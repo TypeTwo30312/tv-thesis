@@ -1,0 +1,24 @@
+\babel@toc {czech}{}\relax 
+\contentsline {chapter}{List of Figures}{xiv}{chapter*.2}%
+\contentsline {chapter}{List of Tables}{xv}{chapter*.2}%
+\contentsline {chapter}{List of Abbreviations}{xvii}{chapter*.3}%
+\contentsline {chapter}{Introduction}{1}{chapter*.4}%
+\contentsline {chapter}{\numberline {1}Theoretical background}{3}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Transcription factors}{3}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Transcription factors and DNA binding}{3}{subsection.1.1.1}%
+\contentsline {subsection}{\numberline {1.1.2}Sequence determinants of binding}{3}{subsection.1.1.2}%
+\contentsline {subsection}{\numberline {1.1.3}Experimental mapping of binding sites}{6}{subsection.1.1.3}%
+\contentsline {section}{\numberline {1.2}Computational methods for motif analysis}{7}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}PWMs}{7}{subsection.1.2.1}%
+\contentsline {section}{\numberline {1.3}Foundation models in genomics}{7}{section.1.3}%
+\contentsline {section}{\numberline {1.4}NGS data}{7}{section.1.4}%
+\contentsline {chapter}{\numberline {2}Aims of thesis}{9}{chapter.2}%
+\contentsline {chapter}{\numberline {3}Methods $\DOTSI \intop \ilimits@ \! f(x)\,\mathrm {d}x$ v~názvu}{11}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Podkapitola}{14}{section.3.1}%
+\contentsline {chapter}{\numberline {4}Druhá kapitola s matematikou $\DOTSI \intop \ilimits@ \! f(x)\,\mathrm {d}x$ v~názvu}{15}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Podkapitola}{18}{section.4.1}%
+\contentsline {chapter}{Závěr}{19}{chapter*.7}%
+\babel@toc {english}{}\relax 
+\babel@toc {czech}{}\relax 
+\contentsline {chapter}{Bibliography}{24}{chapter*.8}%
+\contentsline {chapter}{Appendix}{25}{chapter*.9}%

@@ -1,0 +1,83 @@
+> tohle jsou poznámky, poznámky, poznámky. Projít kde se opakuji určitě. Vizuály? Výsledky z [@faltejskovaNonconsensusFlankingSequence]?
+
+# 1.1
+
+## 1.1.1
+Transcription factors (TFs) are proteins that modulate transcription by binding DNA in a sequence\-/specific manner. The target sequences are typically motifs of 6–20 bp and are recognized with tolerance for sequence variation. They act through regulatory elements such as promoters, enhancers, and silencers, by recruiting the transcription machinery or modulating its activity. Most TFs share a modular architecture: a DNA-binding domain (DBD) that contacts the target sequence, paired with one or more effector domains responsible for transactivation, repression, or dimerisation. Because the DBD determines binding specificity, TFs are usually classified by DBD family rather than by their effector domains or biological function. The human genome encodes approximately 1600 sequence\-/specific TFs, which can be classified into roughly 75 DBD families [@lambertHumanTranscriptionFactors2018]. These families include the C2H2 zinc fingers (the family most represented in humans, e.g. CTCF), the basic helix-loop-helix proteins (e.g. MYC, which binds as a heterodimer with MAX), the ETS domain family (e.g. SPI1), and the forkhead family (e.g. FOXK2).
+
+Despite the considerable variety in structure, all sequence-specific TFs face the same problem - they must recognise their short target sequence among numerous similar but non-functional sites in a genome.
+
+## 1.1.2
+
+The specificity of protein-DNA binding is based on two complementary mechanisms: direct chemical recognition of bases (base readout), and recognition of sequence-dependent DNA geometry (shape readout).
+
+Base readout works through direct contact, either through hydrogen bonds or van der Waals interactions, of amino acid side chains and the Watson-Crick edges of bases, predominantly in the major groove. The major groove presents a distinctive pattern of hydrogen-bond donors and acceptors that allows discrimination between base pairs, including for example the orientation of A-T or T-A [@luscombeAminoAcidbaseInteractions2001;@seemanSequencespecificRecognitionDouble1976]. *The canonical example of base readout is the C2H2 zinc finger, in which each ββα module contacts approximately three base pairs via two or three specificity residues on the recognition helix, contributing additively to the binding affinity of the multi-finger array. Position weight matrices (PWMs) are the natural statistical encoding of this mechanism, treating each position as an independent contribution to binding affinity.*
+
+Unlike base readout, shape readout depends on sequence context beyond the contact position - the geometry at any given base pair is influenced by neighbouring bases over several positions in either direction. The relevant geometric features (minor groove width, propeller twist, helical twist, roll, and slide...) describe the orientation and stacking of base pairs along the helix and are not direct chemical signals of base identity. They are read by protein contacts that respond to local shape and electrostatics rather than to specific bases. The canonical example is recognition of narrow minor grooves by arginine residues: A-tracts (runs of A-T base pairs) produce locally narrowed minor grooves with concentrated negative electrostatic potential, which arginines insert into and stabilise without forming base-specific hydrogen bonds [@rohsRoleDNAShape2009d].
+
+Even taken together, base and shape readout cannot fully account for the specificity of in vivo TF binding. Both mechanisms are short-range: base readout depends on direct contacts within the binding footprint of typically 6–20 bp, and shape readout, while sensitive to surrounding sequence, is mediated through contacts within and immediately flanking that footprint [@yangTranscriptionFactorFamilyspecific2017]. Yet these mechanisms are genuinely complementary rather than redundant. Crystal structures of TF–DNA complexes routinely show major-groove base-specific contacts and minor-groove shape-based contacts within the same interface, and quantitative analyses show that augmenting PWM-based models with shape features systematically improves binding prediction across TF families [@mathelierDNAShapeFeatures2016]. *The limitation is not that the two mechanisms fail individually, but that their combined reach is bounded by the binding footprint. The discrepancy between motif occurrences in the genome and the subset that is actually bound — addressed in the next paragraph — therefore demands explanations beyond the recognition mechanisms reviewed here.*
+
+## 1.1.3
+
+*Sequence-specific TFs recognise short DNA motifs, typically 6–20 bp long.
+The recognition is degenerate: most positions tolerate multiple bases, with information formally captured by position weight matrices [odkaz_na_dalsi_kapitolu?_cut_protoze_se_opakuji?].* The motif as a whole specifies the binding sequence much less precisely than its nominal length would suggest.
+Sequence recognition mechanisms reviewed above operate over tens of base pairs at most.
+In the context of the ~3 Gb human genome, hundreds of thousands to millions of matches are expected by chance alone.
+ChIP-seq, the standard assay for in vivo TF occupancy (described in the next section), typically identifies between a few thousand and a few tens of thousands of bound sites per TF per cell line.
+CTCF in K562 cells, for example, has approximately 52,000 IDR-thresholded ENCODE peaks, against approximately 870,000 matches to the canonical CTCF motif in the hg19 genome at standard FIMO thresholds (stricter thresholds reduce this to a few tens of thousands, but at the cost of missing many genuine binding sites) \cite{dozmorovCTCFBioconductorData2022}.
+This gap between motif presence and actual binding has been termed the transcription factor specificity paradox, *originally formalised for prokaryotic TFs as the futility theorem by \citet{wunderlichDifferentGeneRegulation2009}: in a sufficiently large genome, even highly informative motifs predict more matches than there are TF molecules in the cell, making purely sequence-based recognition statistically insufficient.*
+In practice, this is reflected in the weak correlation between intrinsic in vitro affinity (measured by HT-SELEX or protein-binding microarrays) and in vivo occupancy (measured by ChIP-seq): high-affinity sites can remain unbound, while low-affinity sites are often bound \cite{slatteryAbsenceSimpleCode2014a}.
+This gap is partially explained by several mechanisms, each a substantial research field in its own right.
+
+Chromatin accessibility is regarded as the dominant factor: only a small fraction of the genome may be accessed by proteins at any given time, the rest made unavailable by nucleosomes or compacted into heterochromatin.
+ATAC-seq, DNase-seq, and FAIRE-seq are used to identify accessible , and most in vivo TF binding occurs within it \cite{thurmanAccessibleChromatinLandscape2012}.
+*Cooperative binding with cofactors is the second.
+Many TFs bind productively only as part of a complex — homodimers, heterodimers, or larger assemblies — so combinatorics restrict where binding can occur \cite{spitzTranscriptionFactorsEnhancer2012}[nemam access, najit lepsi].*
+MYC, for example, binds as an obligate heterodimer with MAX.
+Cellular context further narrows the set: TF abundance, post-translational modification, and subcellular localisation are all regulated and condition-dependent.
+
+The fourth and final mechanism - sequence context beyond the motif - is the focus of this thesis.
+Flanking nucleotides, dinucleotide composition, DNA shape, and broader compositional features of the regions surrounding a motif modulate binding affinity and contribute to the discrimination between bound and unbound matches \cite{drorWidespreadRoleMotif2015}.
+Unlike chromatin and cooperativity, this contribution is encoded directly in the DNA sequence and is therefore in principle accessible to any model that operates on raw sequence input.
+The next paragraph develops what is currently known about this contribution, from the immediate flanks of the motif out to the kilobase-scale compositional gradients recently characterised by \citet{faltejskovaNonconsensusFlankingSequence2026} — the biological signal that motivates the rest of this thesis.
+
+
+## 1.1.4
+
+*The fact that motif occurrences vastly outnumber bound sites motivates a substantial body of work on what else in the DNA sequence influences in vivo binding.
+The contributions that have been characterised span three orders of magnitude in distance.*
+
+At the shortest scale, the nucleotides immediately flanking the core motif modify binding affinity in ways that PWMs cannot capture.
+\cite{drorWidespreadRoleMotif2015} showed that flanking-region features improve TF binding prediction across diverse families, with much of the gain attributable to DNA shape: the flanks determine the local geometry of the motif region itself, and so contribute through shape readout rather than through new direct contacts.
+At the intermediate scale of tens to hundreds of base pairs, *broader compositional features modulate the nonspecific affinity that governs how a TF samples DNA during 1D diffusion along the helix.* [check_for_phrasing_in_the_paper] 
+Sequence correlations and poly(dA:dT) tract content shape this nonspecific affinity landscape \cite{afekGenomewideOrganizationEukaryotic2013,selaDNASequenceCorrelations2011}, so the sequence environment a scanning TF traverses is not energetically flat.
+\citet{bergDiffusiondrivenMechanismsProtein1981a} established that TFs locate their targets faster than three-dimensional diffusion would allow by alternating 3D excursions with 1D sliding along DNA, and \citet{slutskyKineticsProteinDNAInteraction2004} formalised the *kinetic trade-off between fast scanning and stable specific binding.*
+A target search of this kind is in principle sensitive to sequence-encoded biases over distances much longer than the binding site itself.
+
+\citet{faltejskovaNonconsensusFlankingSequence} recently characterised such biases at kilobase scale.
+In a systematic analysis of in vivo binding sites for ten TFs from ENCODE ChIP-seq, they identified a statistically significant enrichment of GC content spanning approximately 1–2 kb around the binding site for nearly all TFs studied, with magnitudes on the order of ten percentage points [numbers?] and largely symmetric profiles around the peak centre.
+For a subset of TFs — notably MYC — they additionally observed directional dinucleotide asymmetries: upstream-enriched AA, CA and AC dinucleotides mirrored by downstream-enriched TT, TG and GT, producing a sequence gradient pointing toward the binding site.
+From these observations the authors propose a statistical funnel model in which broad compositional gradients create a low-free-energy landscape biasing 1D-scanning TFs toward their targets; once near the binding site, short-range readout completes the binding event.
+A theoretical feature of this proposal is that the gradients extend well beyond the 
+*Debye screening length* over which direct electrostatic protein–DNA interactions decay, so the signal cannot be read out by long-range electrostatic contact and must instead modulate the scanning process itself.
+This study is *purely descriptive* — the authors propose the funnel as a hypothesis consistent with their observations rather than as a validated mechanism — and they do not test whether any model trained on raw sequence implicitly encodes the gradients they describe.
+That question motivates the rest of this thesis.
+
+## 1.1.5
+
+Throughout this thesis, "binding site" refers to a position identified by ChIP-seq, the standard high-throughput assay for in vivo TF occupancy.
+The procedure consists of cross-linking protein–DNA contacts in living cells (typically with formaldehyde), fragmenting the chromatin, immunoprecipitating fragments bound by the TF of interest using a specific antibody, and sequencing the recovered DNA.
+Reads are aligned to the reference genome, where they accumulate as enrichment peaks at bound regions relative to a control library of input chromatin or non-specific IgG immunoprecipitate.
+Peak calling — the identification of statistically enriched regions against the local background — is conventionally performed with MACS2 \cite{zhangModelbasedAnalysisChIPSeq2008}, and the output is a narrowPeak BED file containing the genomic coordinates of each peak, a significance score, and the offset of the position of maximum read pile-up within the peak (the summit).
+
+Single-replicate peak calls contain false positives.
+The Irreproducible Discovery Rate framework \cite{liMeasuringReproducibilityHighthroughput2011} addresses this by comparing peak rankings between biological replicates and retaining only peaks that are reproducibly called above a defined irreproducibility threshold.
+ENCODE provides IDR-thresholded peak files as the standard high-confidence output of its uniform processing pipeline, and these are the files used throughout this thesis as well as by \citet{faltejskovaNonconsensusFlankingSequence}.
+
+A ChIP-seq peak is a region of read enrichment, typically a few hundred base pairs wide, rather than a single binding event.
+The actual point of TF–DNA contact is somewhere within the peak — most defensibly the summit, more conventionally the peak midpoint.
+The choice between the two is methodological rather than substantive; *this thesis follows \citeauthor{@faltejskovaNonconsensusFlankingSequence2026} in using the midpoint as the binding-site proxy, and the consequences of the choice are revisited in [odkazMetody?].*
+Beyond this positional uncertainty, ChIP-seq has further well-known limitations: antibody quality varies between targets, cross-linking can capture transient or indirect contacts, fragment-length resolution caps the spatial precision at a few hundred base pairs, and any peak set is specific to the cell line and condition in which it was generated.
+
+ENCODE is the data source for the analyses in this thesis.
+The project provides standardised processing, IDR-thresholded peak files, audit metadata for problematic experiments, and broad coverage of TFs across human cell lines, which together make it the natural reference resource for systematic TF studies — and the reason both \citeauthor{@faltejskovaNonconsensusFlankingSequence2026} and this thesis use it.

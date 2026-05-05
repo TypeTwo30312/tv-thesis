@@ -1,0 +1,1624 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nyt/global//global/global}
+    \entry{afekGenomewideOrganizationEukaryotic2013}{misc}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=5f4ec4d291c070b29316e3991ba73169}{%
+           family={Afek},
+           familyi={A\bibinitperiod},
+           given={Ariel},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e8bcce4ee0549cdaa46a9e15fa0d31bc}{%
+           family={Lukatsky},
+           familyi={L\bibinitperiod},
+           given={David\bibnamedelima B.},
+           giveni={D\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{aa04f857da14726f233a6a9f53fec235}
+      \strng{fullhash}{aa04f857da14726f233a6a9f53fec235}
+      \strng{bibnamehash}{aa04f857da14726f233a6a9f53fec235}
+      \strng{authorbibnamehash}{aa04f857da14726f233a6a9f53fec235}
+      \strng{authornamehash}{aa04f857da14726f233a6a9f53fec235}
+      \strng{authorfullhash}{aa04f857da14726f233a6a9f53fec235}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Genome-wide binding preferences of the key components of eukaryotic pre-initiation complex (PIC) have been recently measured with high resolution in Saccharomyces cerevisiae by Rhee and Pugh (Nature (2012) 483:295-301). Yet the rules determining the PIC binding specificity remain poorly understood. In this study we show that nonconsensus protein-DNA binding significantly influences PIC binding preferences. We estimate that such nonconsensus binding contribute statistically at least 2-3 kcal/mol (on average) of additional attractive free energy per protein, per core promoter region. The predicted attractive effect is particularly strong at repeated poly(dA:dT) and poly(dC:dG) tracts. Overall, the computed free energy landscape of nonconsensus protein-DNA binding shows strong correlation with the measured genome-wide PIC occupancy. Remarkably, statistical PIC binding preferences to both TFIID-dominated and SAGA-dominated genes correlate with the nonconsensus free energy landscape, yet these two groups of genes are distinguishable based on the average free energy profiles. We suggest that the predicted nonconsensus binding mechanism provides a genome-wide background for specific promoter elements, such as transcription factor binding sites, TATA-like elements, and specific binding of the PIC components to nucleosomes. We also show that nonconsensus binding influences transcriptional frequency genome-wide.}
+      \field{howpublished}{https://arxiv.org/abs/1303.1302v1}
+      \field{journaltitle}{arXiv.org}
+      \field{langid}{english}
+      \field{month}{3}
+      \field{title}{Genome-Wide Organization of Eukaryotic Pre-Initiation Complex Is Influenced by Nonconsensus Protein-{{DNA}} Binding}
+      \field{urlday}{4}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{year}{2013}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.1016/j.bpj.2013.01.038
+      \endverb
+      \verb{file}
+      \verb /home/vambersky_t/Zotero/storage/LU2UVDMW/Afek and Lukatsky - 2013 - Genome-wide organization of eukaryotic pre-initiation complex is influenced by nonconsensus protein-.pdf
+      \endverb
+    \endentry
+    \entry{bergDiffusiondrivenMechanismsProtein1981a}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=85b1ee75a5310083c84bfe20f67fe693}{%
+           family={Berg},
+           familyi={B\bibinitperiod},
+           given={Otto\bibnamedelima G.},
+           giveni={O\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c3e38e2772224ec522d8cb056f71a963}{%
+           family={Winter},
+           familyi={W\bibinitperiod},
+           given={Robert\bibnamedelima B.},
+           giveni={R\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7a911754a4cfb7ca1ba486a1fbf10878}{%
+           family={Von\bibnamedelima Hippel},
+           familyi={V\bibinitperiod\bibinitdelim H\bibinitperiod},
+           given={Peter\bibnamedelima H.},
+           giveni={P\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {American Chemical Society}%
+      }
+      \strng{namehash}{4f905376a6ed4fb2cb6c11c8678cf76f}
+      \strng{fullhash}{822a8cd01c372f715c7671780c98e2b4}
+      \strng{bibnamehash}{822a8cd01c372f715c7671780c98e2b4}
+      \strng{authorbibnamehash}{822a8cd01c372f715c7671780c98e2b4}
+      \strng{authornamehash}{4f905376a6ed4fb2cb6c11c8678cf76f}
+      \strng{authorfullhash}{822a8cd01c372f715c7671780c98e2b4}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0006-2960}
+      \field{journaltitle}{Biochemistry}
+      \field{month}{11}
+      \field{number}{24}
+      \field{title}{Diffusion-Driven Mechanisms of Protein Translocation on Nucleic Acids. 1. {{Models}} and Theory}
+      \field{urlday}{4}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{volume}{20}
+      \field{year}{1981}
+      \field{urldateera}{ce}
+      \field{pages}{6929\bibrangedash 6948}
+      \range{pages}{20}
+      \verb{doi}
+      \verb 10.1021/bi00527a028
+      \endverb
+      \verb{file}
+      \verb /home/vambersky_t/Zotero/storage/ATFN2VUA/Berg et al. - 1981 - Diffusion-driven mechanisms of protein translocation on nucleic acids. 1. Models and theory.pdf
+      \endverb
+    \endentry
+    \entry{dozmorovCTCFBioconductorData2022}{article}{}
+      \name{author}{7}{}{%
+        {{un=0,uniquepart=base,hash=1f778a1eafd422afc6f9b7c029c9bc92}{%
+           family={Dozmorov},
+           familyi={D\bibinitperiod},
+           given={Mikhail\bibnamedelima G},
+           giveni={M\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5877e09afa85dc68c3d01fffb65b4384}{%
+           family={Mu},
+           familyi={M\bibinitperiod},
+           given={Wancen},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2f14d8fc9c516a5faadbe81d4a23b857}{%
+           family={Davis},
+           familyi={D\bibinitperiod},
+           given={Eric\bibnamedelima S},
+           giveni={E\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=501863d7cefa1f6d8d498362686e0203}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={Stuart},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fb45357bb7818a4a536bac9908e4fe4f}{%
+           family={Triche},
+           familyi={T\bibinitperiod},
+           given={Timothy\bibnamedelima J},
+           giveni={T\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fb8a1f2b4a34631aba65b1fcf9d0c54b}{%
+           family={Phanstiel},
+           familyi={P\bibinitperiod},
+           given={Douglas\bibnamedelima H},
+           giveni={D\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8d480d3f68226ebba9e9a763795e86f7}{%
+           family={Love},
+           familyi={L\bibinitperiod},
+           given={Michael\bibnamedelima I},
+           giveni={M\bibinitperiod\bibinitdelim I\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{b9c570394cd47eae4f58b171f6240434}
+      \strng{fullhash}{851dc52dc261bfc32f5ce7fdd9647ea2}
+      \strng{bibnamehash}{b9c570394cd47eae4f58b171f6240434}
+      \strng{authorbibnamehash}{b9c570394cd47eae4f58b171f6240434}
+      \strng{authornamehash}{b9c570394cd47eae4f58b171f6240434}
+      \strng{authorfullhash}{851dc52dc261bfc32f5ce7fdd9647ea2}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Summary CTCF (CCCTC-binding factor) is an 11-zinc-finger DNA binding protein which regulates much of the eukaryotic genome's 3D structure and function. The diversity of CTCF binding motifs has led to a fragmented landscape of CTCF binding data. We collected position weight matrices of CTCF binding motifs and defined strand-oriented CTCF binding sites in the human and mouse genomes, including the recent Telomere to Telomere and mm39 assemblies. We included selected experimentally determined and predicted CTCF binding sites, such as CTCF-bound cis-regulatory elements from SCREEN ENCODE. We recommend filtering strategies for CTCF binding motifs and demonstrate that liftOver is a viable alternative to convert CTCF coordinates between assemblies. Our comprehensive data resource and usage recommendations can serve to harmonize and strengthen the reproducibility of genomic studies utilizing CTCF binding data. Availability and implementation https://bioconductor.org/packages/CTCF. Companion website: https://dozmorovlab.github.io/CTCF/; Code to reproduce the analyses: https://github.com/dozmorovlab/CTCF.dev. Supplementary information are available at Bioinformatics Advances online.}
+      \field{issn}{2635-0041}
+      \field{journaltitle}{Bioinformatics Advances}
+      \field{month}{12}
+      \field{number}{1}
+      \field{shorttitle}{{{CTCF}}}
+      \field{title}{{{CTCF}}: An {{R}}/Bioconductor Data Package of Human and Mouse {{CTCF}} Binding Sites}
+      \field{urlday}{30}
+      \field{urlmonth}{4}
+      \field{urlyear}{2026}
+      \field{volume}{2}
+      \field{year}{2022}
+      \field{urldateera}{ce}
+      \field{pages}{vbac097}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1093/bioadv/vbac097
+      \endverb
+      \verb{file}
+      \verb /home/vambersky_t/Zotero/storage/TUNX6QV2/Dozmorov et al. - 2022 - CTCF an Rbioconductor data package of human and mouse CTCF binding sites.pdf
+      \endverb
+    \endentry
+    \entry{drorWidespreadRoleMotif2015}{article}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=d8ef4aadce75d34bb565441b1508f28c}{%
+           family={Dror},
+           familyi={D\bibinitperiod},
+           given={Iris},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0986f555ebc1c1b8df056bfcfcc76516}{%
+           family={Golan},
+           familyi={G\bibinitperiod},
+           given={Tamar},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=10d8bafc6495a283f47f7c5a9d096428}{%
+           family={Levy},
+           familyi={L\bibinitperiod},
+           given={Carmit},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c8fe275a7f8960db9fd0bab64ecab23f}{%
+           family={Rohs},
+           familyi={R\bibinitperiod},
+           given={Remo},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4f2706b1cbc3f12c363f94d4e2116827}{%
+           family={{Mandel-Gutfreund}},
+           familyi={M\bibinitperiod},
+           given={Yael},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Cold Spring Harbor Laboratory Press}%
+      }
+      \strng{namehash}{27be5c651dcbff54d48599164deac63f}
+      \strng{fullhash}{8c39f9338f08e461d4c8ff52150bf832}
+      \strng{bibnamehash}{27be5c651dcbff54d48599164deac63f}
+      \strng{authorbibnamehash}{27be5c651dcbff54d48599164deac63f}
+      \strng{authornamehash}{27be5c651dcbff54d48599164deac63f}
+      \strng{authorfullhash}{8c39f9338f08e461d4c8ff52150bf832}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Transcriptional regulation requires the binding of transcription factors (TFs) to short sequence-specific DNA motifs, usually located at the gene regulatory regions. Interestingly, based on a vast amount of data accumulated from genomic assays, it has been shown that only a small fraction of all potential binding sites containing the consensus motif of a given TF actually bind the protein. Recent in vitro binding assays, which exclude the effects of the cellular environment, also demonstrate selective TF binding. An intriguing conjecture is that the surroundings of cognate binding sites have unique characteristics that distinguish them from other sequences containing a similar motif that are not bound by the TF. To test this hypothesis, we conducted a comprehensive analysis of the sequence and DNA shape features surrounding the core-binding sites of 239 and 56 TFs extracted from in vitro HT-SELEX binding assays and in vivo ChIP-seq data, respectively. Comparing the nucleotide content of the regions around the TF-bound sites to the counterpart unbound regions containing the same consensus motifs revealed significant differences that extend far beyond the core-binding site. Specifically, the environment of the bound motifs demonstrated unique sequence compositions, DNA shape features, and overall high similarity to the core-binding motif. Notably, the regions around the binding sites of TFs that belong to the same TF families exhibited similar features, with high agreement between the in vitro and in vivo data sets. We propose that these unique features assist in guiding TFs to their cognate binding sites.}
+      \field{chapter}{Research}
+      \field{issn}{1088-9051, 1549-5469}
+      \field{journaltitle}{Genome Research}
+      \field{langid}{english}
+      \field{month}{7}
+      \field{number}{9}
+      \field{title}{A Widespread Role of the Motif Environment in Transcription Factor Binding across Diverse Protein Families}
+      \field{urlday}{14}
+      \field{urlmonth}{4}
+      \field{urlyear}{2026}
+      \field{volume}{25}
+      \field{year}{2015}
+      \field{urldateera}{ce}
+      \field{pages}{1268\bibrangedash 1280}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1101/gr.184671.114
+      \endverb
+      \verb{file}
+      \verb /home/vambersky_t/Zotero/storage/2NRW47EW/Dror et al. - 2015 - A widespread role of the motif environment in transcription factor binding across diverse protein fa.pdf;/home/vambersky_t/Zotero/storage/SPPKBUEC/Dror et al. - 2015 - A widespread role of the motif environment on transcription factor binding across diverse protein fa.pdf
+      \endverb
+    \endentry
+    \entry{faltejskovaNonconsensusFlankingSequence2026}{misc}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=1af9a0292ca44827eb3d1da61acf2c03}{%
+           family={Faltejsková},
+           familyi={F\bibinitperiod},
+           given={Kateřina},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e8c1ce41f354f367ef5df40ab0979c2e}{%
+           family={Šulc},
+           familyi={Š\bibinitperiod},
+           given={Josef},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1258424732458b2dd85d8e719244f794}{%
+           family={Vondrášek},
+           familyi={V\bibinitperiod},
+           given={Jiří},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {bioRxiv}%
+      }
+      \strng{namehash}{be810df249e4e45c201a7b19371b20d3}
+      \strng{fullhash}{03fcb0d9363c883b8acdd4d2379916f6}
+      \strng{bibnamehash}{03fcb0d9363c883b8acdd4d2379916f6}
+      \strng{authorbibnamehash}{03fcb0d9363c883b8acdd4d2379916f6}
+      \strng{authornamehash}{be810df249e4e45c201a7b19371b20d3}
+      \strng{authorfullhash}{03fcb0d9363c883b8acdd4d2379916f6}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{It was long suspected that for specific DNA binding by a transcription factor, the flanks of the binding motifs can play an important role. By a thorough analysis of the DNA sequence in the broad context (\textpm{} 5000 bp) of in vivo binding sites (as identified in a ChIP-seq or a Cut\&Tag experiment), we show that the average GC content is in most cases statistically significantly increased around the binding site in a patch spanning 1000--1500 bp. This increase was observed consistently in experiment targeting the same TF in different cell lines. The surrounding of binding sites of certain TFs like MYC display a directional alteration of dinucleotide frequencies. We attempt to explain these preferences by alteration in DNA shape features as well as by potential cooperation with other TFs. We observed differences in sequence affinity to various potential cooperating TFs between cell lines. Altogether, we propose that the observed feature distortion is indicative of a coarse scanning mechanism that helps TFs find the target binding site. {$<$}img class="highwire-fragment fragment-image" alt="Figure" src="https://www.biorxiv.org/content/biorxiv/early/2026/03/10/2025.05.28.656598/F1.medium.gif" width="440" height="175"/{$>$}Download figureOpen in new tab Key MessagesWe prove an increase in GC content 1000--1500 bp both upstream and downstream of the binding site.We observed a funnel-like sequence signature of thousands of bp that is shared between most cell lines.We propose an explanation based on helix shape and binding affinities of potential cooperating TFs, supported by crosslinking the ChIP-seq (Cut\&Tag) experiments with ATAC-seq experiments.}
+      \field{chapter}{New Results}
+      \field{eprintclass}{New Results}
+      \field{eprinttype}{bioRxiv}
+      \field{issn}{2692-8205}
+      \field{langid}{english}
+      \field{month}{3}
+      \field{shorttitle}{Non-Consensus Flanking Sequence of Hundreds of Base Pairs around in Vivo Binding Sites}
+      \field{title}{Non-Consensus Flanking Sequence of Hundreds of Base Pairs around in Vivo Binding Sites: Statistical Beacons for Transcription Factor Scanning}
+      \field{urlday}{14}
+      \field{urlmonth}{3}
+      \field{urlyear}{2026}
+      \field{year}{2026}
+      \field{urldateera}{ce}
+      \field{pages}{2025.05.28.656598}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1101/2025.05.28.656598
+      \endverb
+      \verb{file}
+      \verb /home/vambersky_t/Zotero/storage/EEDRFE97/Faltejsková et al. - 2026 - Non-consensus flanking sequence of hundreds of base pairs around in vivo binding sites statistical.pdf;/home/vambersky_t/Zotero/storage/TZMJET9K/Faltejsková et al. - 2026 - Non-consensus flanking sequence of hundreds of base pairs around in vivo binding sites statistical.pdf;/home/vambersky_t/Zotero/storage/VWGLULEZ/Faltejsková et al. - 2026 - Non-consensus flanking sequence of hundreds of base pairs around in vivo binding sites statistical.pdf
+      \endverb
+    \endentry
+    \entry{lambertHumanTranscriptionFactors2018}{article}{}
+      \name{author}{10}{}{%
+        {{un=0,uniquepart=base,hash=33cb7c8834e975b1ba121e820fad5c20}{%
+           family={Lambert},
+           familyi={L\bibinitperiod},
+           given={Samuel\bibnamedelima A.},
+           giveni={S\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=159aaa6e76a5e0cdb4d1f42242c0dd3d}{%
+           family={Jolma},
+           familyi={J\bibinitperiod},
+           given={Arttu},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=534d75c48446eca148f10dbcddd9105a}{%
+           family={Campitelli},
+           familyi={C\bibinitperiod},
+           given={Laura\bibnamedelima F.},
+           giveni={L\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=826fea80aa99a9e6d60c08474b4aab99}{%
+           family={Das},
+           familyi={D\bibinitperiod},
+           given={Pratyush},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=475e058882a8ec8d6c7eb977731ebec3}{%
+           family={Yin},
+           familyi={Y\bibinitperiod},
+           given={Yimeng},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=eb17ee1e89ea230c0b62997ebda33e98}{%
+           family={Albu},
+           familyi={A\bibinitperiod},
+           given={Mihai},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b5a5b0bbd54821ed0c4a99abce47191e}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Xiaoting},
+           giveni={X\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1d0f5f1eda1642a5133f5f56e8d03a99}{%
+           family={Taipale},
+           familyi={T\bibinitperiod},
+           given={Jussi},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1d94d8b59b86986eb9ea7a04e38fa3f6}{%
+           family={Hughes},
+           familyi={H\bibinitperiod},
+           given={Timothy\bibnamedelima R.},
+           giveni={T\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=90b6e27f43d7cfbe186b0da22f6e48d8}{%
+           family={Weirauch},
+           familyi={W\bibinitperiod},
+           given={Matthew\bibnamedelima T.},
+           giveni={M\bibinitperiod\bibinitdelim T\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{c866c209dc562b3d1ad0b8c750e5dd08}
+      \strng{fullhash}{4fa244ddd55487415a7dc6ec6cccbd1d}
+      \strng{bibnamehash}{c866c209dc562b3d1ad0b8c750e5dd08}
+      \strng{authorbibnamehash}{c866c209dc562b3d1ad0b8c750e5dd08}
+      \strng{authornamehash}{c866c209dc562b3d1ad0b8c750e5dd08}
+      \strng{authorfullhash}{4fa244ddd55487415a7dc6ec6cccbd1d}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Transcription factors (TFs) recognize specific DNA sequences to control chromatin and transcription, forming a complex system that guides expression of the genome. We present a catalog of 1,639 likely human TFs and their binding specificities. Decoding how TFs find their genomic targets and how TF binding relates to regulation of transcription remain challenging. Cooperativity among TFs and associated chromatin factors can impart specificity, but relevant data are generally lacking. Major classes of human TFs differ markedly in their evolutionary trajectories and expression patterns, underscoring distinct functions. TFs likewise underlie many different aspects of human physiology, disease, and variation, highlighting the importance of understanding TF-mediated gene regulation.}
+      \field{issn}{0092-8674}
+      \field{journaltitle}{Cell}
+      \field{month}{2}
+      \field{number}{4}
+      \field{title}{The {{Human Transcription Factors}}}
+      \field{urlday}{17}
+      \field{urlmonth}{4}
+      \field{urlyear}{2026}
+      \field{volume}{172}
+      \field{year}{2018}
+      \field{urldateera}{ce}
+      \field{pages}{650\bibrangedash 665}
+      \range{pages}{16}
+      \verb{doi}
+      \verb 10.1016/j.cell.2018.01.029
+      \endverb
+      \verb{file}
+      \verb /home/vambersky_t/Zotero/storage/K84HRUU6/Lambert et al. - 2018 - The Human Transcription Factors.pdf
+      \endverb
+    \endentry
+    \entry{liMeasuringReproducibilityHighthroughput2011}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=648f941baf22576f7a907f38049cfbec}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Qunhua},
+           giveni={Q\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=53aad1e4f1d440695d8f561e110a7b73}{%
+           family={Brown},
+           familyi={B\bibinitperiod},
+           given={James\bibnamedelima B.},
+           giveni={J\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=138f5c8d589ba1067e612ea3358b0ae4}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Haiyan},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4cbb7e2b2b68aff0e8c8ad3f0cf5f335}{%
+           family={Bickel},
+           familyi={B\bibinitperiod},
+           given={Peter\bibnamedelima J.},
+           giveni={P\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Institute of Mathematical Statistics}%
+      }
+      \strng{namehash}{72e707bf13ade7f80d92f4e314b48256}
+      \strng{fullhash}{980f9dfca0b8e28756330e4df1109f75}
+      \strng{bibnamehash}{72e707bf13ade7f80d92f4e314b48256}
+      \strng{authorbibnamehash}{72e707bf13ade7f80d92f4e314b48256}
+      \strng{authornamehash}{72e707bf13ade7f80d92f4e314b48256}
+      \strng{authorfullhash}{980f9dfca0b8e28756330e4df1109f75}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Reproducibility is essential to reliable scientific discovery in high-throughput experiments. In this work we propose a unified approach to measure the reproducibility of findings identified from replicate experiments and identify putative discoveries using reproducibility. Unlike the usual scalar measures of reproducibility, our approach creates a curve, which quantitatively assesses when the findings are no longer consistent across replicates. Our curve is fitted by a copula mixture model, from which we derive a quantitative reproducibility score, which we call the ``irreproducible discovery rate'' (IDR) analogous to the FDR. This score can be computed at each set of paired replicate ranks and permits the principled setting of thresholds both for assessing reproducibility and combining replicates. Since our approach permits an arbitrary scale for each replicate, it provides useful descriptive measures in a wide variety of situations to be explored. We study the performance of the algorithm using simulations and give a heuristic analysis of its theoretical properties. We demonstrate the effectiveness of our method in a ChIP-seq experiment.}
+      \field{issn}{1932-6157, 1941-7330}
+      \field{journaltitle}{The Annals of Applied Statistics}
+      \field{langid}{english}
+      \field{month}{9}
+      \field{number}{3}
+      \field{title}{Measuring Reproducibility of High-Throughput Experiments}
+      \field{urlday}{4}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{volume}{5}
+      \field{year}{2011}
+      \field{urldateera}{ce}
+      \field{pages}{1752\bibrangedash 1779}
+      \range{pages}{28}
+      \verb{doi}
+      \verb 10.1214/11-AOAS466
+      \endverb
+      \verb{file}
+      \verb /home/vambersky_t/Zotero/storage/K3QVWL8I/Li et al. - 2011 - Measuring reproducibility of high-throughput experiments.pdf
+      \endverb
+      \keyw{association,copula,genomics,high-throughput experiment,irreproducible discovery rate,iterative algorithm,mixture model,reproducibility}
+    \endentry
+    \entry{luscombeAminoAcidbaseInteractions2001}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=d6527f03e3cfa081a7b75b8c912795ae}{%
+           family={Luscombe},
+           familyi={L\bibinitperiod},
+           given={N.\bibnamedelimi M.},
+           giveni={N\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e38160a9ca34d9bf85b805da667dce76}{%
+           family={Laskowski},
+           familyi={L\bibinitperiod},
+           given={R.\bibnamedelimi A.},
+           giveni={R\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=19ed35fdd4fa5aa3661bf1cb942c0ea9}{%
+           family={Thornton},
+           familyi={T\bibinitperiod},
+           given={J.\bibnamedelimi M.},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{c7074acc80af220b3a04d40710667a49}
+      \strng{fullhash}{153be66b26a94cc27c96d88bc60ac0f9}
+      \strng{bibnamehash}{153be66b26a94cc27c96d88bc60ac0f9}
+      \strng{authorbibnamehash}{153be66b26a94cc27c96d88bc60ac0f9}
+      \strng{authornamehash}{c7074acc80af220b3a04d40710667a49}
+      \strng{authorfullhash}{153be66b26a94cc27c96d88bc60ac0f9}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{To assess whether there are universal rules that govern amino acid-base recognition, we investigate hydrogen bonds, van der Waals contacts and water-mediated bonds in 129 protein-DNA complex structures. DNA-backbone interactions are the most numerous, providing stability rather than specificity. For base interactions, there are significant base-amino acid type correlations, which can be rationalised by considering the stereochemistry of protein side chains and the base edges exposed in the DNA structure. Nearly two-thirds of the direct read-out of DNA sequences involves complex networks of hydrogen bonds, which enhance specificity. Two-thirds of all protein-DNA interactions comprise van der Waals contacts, compared to about one-sixth each of hydrogen and water-mediated bonds. This highlights the central importance of these contacts for complex formation, which have previously been relegated to a secondary role. Although common, water-mediated bonds are usually non-specific, acting as space-fillers at the protein-DNA interface. In conclusion, the majority of amino acid-base interactions observed follow general principles that apply across all protein-DNA complexes, although there are individual exceptions. Therefore, we distinguish between interactions whose specificities are 'universal' and 'context-dependent'. An interactive Web-based atlas of side chain-base contacts provides access to the collected data, including analyses and visualisation of the three-dimensional geometry of the interactions.}
+      \field{issn}{1362-4962}
+      \field{journaltitle}{Nucleic Acids Research}
+      \field{langid}{english}
+      \field{month}{7}
+      \field{number}{13}
+      \field{shorttitle}{Amino Acid-Base Interactions}
+      \field{title}{Amino Acid-Base Interactions: A Three-Dimensional Analysis of Protein-{{DNA}} Interactions at an Atomic Level}
+      \field{volume}{29}
+      \field{year}{2001}
+      \field{pages}{2860\bibrangedash 2874}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.1093/nar/29.13.2860
+      \endverb
+      \verb{file}
+      \verb /home/vambersky_t/Zotero/storage/2HGE5DAE/Luscombe et al. - 2001 - Amino acid-base interactions a three-dimensional analysis of protein-DNA interactions at an atomic.pdf
+      \endverb
+      \keyw{Base Pairing,Databases as Topic,DNA,DNA-Binding Proteins,Hydrogen Bonding,Internet,Nucleic Acid Conformation,Protein Binding,Protein Conformation,Sequence Homology Amino Acid,Software,Static Electricity,Substrate Specificity,Water}
+    \endentry
+    \entry{mathelierDNAShapeFeatures2016}{article}{}
+      \name{author}{6}{}{%
+        {{un=0,uniquepart=base,hash=49f8c101c2da5dbf1a869394004d2e0f}{%
+           family={Mathelier},
+           familyi={M\bibinitperiod},
+           given={Anthony},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3a55c324019751883f6c687302162517}{%
+           family={Xin},
+           familyi={X\bibinitperiod},
+           given={Beibei},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=23eb2e0dc9987c93f4b2d8f335913226}{%
+           family={Chiu},
+           familyi={C\bibinitperiod},
+           given={Tsu-Pei},
+           giveni={T\bibinithyphendelim P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=eba68d34a25d8e0125cb5eeb7f44fbd9}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Lin},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c8fe275a7f8960db9fd0bab64ecab23f}{%
+           family={Rohs},
+           familyi={R\bibinitperiod},
+           given={Remo},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ae913606cdec73011ecd781b78bdb439}{%
+           family={Wasserman},
+           familyi={W\bibinitperiod},
+           given={Wyeth\bibnamedelima W.},
+           giveni={W\bibinitperiod\bibinitdelim W\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{809ad99959899fd9410b5b3e3db4a22e}
+      \strng{fullhash}{62ec08cf00c59aa3ce1254ac1904516e}
+      \strng{bibnamehash}{809ad99959899fd9410b5b3e3db4a22e}
+      \strng{authorbibnamehash}{809ad99959899fd9410b5b3e3db4a22e}
+      \strng{authornamehash}{809ad99959899fd9410b5b3e3db4a22e}
+      \strng{authorfullhash}{62ec08cf00c59aa3ce1254ac1904516e}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Interactions of transcription factors (TFs) with DNA comprise a complex interplay between base-specific amino acid contacts and readout of DNA structure. Recent studies have highlighted the complementarity of DNA sequence and shape in modeling TF binding in~vitro. Here, we have provided a comprehensive evaluation of in~vivo datasets to assess the predictive power obtained by augmenting various DNA sequence-based models of TF binding sites (TFBSs) with DNA shape features (helix twist, minor groove width, propeller twist, and roll). Results from 400 human ChIP-seq datasets for 76 TFs show that combining DNA shape features with position-specific scoring matrix (PSSM) scores improves TFBS predictions. Improvement has also been observed using TF flexible models and a machine-learning approach using a binary encoding of nucleotides in~lieu of PSSMs. Incorporating DNA shape information is most beneficial for E2F and MADS-domain TF families. Our findings indicate that incorporating DNA sequence and shape information benefits the modeling of TF binding under complex in~vivo conditions.}
+      \field{issn}{2405-4712}
+      \field{journaltitle}{Cell Systems}
+      \field{month}{9}
+      \field{number}{3}
+      \field{title}{{{DNA Shape Features Improve Transcription Factor Binding Site Predictions In~Vivo}}}
+      \field{urlday}{30}
+      \field{urlmonth}{4}
+      \field{urlyear}{2026}
+      \field{volume}{3}
+      \field{year}{2016}
+      \field{urldateera}{ce}
+      \field{pages}{278\bibrangedash 286.e4}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1016/j.cels.2016.07.001
+      \endverb
+      \verb{file}
+      \verb /home/vambersky_t/Zotero/storage/Q5MA9AML/Mathelier et al. - 2016 - DNA Shape Features Improve Transcription Factor Binding Site Predictions In Vivo.pdf;/home/vambersky_t/Zotero/storage/MDA76HNZ/S2405471216302186.html
+      \endverb
+    \endentry
+    \entry{rohsRoleDNAShape2009}{article}{}
+      \name{author}{6}{}{%
+        {{un=0,uniquepart=base,hash=c8fe275a7f8960db9fd0bab64ecab23f}{%
+           family={Rohs},
+           familyi={R\bibinitperiod},
+           given={Remo},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=96be655b63f393643c25b90e18dd7c7a}{%
+           family={West},
+           familyi={W\bibinitperiod},
+           given={Sean\bibnamedelima M.},
+           giveni={S\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a4a116d1a29fdb1333b6d48a881d86b0}{%
+           family={Sosinsky},
+           familyi={S\bibinitperiod},
+           given={Alona},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2c112d9d43345185672db278b5111bc4}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Peng},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1a3bf8d8272b3d6a5a7b2f486723c209}{%
+           family={Mann},
+           familyi={M\bibinitperiod},
+           given={Richard\bibnamedelima S.},
+           giveni={R\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5fc95c0c7e58f1e33e29011a9ed6edfc}{%
+           family={Honig},
+           familyi={H\bibinitperiod},
+           given={Barry},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Nature Publishing Group}%
+      }
+      \strng{namehash}{ad64606ee5ad5a87d32a33795d52aff4}
+      \strng{fullhash}{4038fb9da0dae267403704402d75b475}
+      \strng{bibnamehash}{ad64606ee5ad5a87d32a33795d52aff4}
+      \strng{authorbibnamehash}{ad64606ee5ad5a87d32a33795d52aff4}
+      \strng{authornamehash}{ad64606ee5ad5a87d32a33795d52aff4}
+      \strng{authorfullhash}{4038fb9da0dae267403704402d75b475}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The recognition of specific DNA sequences by proteins is thought to depend on two types of mechanisms: one that involves the formation of hydrogen bonds with specific bases, primarily in the major groove, and one involving sequence-dependent deformations of the DNA helix. By comprehensively analyzing the three dimensional structures of protein-DNA complexes, we show that the binding of arginines to narrow minor grooves is a widely used mode for protein-DNA recognition. This readout mechanism exploits the phenomenon that narrow minor grooves strongly enhance the negative electrostatic potential of the DNA. The nucleosome core particle offers a striking example of this effect. Minor groove narrowing is often associated with the presence of A-tracts, AT-rich sequences that exclude the flexible TpA step. These findings suggest that the ability to detect local variations in DNA shape and electrostatic potential is a general mechanism that enables proteins to use information in the minor groove, which otherwise offers few opportunities for the formation of base-specific hydrogen bonds, to achieve DNA binding specificity.}
+      \field{issn}{0028-0836}
+      \field{journaltitle}{Nature}
+      \field{langid}{english}
+      \field{month}{10}
+      \field{number}{7268}
+      \field{title}{The Role of {{DNA}} Shape in Protein-{{DNA}} Recognition}
+      \field{urlday}{30}
+      \field{urlmonth}{4}
+      \field{urlyear}{2026}
+      \field{volume}{461}
+      \field{year}{2009}
+      \field{urldateera}{ce}
+      \field{pages}{1248\bibrangedash 1253}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1038/nature08473
+      \endverb
+      \verb{file}
+      \verb /home/vambersky_t/Zotero/storage/YNSEMRUL/Rohs et al. - 2009 - The role of DNA shape in protein–DNA recognition.pdf
+      \endverb
+      \keyw{Humanities and Social Sciences,multidisciplinary,Science}
+    \endentry
+    \entry{seemanSequencespecificRecognitionDouble1976}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=92f1e1dafcc2f489a6972210bf28503c}{%
+           family={Seeman},
+           familyi={S\bibinitperiod},
+           given={N\bibnamedelima C},
+           giveni={N\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=32029f6d872a7ab7326e64c014483d95}{%
+           family={Rosenberg},
+           familyi={R\bibinitperiod},
+           given={J\bibnamedelima M},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0829d3ed50c300a21f877ca0847c299c}{%
+           family={Rich},
+           familyi={R\bibinitperiod},
+           given={A},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Proceedings of the National Academy of Sciences}%
+      }
+      \strng{namehash}{112013fe324c92a2894ba4dd14f727a5}
+      \strng{fullhash}{cb1a1b9c5b73d613768937eb01868bf1}
+      \strng{bibnamehash}{cb1a1b9c5b73d613768937eb01868bf1}
+      \strng{authorbibnamehash}{cb1a1b9c5b73d613768937eb01868bf1}
+      \strng{authornamehash}{112013fe324c92a2894ba4dd14f727a5}
+      \strng{authorfullhash}{cb1a1b9c5b73d613768937eb01868bf1}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The base pairs in double helical nucleic acids have been compared to see how they can be recognized by proteins. We conclude that a single hydrogen bond is inadequate for uniquely identifying any particular base pair, as this leads to numerous degeneracies. However, using two hydrogen bonds, fidelity of base pair recognition may be achieved. We propose specific amino-acid side chain interactions involving two hydrogen bonds as a component of the recognition system for base pairs. In the major groove we suggest that asparagine or glutamine binds to adenine of the base pair or arginine binds to guanine. In the minor groove, we suggest an interaction between asparagine or glutamine with guanine of the base pair. We also discuss the role that ions and other amino-acid side chains may play in recognition interactions.}
+      \field{journaltitle}{Proceedings of the National Academy of Sciences}
+      \field{month}{3}
+      \field{number}{3}
+      \field{title}{Sequence-Specific Recognition of Double Helical Nucleic Acids by Proteins.}
+      \field{urlday}{30}
+      \field{urlmonth}{4}
+      \field{urlyear}{2026}
+      \field{volume}{73}
+      \field{year}{1976}
+      \field{urldateera}{ce}
+      \field{pages}{804\bibrangedash 808}
+      \range{pages}{5}
+      \verb{doi}
+      \verb 10.1073/pnas.73.3.804
+      \endverb
+      \verb{file}
+      \verb /home/vambersky_t/Zotero/storage/7KSCJU6D/Seeman et al. - 1976 - Sequence-specific recognition of double helical nucleic acids by proteins..pdf
+      \endverb
+    \endentry
+    \entry{selaDNASequenceCorrelations2011}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=9409e23d53a107f2f0a8c65a93e8dffa}{%
+           family={Sela},
+           familyi={S\bibinitperiod},
+           given={Itamar},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e8bcce4ee0549cdaa46a9e15fa0d31bc}{%
+           family={Lukatsky},
+           familyi={L\bibinitperiod},
+           given={David\bibnamedelima B.},
+           giveni={D\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{8afe03afa7d4ded802bec7206cd63adf}
+      \strng{fullhash}{8afe03afa7d4ded802bec7206cd63adf}
+      \strng{bibnamehash}{8afe03afa7d4ded802bec7206cd63adf}
+      \strng{authorbibnamehash}{8afe03afa7d4ded802bec7206cd63adf}
+      \strng{authornamehash}{8afe03afa7d4ded802bec7206cd63adf}
+      \strng{authorfullhash}{8afe03afa7d4ded802bec7206cd63adf}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0006-3495, 1542-0086}
+      \field{journaltitle}{Biophysical Journal}
+      \field{langid}{english}
+      \field{month}{7}
+      \field{number}{1}
+      \field{title}{{{DNA Sequence Correlations Shape Nonspecific Transcription Factor-DNA Binding Affinity}}}
+      \field{urlday}{4}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{volume}{101}
+      \field{year}{2011}
+      \field{urldateera}{ce}
+      \field{pages}{160\bibrangedash 166}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1016/j.bpj.2011.04.037
+      \endverb
+      \verb{file}
+      \verb /home/vambersky_t/Zotero/storage/VAF7DS5Z/Sela and Lukatsky - 2011 - DNA Sequence Correlations Shape Nonspecific Transcription Factor-DNA Binding Affinity.pdf
+      \endverb
+    \endentry
+    \entry{slatteryAbsenceSimpleCode2014a}{article}{}
+      \name{author}{6}{}{%
+        {{un=0,uniquepart=base,hash=2a944a9ccafd9c24ea5aaa60819691ac}{%
+           family={Slattery},
+           familyi={S\bibinitperiod},
+           given={Matthew},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=34e638c856d838674dd734ac4dbfcad4}{%
+           family={Zhou},
+           familyi={Z\bibinitperiod},
+           given={Tianyin},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=eba68d34a25d8e0125cb5eeb7f44fbd9}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Lin},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4fa7e231c7ca6cb2bd7dcd5937d13ecd}{%
+           family={Machado},
+           familyi={M\bibinitperiod},
+           given={Ana\bibnamedelimb Carolina\bibnamedelima Dantas},
+           giveni={A\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=99976a8301ee3faeaad187fd097d19a2}{%
+           family={Gordân},
+           familyi={G\bibinitperiod},
+           given={Raluca},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c8fe275a7f8960db9fd0bab64ecab23f}{%
+           family={Rohs},
+           familyi={R\bibinitperiod},
+           given={Remo},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{96e5e2559e90c447e8a08b4e906e2d40}
+      \strng{fullhash}{88055a06a457510a53f6296611188a2f}
+      \strng{bibnamehash}{96e5e2559e90c447e8a08b4e906e2d40}
+      \strng{authorbibnamehash}{96e5e2559e90c447e8a08b4e906e2d40}
+      \strng{authornamehash}{96e5e2559e90c447e8a08b4e906e2d40}
+      \strng{authorfullhash}{88055a06a457510a53f6296611188a2f}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Transcription factors (TFs) influence cell fate by interpreting the regulatory DNA within a genome. TFs recognize DNA in a specific manner; the mechanisms underlying this specificity have been identified for many TFs, based on three-dimensional structures of protein-DNA complexes. More recently, structural views have been complemented with data from high-throughput in vitro and in vivo explorations of the DNA binding preferences of many TFs. Together, these approaches have greatly expanded our understanding of TF-DNA interactions. However, the mechanisms by which TFs select in vivo binding sites and alter gene expression remain unclear. Recent work has highlighted the many variables that influence TF-DNA binding, while demonstrating that a biophysical understanding of these many factors will be central to understanding TF function.}
+      \field{issn}{0968-0004}
+      \field{journaltitle}{Trends in biochemical sciences}
+      \field{month}{9}
+      \field{number}{9}
+      \field{shorttitle}{Absence of a Simple Code}
+      \field{title}{Absence of a Simple Code: How Transcription Factors Read the Genome}
+      \field{urlday}{30}
+      \field{urlmonth}{4}
+      \field{urlyear}{2026}
+      \field{volume}{39}
+      \field{year}{2014}
+      \field{urldateera}{ce}
+      \field{pages}{381\bibrangedash 399}
+      \range{pages}{19}
+      \verb{doi}
+      \verb 10.1016/j.tibs.2014.07.002
+      \endverb
+      \verb{file}
+      \verb /home/vambersky_t/Zotero/storage/7K698ZHH/Slattery et al. - 2014 - Absence of a simple code how transcription factors read the genome.pdf;/home/vambersky_t/Zotero/storage/C5N5FCNY/Slattery et al. - 2014 - Absence of a simple code how transcription factors read the genome.pdf
+      \endverb
+    \endentry
+    \entry{slutskyKineticsProteinDNAInteraction2004}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=c757423bda65c25068c6e2c9e5a4afad}{%
+           family={Slutsky},
+           familyi={S\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3d7fe04d09f08b82f608fd67ad034a3d}{%
+           family={Mirny},
+           familyi={M\bibinitperiod},
+           given={Leonid\bibnamedelima A.},
+           giveni={L\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{22d96479f47521ee9a316c16cb2545b7}
+      \strng{fullhash}{22d96479f47521ee9a316c16cb2545b7}
+      \strng{bibnamehash}{22d96479f47521ee9a316c16cb2545b7}
+      \strng{authorbibnamehash}{22d96479f47521ee9a316c16cb2545b7}
+      \strng{authornamehash}{22d96479f47521ee9a316c16cb2545b7}
+      \strng{authorfullhash}{22d96479f47521ee9a316c16cb2545b7}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Recognition and binding of specific sites on DNA by proteins is central for many cellular functions such as transcription, replication, and recombination. In the process of recognition, a protein rapidly searches for its specific site on a long DNA molecule and then strongly binds this site. Here we aim to find a mechanism that can provide both a fast search (1--10 s) and high stability of the specific protein-DNA complex (Kd = 10-15--10-8 M). Earlier studies have suggested that rapid search involves sliding of the protein along the DNA. Here we consider sliding as a one-dimensional diffusion in a sequence-dependent rough energy landscape. We demonstrate that, despite the landscape's roughness, rapid search can be achieved if one-dimensional sliding is accompanied by three-dimensional diffusion. We estimate the range of the specific and nonspecific DNA-binding energy required for rapid search and suggest experiments that can test our mechanism. We show that optimal search requires a protein to spend half of its time sliding along the DNA and the other half diffusing in three dimensions. We also establish that, paradoxically, realistic energy functions cannot provide both rapid search and strong binding of a rigid protein. To reconcile these two fundamental requirements we propose a search-and-fold mechanism that involves the coupling of protein binding and partial protein folding. The proposed mechanism has several important biological implications for search in the presence of other proteins and nucleosomes, simultaneous search by several proteins, etc. The proposed mechanism also provides a new framework for interpretation of experimental and structural data on protein-DNA interactions.}
+      \field{issn}{0006-3495}
+      \field{journaltitle}{Biophysical Journal}
+      \field{month}{12}
+      \field{number}{6}
+      \field{shorttitle}{Kinetics of {{Protein-DNA Interaction}}}
+      \field{title}{Kinetics of {{Protein-DNA Interaction}}: {{Facilitated Target Location}} in {{Sequence-Dependent Potential}}}
+      \field{urlday}{4}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{volume}{87}
+      \field{year}{2004}
+      \field{urldateera}{ce}
+      \field{pages}{4021\bibrangedash 4035}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.1529/biophysj.104.050765
+      \endverb
+      \verb{file}
+      \verb /home/vambersky_t/Zotero/storage/6NWXUGSB/Slutsky and Mirny - 2004 - Kinetics of Protein-DNA Interaction Facilitated Target Location in Sequence-Dependent Potential.pdf
+      \endverb
+    \endentry
+    \entry{spitzTranscriptionFactorsEnhancer2012}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=1c589f36d81834e4e7d39939103700bb}{%
+           family={Spitz},
+           familyi={S\bibinitperiod},
+           given={François},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9c4849c3d4c7a14d8defa2c33ed73d19}{%
+           family={Furlong},
+           familyi={F\bibinitperiod},
+           given={Eileen\bibnamedelimb E.\bibnamedelimi M.},
+           giveni={E\bibinitperiod\bibinitdelim E\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Nature Publishing Group}%
+      }
+      \strng{namehash}{ba2ceaa14ad411361df104ce17d43f80}
+      \strng{fullhash}{ba2ceaa14ad411361df104ce17d43f80}
+      \strng{bibnamehash}{ba2ceaa14ad411361df104ce17d43f80}
+      \strng{authorbibnamehash}{ba2ceaa14ad411361df104ce17d43f80}
+      \strng{authornamehash}{ba2ceaa14ad411361df104ce17d43f80}
+      \strng{authorfullhash}{ba2ceaa14ad411361df104ce17d43f80}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Genetic studies during the past decades have revealed tightly regulated transcriptional networks that control robust developmental programs. However, this deterministic view of development contrasts with recent genomic studies that suggest that the multiple steps of transcription are by themselves rather leaky.Although any single transcription factor (TF) can typically bind to thousands of sites throughout the genome, cis-regulatory activity at enhancers requires the concerted action of multiple binding events (which can be homotypic or heterotypic).TFs bind to enhancers in a combinatorial manner, which is facilitated through direct and indirect cooperative mechanisms. The combinatorial nature of enhancer occupancy allows genes to be regulated in complex patterns in both space and time.DNA and proteins can act together as a scaffold to cooperatively recruit TFs to enhancers.Enhancers undergo progressive changes during development, in which their occupancy by TFs, and the position of nucleosomes with or without post-translational modifications, reflect their inactive, poised or active state.Pioneer TFs recruit chromatin-remodelling factors to reposition nucleosomes, thus facilitating the occupancy of other TFs at subsequent developmental stages.Enhancer priming can occur through many different mechanisms. For example, some TF binding events may serve as placeholders to prevent nucleosome repositioning.Partially redundant enhancers can act to buffer changes in environmental conditions to ensure robust developmental progression.Multiple elements regulating the same gene seem to assemble in a three-dimensional structure with the promoter, and can have synergistic or repressive influences on each other.}
+      \field{issn}{1471-0064}
+      \field{journaltitle}{Nature Reviews Genetics}
+      \field{langid}{english}
+      \field{month}{9}
+      \field{number}{9}
+      \field{shorttitle}{Transcription Factors}
+      \field{title}{Transcription Factors: From Enhancer Binding to Developmental Control}
+      \field{urlday}{4}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{volume}{13}
+      \field{year}{2012}
+      \field{urldateera}{ce}
+      \field{pages}{613\bibrangedash 626}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1038/nrg3207
+      \endverb
+      \keyw{Developmental biology,Functional genomics,Gene expression,Gene regulation,Transcription factors}
+    \endentry
+    \entry{thurmanAccessibleChromatinLandscape2012}{article}{}
+      \name{author}{62}{}{%
+        {{un=0,uniquepart=base,hash=e70dbb9786117e99e5841ab3dabed76d}{%
+           family={Thurman},
+           familyi={T\bibinitperiod},
+           given={Robert\bibnamedelima E.},
+           giveni={R\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=75358f41f612c8999dd94f015ee630bf}{%
+           family={Rynes},
+           familyi={R\bibinitperiod},
+           given={Eric},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=727d713a8196e7df289bc3214f34bb18}{%
+           family={Humbert},
+           familyi={H\bibinitperiod},
+           given={Richard},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4b4187d27cba0ff351429676d380764d}{%
+           family={Vierstra},
+           familyi={V\bibinitperiod},
+           given={Jeff},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ae0e583b8e15ab3fdaee490b150ef1e9}{%
+           family={Maurano},
+           familyi={M\bibinitperiod},
+           given={Matthew\bibnamedelima T.},
+           giveni={M\bibinitperiod\bibinitdelim T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3ff71d4ea0c92e1e72a0554147676d59}{%
+           family={Haugen},
+           familyi={H\bibinitperiod},
+           given={Eric},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2e4f4a6afb4fc78f62ece95bc41e7f53}{%
+           family={Sheffield},
+           familyi={S\bibinitperiod},
+           given={Nathan\bibnamedelima C.},
+           giveni={N\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ac94c8856c51ece7b063ed2eadb6dda1}{%
+           family={Stergachis},
+           familyi={S\bibinitperiod},
+           given={Andrew\bibnamedelima B.},
+           giveni={A\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c8cf19241225247d6d07dbf8a516b8ed}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Hao},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1510a1328e79563f02e7fd80be83a925}{%
+           family={Vernot},
+           familyi={V\bibinitperiod},
+           given={Benjamin},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1a2c6772db27d61c1b91aeb76ca45238}{%
+           family={Garg},
+           familyi={G\bibinitperiod},
+           given={Kavita},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8246342f23669dc1b2aced7306f7661a}{%
+           family={John},
+           familyi={J\bibinitperiod},
+           given={Sam},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b4d93e523652435fc0a464d079ff3d8c}{%
+           family={Sandstrom},
+           familyi={S\bibinitperiod},
+           given={Richard},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c26ccbe62628291f9f7496236cd0d44a}{%
+           family={Bates},
+           familyi={B\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=11fd120ffd4a8552ef5c257fe413cb78}{%
+           family={Boatman},
+           familyi={B\bibinitperiod},
+           given={Lisa},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=016d194adb10711236a03a4873e8a247}{%
+           family={Canfield},
+           familyi={C\bibinitperiod},
+           given={Theresa\bibnamedelima K.},
+           giveni={T\bibinitperiod\bibinitdelim K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a8a9f30f56afebeb0f9726e04467874c}{%
+           family={Diegel},
+           familyi={D\bibinitperiod},
+           given={Morgan},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=49b3698184d81e326a56effc2c47e183}{%
+           family={Dunn},
+           familyi={D\bibinitperiod},
+           given={Douglas},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9cfa4ad7408ab3270c29f8267d0b588f}{%
+           family={Ebersol},
+           familyi={E\bibinitperiod},
+           given={Abigail\bibnamedelima K.},
+           giveni={A\bibinitperiod\bibinitdelim K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7bdb862a1db33a8ba1de1031151f415d}{%
+           family={Frum},
+           familyi={F\bibinitperiod},
+           given={Tristan},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=743f068509b94a5fb86b56670e032127}{%
+           family={Giste},
+           familyi={G\bibinitperiod},
+           given={Erika},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=62256c43349ee835b4ef2523eaf94954}{%
+           family={Johnson},
+           familyi={J\bibinitperiod},
+           given={Audra\bibnamedelima K.},
+           giveni={A\bibinitperiod\bibinitdelim K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fd5d1c4460ab716ea77cd3e882f78961}{%
+           family={Johnson},
+           familyi={J\bibinitperiod},
+           given={Ericka\bibnamedelima M.},
+           giveni={E\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8b994623121969e035f8d8b45629c456}{%
+           family={Kutyavin},
+           familyi={K\bibinitperiod},
+           given={Tanya},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=66b9066ba083d49d541ced4f483d11b8}{%
+           family={Lajoie},
+           familyi={L\bibinitperiod},
+           given={Bryan},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1523bf7473314c75f7565e3c9f87a99e}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={Bum-Kyu},
+           giveni={B\bibinithyphendelim K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=15ee1d8a8fa871a8e92f5d71ef4bbd49}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={Kristen},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=053107725682875b0c0d9ab5903c4c20}{%
+           family={London},
+           familyi={L\bibinitperiod},
+           given={Darin},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c604d77a1d594d1ba476febd4ea4d005}{%
+           family={Lotakis},
+           familyi={L\bibinitperiod},
+           given={Dimitra},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bbf54985a4587e6e392d7bdc3fd837a0}{%
+           family={Neph},
+           familyi={N\bibinitperiod},
+           given={Shane},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c2ccf385daf991f3cfab52a418c379bb}{%
+           family={Neri},
+           familyi={N\bibinitperiod},
+           given={Fidencio},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=53e7e9cc87582293d2f13736e8520808}{%
+           family={Nguyen},
+           familyi={N\bibinitperiod},
+           given={Eric\bibnamedelima D.},
+           giveni={E\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f0b395ee0d87da1a28d858118e6877a5}{%
+           family={Qu},
+           familyi={Q\bibinitperiod},
+           given={Hongzhu},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=121f0b784a320791af09a1edd9110691}{%
+           family={Reynolds},
+           familyi={R\bibinitperiod},
+           given={Alex\bibnamedelima P.},
+           giveni={A\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a10ac6288be4b49ae5228ddd504ca421}{%
+           family={Roach},
+           familyi={R\bibinitperiod},
+           given={Vaughn},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a506de4be83cc602ff32b197854b734d}{%
+           family={Safi},
+           familyi={S\bibinitperiod},
+           given={Alexias},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=67fa26d8fd55408cea7977ca0612e50e}{%
+           family={Sanchez},
+           familyi={S\bibinitperiod},
+           given={Minerva\bibnamedelima E.},
+           giveni={M\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a7878bc9b31719c43a834ca989a12950}{%
+           family={Sanyal},
+           familyi={S\bibinitperiod},
+           given={Amartya},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a954f439171312363219c1bcb61168da}{%
+           family={Shafer},
+           familyi={S\bibinitperiod},
+           given={Anthony},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cb725503584a276cdc21a8be188f414e}{%
+           family={Simon},
+           familyi={S\bibinitperiod},
+           given={Jeremy\bibnamedelima M.},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=aa21044791d7e9e6528a77238fbaf8c9}{%
+           family={Song},
+           familyi={S\bibinitperiod},
+           given={Lingyun},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7441bde4183ab9553aff8352456fae20}{%
+           family={Vong},
+           familyi={V\bibinitperiod},
+           given={Shinny},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6d2ad65954e114a89ca7c9e8cf04e5c8}{%
+           family={Weaver},
+           familyi={W\bibinitperiod},
+           given={Molly},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fea157bf953406a806b6a1a983fbf947}{%
+           family={Yan},
+           familyi={Y\bibinitperiod},
+           given={Yongqi},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f3fef2b4caecb2b8feddb7417980a2ae}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Zhancheng},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=14942e44acb4edb1082cd1d6601ac9b8}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Zhuzhu},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fe0669ba5c91815beca7dc9e09657b8c}{%
+           family={Lenhard},
+           familyi={L\bibinitperiod},
+           given={Boris},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c4dbd731856addc439f7f9fbdbba9eae}{%
+           family={Tewari},
+           familyi={T\bibinitperiod},
+           given={Muneesh},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c7898b2dfdb276ae825864d3056419b3}{%
+           family={Dorschner},
+           familyi={D\bibinitperiod},
+           given={Michael\bibnamedelima O.},
+           giveni={M\bibinitperiod\bibinitdelim O\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0468fec89f6bd7f86b60539797b59780}{%
+           family={Hansen},
+           familyi={H\bibinitperiod},
+           given={R.\bibnamedelimi Scott},
+           giveni={R\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c12645d969b8e59b4b08b62217b83688}{%
+           family={Navas},
+           familyi={N\bibinitperiod},
+           given={Patrick\bibnamedelima A.},
+           giveni={P\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=51082415f64934e16d05267ec5dd2320}{%
+           family={Stamatoyannopoulos},
+           familyi={S\bibinitperiod},
+           given={George},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=56d9889c0777326f0f7aad12da9d3596}{%
+           family={Iyer},
+           familyi={I\bibinitperiod},
+           given={Vishwanath\bibnamedelima R.},
+           giveni={V\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=55e97a256a9952940a686430c1d221d0}{%
+           family={Lieb},
+           familyi={L\bibinitperiod},
+           given={Jason\bibnamedelima D.},
+           giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a5907ea76de19000217001345c497376}{%
+           family={Sunyaev},
+           familyi={S\bibinitperiod},
+           given={Shamil\bibnamedelima R.},
+           giveni={S\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b632f9b66a5c4458880e807ea77b2548}{%
+           family={Akey},
+           familyi={A\bibinitperiod},
+           given={Joshua\bibnamedelima M.},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b57bd447b5f4961a2ee3b6dcb3da69f8}{%
+           family={Sabo},
+           familyi={S\bibinitperiod},
+           given={Peter\bibnamedelima J.},
+           giveni={P\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=aef985a8041cafa3d6694a4905cf7ec4}{%
+           family={Kaul},
+           familyi={K\bibinitperiod},
+           given={Rajinder},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=64aac5f3ba42e6b6c799facc0db555ac}{%
+           family={Furey},
+           familyi={F\bibinitperiod},
+           given={Terrence\bibnamedelima S.},
+           giveni={T\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d206bf011de69e37a443f9be4bbec2f0}{%
+           family={Dekker},
+           familyi={D\bibinitperiod},
+           given={Job},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8593ab3e13b671185afdfc3dcced68ef}{%
+           family={Crawford},
+           familyi={C\bibinitperiod},
+           given={Gregory\bibnamedelima E.},
+           giveni={G\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=85e05b8dfab88e1494fdef228eab7f54}{%
+           family={Stamatoyannopoulos},
+           familyi={S\bibinitperiod},
+           given={John\bibnamedelima A.},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Nature Publishing Group}%
+      }
+      \strng{namehash}{1aed92be400e50dbc5fd51a7b73429bf}
+      \strng{fullhash}{de9ef539b65793804f918fe7f4d4ef90}
+      \strng{bibnamehash}{1aed92be400e50dbc5fd51a7b73429bf}
+      \strng{authorbibnamehash}{1aed92be400e50dbc5fd51a7b73429bf}
+      \strng{authornamehash}{1aed92be400e50dbc5fd51a7b73429bf}
+      \strng{authorfullhash}{de9ef539b65793804f918fe7f4d4ef90}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{DNase\,I hypersensitive sites (DHSs) are markers of regulatory DNA and have underpinned the discovery of all classes of cis-regulatory elements including enhancers, promoters, insulators, silencers and locus control regions. Here we present the first extensive map of human DHSs identified through genome-wide profiling in 125 diverse cell and tissue types. We identify {$\sim$}2.9 million DHSs that encompass virtually all known experimentally validated cis-regulatory sequences and expose a vast trove of novel elements, most with highly cell-selective regulation. Annotating these elements using ENCODE data reveals novel relationships between chromatin accessibility, transcription, DNA methylation and regulatory factor occupancy patterns. We connect {$\sim$}580,000 distal DHSs with their target promoters, revealing systematic pairing of different classes of distal DHSs and specific promoter types. Patterning of chromatin accessibility at many regulatory regions is organized with dozens to hundreds of co-activated elements, and the transcellular DNase\,I sensitivity pattern at a given region can predict cell-type-specific functional behaviours. The DHS landscape shows signatures of recent functional evolutionary constraint. However, the DHS compartment in pluripotent and immortalized cells exhibits higher mutation rates than that in highly differentiated cells, exposing an unexpected link between chromatin accessibility, proliferative potential and patterns of human variation.}
+      \field{issn}{1476-4687}
+      \field{journaltitle}{Nature}
+      \field{langid}{english}
+      \field{month}{9}
+      \field{number}{7414}
+      \field{title}{The Accessible Chromatin Landscape of the Human Genome}
+      \field{urlday}{4}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{volume}{489}
+      \field{year}{2012}
+      \field{urldateera}{ce}
+      \field{pages}{75\bibrangedash 82}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1038/nature11232
+      \endverb
+      \verb{file}
+      \verb /home/vambersky_t/Zotero/storage/3YU9VS33/Thurman et al. - 2012 - The accessible chromatin landscape of the human genome.pdf
+      \endverb
+      \keyw{Chromatin structure,Genetic variation,Genomics}
+    \endentry
+    \entry{wunderlichDifferentGeneRegulation2009}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=6f52f7df3a055b989f8f34d6b879fa5d}{%
+           family={Wunderlich},
+           familyi={W\bibinitperiod},
+           given={Zeba},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3d7fe04d09f08b82f608fd67ad034a3d}{%
+           family={Mirny},
+           familyi={M\bibinitperiod},
+           given={Leonid\bibnamedelima A.},
+           giveni={L\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{1b8c82bcc99328dfb7dd411ea962cbca}
+      \strng{fullhash}{1b8c82bcc99328dfb7dd411ea962cbca}
+      \strng{bibnamehash}{1b8c82bcc99328dfb7dd411ea962cbca}
+      \strng{authorbibnamehash}{1b8c82bcc99328dfb7dd411ea962cbca}
+      \strng{authornamehash}{1b8c82bcc99328dfb7dd411ea962cbca}
+      \strng{authorfullhash}{1b8c82bcc99328dfb7dd411ea962cbca}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Coordinated regulation of gene expression relies on transcription factors (TFs) binding to specific DNA sites. Our large-scale information--theoretical analysis of {$>$}950 TF-binding motifs demonstrates that prokaryotes and eukaryotes use strikingly different strategies to target TFs to specific genome locations. Although bacterial TFs can recognize a specific DNA site in the genomic background, eukaryotic TFs exhibit widespread, nonfunctional binding and require clustering of sites to achieve specificity. We find support for this mechanism in a range of experimental studies and in our evolutionary analysis of DNA-binding domains. Our systematic characterization of binding motifs provides a quantitative assessment of the differences in transcription regulation in prokaryotes and eukaryotes.}
+      \field{issn}{0168-9525}
+      \field{journaltitle}{Trends in Genetics}
+      \field{month}{10}
+      \field{number}{10}
+      \field{title}{Different Gene Regulation Strategies Revealed by Analysis of Binding Motifs}
+      \field{urlday}{4}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{volume}{25}
+      \field{year}{2009}
+      \field{urldateera}{ce}
+      \field{pages}{434\bibrangedash 440}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1016/j.tig.2009.08.003
+      \endverb
+      \verb{file}
+      \verb /home/vambersky_t/Zotero/storage/V7C9GKBE/Wunderlich and Mirny - 2009 - Different gene regulation strategies revealed by analysis of binding motifs.pdf;/home/vambersky_t/Zotero/storage/C9RPGA7T/S0168952509001656.html
+      \endverb
+    \endentry
+    \entry{yangTranscriptionFactorFamilyspecific2017}{article}{}
+      \name{author}{7}{}{%
+        {{un=0,uniquepart=base,hash=eba68d34a25d8e0125cb5eeb7f44fbd9}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Lin},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2b8bc7df66fbf951269f478b19107b39}{%
+           family={Orenstein},
+           familyi={O\bibinitperiod},
+           given={Yaron},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=159aaa6e76a5e0cdb4d1f42242c0dd3d}{%
+           family={Jolma},
+           familyi={J\bibinitperiod},
+           given={Arttu},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=475e058882a8ec8d6c7eb977731ebec3}{%
+           family={Yin},
+           familyi={Y\bibinitperiod},
+           given={Yimeng},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1d0f5f1eda1642a5133f5f56e8d03a99}{%
+           family={Taipale},
+           familyi={T\bibinitperiod},
+           given={Jussi},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=da4ba3cdc3a779401374c18d71ad03b2}{%
+           family={Shamir},
+           familyi={S\bibinitperiod},
+           given={Ron},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c8fe275a7f8960db9fd0bab64ecab23f}{%
+           family={Rohs},
+           familyi={R\bibinitperiod},
+           given={Remo},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Springer Science and Business Media Deutschland GmbH}%
+      }
+      \strng{namehash}{ed2bd6fd519124175ed844b0d98262ac}
+      \strng{fullhash}{4ee6ff232fd19b060a27339bb9434c95}
+      \strng{bibnamehash}{ed2bd6fd519124175ed844b0d98262ac}
+      \strng{authorbibnamehash}{ed2bd6fd519124175ed844b0d98262ac}
+      \strng{authornamehash}{ed2bd6fd519124175ed844b0d98262ac}
+      \strng{authorfullhash}{4ee6ff232fd19b060a27339bb9434c95}
+      \field{sortinit}{Y}
+      \field{sortinithash}{fd67ad5a9ef0f7456bdd9aab10fe1495}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1744-4292}
+      \field{journaltitle}{Molecular Systems Biology}
+      \field{langid}{english}
+      \field{month}{2}
+      \field{number}{2}
+      \field{title}{Transcription Factor Family-Specific {{DNA}} Shape Readout Revealed by Quantitative Specificity Models}
+      \field{urlday}{30}
+      \field{urlmonth}{4}
+      \field{urlyear}{2026}
+      \field{volume}{13}
+      \field{year}{2017}
+      \field{urldateera}{ce}
+      \field{pages}{910}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.15252/msb.20167238
+      \endverb
+      \verb{file}
+      \verb /home/vambersky_t/Zotero/storage/2YQ4J4HE/Yang et al. - 2017 - Transcription factor family-specific DNA shape readout revealed by quantitative specificity models.pdf;/home/vambersky_t/Zotero/storage/LAEP2A8K/transcription-factor-family-specific-dna-shape-readout-revealed-b-3.html
+      \endverb
+    \endentry
+    \entry{zhangModelbasedAnalysisChIPSeq2008}{article}{}
+      \name{author}{11}{}{%
+        {{un=0,uniquepart=base,hash=2c81656c924858824dfb10d50423b77a}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Yong},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b9ea953e38962ea62150af4914b3a85b}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Tao},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7f45dec415e8e50476d675d4cdab15e3}{%
+           family={Meyer},
+           familyi={M\bibinitperiod},
+           given={Clifford\bibnamedelima A.},
+           giveni={C\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1f36d87ab17349e4246063e1b433b043}{%
+           family={Eeckhoute},
+           familyi={E\bibinitperiod},
+           given={Jérôme},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8f805225d8e433c29a18a566d1f6acc6}{%
+           family={Johnson},
+           familyi={J\bibinitperiod},
+           given={David\bibnamedelima S.},
+           giveni={D\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b1492fc9a6dad81cfb914cab0699b4cd}{%
+           family={Bernstein},
+           familyi={B\bibinitperiod},
+           given={Bradley\bibnamedelima E.},
+           giveni={B\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=62906b245bcf166af3723a13f3db6595}{%
+           family={Nusbaum},
+           familyi={N\bibinitperiod},
+           given={Chad},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e1ed5d8b27d6ba9b572994831e6a6f79}{%
+           family={Myers},
+           familyi={M\bibinitperiod},
+           given={Richard\bibnamedelima M.},
+           giveni={R\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=87990b40079449767dd9ef0e87e4af11}{%
+           family={Brown},
+           familyi={B\bibinitperiod},
+           given={Myles},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=be6f1b6df7f1ddfafad18806238fa391}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Wei},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ce053aa23e50f63feec80cc5cd4dad0d}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={X.\bibnamedelimi Shirley},
+           giveni={X\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{2810de8af34d5dab287ae58a8692e0cf}
+      \strng{fullhash}{3033911d1f6251aca6690613c7d03705}
+      \strng{bibnamehash}{2810de8af34d5dab287ae58a8692e0cf}
+      \strng{authorbibnamehash}{2810de8af34d5dab287ae58a8692e0cf}
+      \strng{authornamehash}{2810de8af34d5dab287ae58a8692e0cf}
+      \strng{authorfullhash}{3033911d1f6251aca6690613c7d03705}
+      \field{sortinit}{Z}
+      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We present Model-based Analysis of ChIP-Seq data, MACS, which analyzes data generated by short read sequencers such as Solexa's Genome Analyzer. MACS empirically models the shift size of ChIP-Seq tags, and uses it to improve the spatial resolution of predicted binding sites. MACS also uses a dynamic Poisson distribution to effectively capture local biases in the genome, allowing for more robust predictions. MACS compares favorably to existing ChIP-Seq peak-finding algorithms, and is freely available.}
+      \field{issn}{1474-760X}
+      \field{journaltitle}{Genome Biology}
+      \field{langid}{english}
+      \field{month}{9}
+      \field{number}{9}
+      \field{title}{Model-Based {{Analysis}} of {{ChIP-Seq}} ({{MACS}})}
+      \field{urlday}{4}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{volume}{9}
+      \field{year}{2008}
+      \field{urldateera}{ce}
+      \field{pages}{R137}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1186/gb-2008-9-9-r137
+      \endverb
+      \verb{file}
+      \verb /home/vambersky_t/Zotero/storage/BXCMIM4Q/Zhang et al. - 2008 - Model-based Analysis of ChIP-Seq (MACS).pdf
+      \endverb
+      \keyw{Additional Data File,Candidate Peak,False Discovery Rate,False Discovery Rate Estimate,Peak Summit}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

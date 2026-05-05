@@ -1,0 +1,10 @@
+\begin{theindex}
+
+  \item jiná položka, \hyperpage{14}, \hyperpage{18}
+
+  \indexspace
+
+  \item nějaká
+    \subitem položka, \hyperpage{12}, \hyperpage{16}
+
+\end{theindex}
