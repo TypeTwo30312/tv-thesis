@@ -1,0 +1,113 @@
+% Scratchpad for drafting individual thesis sections.
+% Matches Prace.tex's documentclass, fonts, and biblatex setup so that
+% drafts paste cleanly into the thesis (wrap a \chapter{...} around them
+% if the draft should become a new chapter).
+%
+% Compile from this directory: `latexmk -pdf section.tex`
+% (latexmkrc routes build artifacts into ./build/)
+
+\documentclass[12pt,a4paper,twoside,final]{book}
+
+% --- encoding & fonts (match Prace.tex) ---
+\usepackage[utf8]{inputenc}
+\usepackage[IL2]{fontenc}
+\usepackage[english]{babel}     % english-only for drafting
+\usepackage{fourier}
+\usepackage{microtype}
+
+% --- common math / figures / tables ---
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{siunitx}
+
+% --- hyperlinks ---
+\usepackage[hidelinks]{hyperref}
+
+% --- bibliography (mirror Prace.tex exactly) ---
+\usepackage[
+  backend=biber,
+  citestyle=authoryear-comp,
+  natbib=true,
+  sorting=nyt,
+  maxcitenames=2,
+  doi=true
+]{biblatex}
+\let\cite\citep                 % \cite{} -> parenthetical, as in Prace.tex
+\addbibresource{../../DP_VamberskyT.bib}
+\usepackage{csquotes}
+\AtBeginBibliography{\selectlanguage{english}}
+\AtEveryBibitem{\clearfield{issue}}
+
+% --- drafting helpers (scratchpad only; strip before pasting into Prace.tex) ---
+\usepackage{xcolor}
+\newcommand{\todo}[1]{\textcolor{red}{\textbf{[TODO: #1]}}}
+
+\begin{document}
+
+\section{Computer}
+
+\subsection{PWMs}
+
+% \label{sec:working-title}
+
+\todo{TeX rovnice!}
+
+The standard representation of a TF binding motif is the position weight matrix (PWM), constructed from an aligned set of known binding sequences.
+Counts of each base at each position give the position frequency matrix; dividing by the number of sequences gives the position probability matrix $f_{b,i}$.
+The PWM entries are the log-odds of these probabilities against a background distribution, $w_{b,i} = \log_2 \left( f_{b,i} / p_b \right)$, where $p_b$ is typically $0.25$ for each base or the genome-wide composition.
+The conservation at each position is summarised by the information content $I_i = 2 - H_i$, where $H_i = -\sum_b f_{b,i} \log_2 f_{b,i}$ is the Shannon entropy of the base distribution at position $i$.
+Sequence logos visualise the PWM by stacking letters at each position with heights proportional to $f_{b,i} \cdot I_i$, so that conserved positions appear as tall, near-pure stacks and degenerate positions as short, mixed ones.
+To identify candidate binding sites in a genome, the PWM is slid across the sequence and each $L$-bp window is scored by summing the matrix entries corresponding to its bases: $S = \sum_{i=1}^{L} w_{b_i, i}$.
+Standard scanning tools such as FIMO \cite{grantFIMOScanningOccurrences2011} convert this score into a p-value against the background distribution, and report windows below a chosen significance threshold as hits.
+The additive form of the scoring rule encodes a strong assumption: that each position contributes to binding affinity independently of the others.
+This approximation is known to be violated for many TFs — for example, where the identity of one position constrains which bases are tolerated at a neighbouring position \todo{cite needed} — and motivates the extensions discussed below.
+
+Curated PWM models for known TFs are derived computationally from sets of enriched sequences, typically obtained from in vitro selection assays such as HT-SELEX or from high-confidence ChIP-seq peaks.
+The two most widely used discovery tools are MEME \cite{baileyMEMESuite2015}, which identifies over-represented motifs by expectation maximisation, and HOMER \cite{heinzSimpleCombinationsLineageDetermining2010}, which is optimised for ChIP-seq and identifies motifs by differential enrichment against a matched background.
+Both produce PWMs as their primary output.
+Curated databases — JASPAR \cite{ovekbaydarJASPAR2026Expansion2026} for general-purpose use and HOCOMOCO \cite{vorontsovHOCOMOCO2024Rebuild2024} for human and mouse TFs — collect such models across studies and provide reference resources for downstream applications; this thesis uses HOCOMOCO v12, matching the choice of \cite{faltejskovaNonconsensusFlankingSequence2026}.
+
+Several approaches relax the positional independence assumption of PWMs.
+Dinucleotide weight matrices extend the framework minimally, by scoring adjacent pairs of bases rather than single positions, and so capturing nearest-neighbour dependencies \cite{siebertBayesianMarkovModels2016}; hidden Markov models go further, allowing variable-length and internally structured motifs through state transitions \cite{eddyWhatHiddenMarkov2004} \todo{terrible source and i dont have access, fix!}.
+Other extensions — Bayesian networks for arbitrary positional dependencies, and k-mer-based methods that learn from short subsequence frequencies directly — explore the same conceptual space.
+Benchmarking on in vitro binding data has shown that mononucleotide PWMs trained by the best methods perform comparably to more complex models for the majority of TFs, with measurable gains concentrated in a minority of cases \cite{weirauchEvaluationMethodsModeling2013}.
+The fundamental constraint these extensions share is locality: regardless of how the independence assumption is relaxed, the model remains bounded to the motif region itself.
+
+The PWM framework and its extensions are bounded by the binding footprint by design.
+The kilobase-scale gradients described in §1.1.4, however, lie well outside that footprint, and have so far been characterised only with hand-engineered compositional features rather than learned directly from sequence.
+DNA language models — foundation models trained on raw genomic sequence over long contexts — operate at a scale where such gradients fall within their input window, and so could in principle encode them as part of their learned representation.
+The question this thesis addresses is whether a model of this kind, trained on raw sequence with no compositional features supplied, encodes the kilobase-scale signal that \citet{faltejskovaNonconsensusFlankingSequence2026} characterised by other means.
+
+\section{Foundation models for genomics}
+
+Foundation models are large neural networks trained on massive unlabelled datasets using self-supervised objectives, yielding general-purpose representations that downstream tasks can draw on \cite{bommasaniOpportunitiesRisksFoundation2022}.
+The two principal objectives are masked language modelling, in which the model recovers hidden tokens from their context, and autoregressive next-token prediction, in which the model predicts each token in sequence given everything to its left.
+This contrasts with supervised learning, which requires task-specific labels and therefore scales with the cost of annotation rather than with the availability of raw data.
+In genomics, this approach has produced models trained on raw nucleotide sequence at scale.
+
+\subsection{the architectures i guess}
+
+Genomic foundation models fall into two architectural families that have developed in parallel: those built on the transformer, and those built on alternatives to attention.
+The first genomic foundation models adapted BERT to nucleotide input: DNABERT \cite{jiDNABERTPretrainedBidirectional2021a} with masked language modelling on k-merised human sequence, and Nucleotide Transformer \cite{dalla-torreNucleotideTransformerBuilding2025} scaling this across multiple species and parameter counts.
+Both were limited in the length of input sequence they could process at once.
+In contrast, HyenaDNA \cite{nguyenHyenaDNALongRangeGenomic2023} replaced attention with the Hyena operator, reaching context lengths in the hundreds of thousands of base pairs.
+Across both families, the design priority has been to extend the context window.
+
+\subsection{Evo2 and how they used it}
+
+Evo 2 \cite{brixiGenomeModellingDesign2026} is a family of genomic foundation models developed by the Arc Institute, built on the StripedHyena 2 architecture.
+Attention scales quadratically in sequence length, which limits transformer-only models;
+StripedHyena 2 addresses this by combining attention with gated convolutional operators that scale linearly while preserving long-range dependencies.
+Evo 2's context window extends to 1 Mb at single-nucleotide resolution, comfortably hosting the kilobase-scale gradients of §1.1.4 within a single input.
+Evo 2 was pretrained autoregressively on OpenGenome2, a dataset of 8.8 trillion DNA tokens drawn from bacteria, archaea, eukarya, and bacteriophage.
+Pretraining proceeded in two phases: a short-context phase on roughly 8 kb windows enriched for genic regions, followed by a long-context phase extending to 1 Mb on whole-genome samples.
+Three capabilities follow: sequence scoring, which assigns a likelihood to an input under the model; generation, which samples new sequences; and embedding extraction, which retrieves representations from intermediate layers.
+
+\todo{simplified StripedHyena 2 diagram, or the one from the paper}
+
+\todo{what they did with TFs, what am i doing?}
+
+\printbibliography
+
+\end{document}

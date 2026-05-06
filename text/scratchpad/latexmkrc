@@ -1,0 +1,17 @@
+# latexmk configuration for the scratchpad.
+# - pdflatex engine
+# - biber for biblatex
+# - build artifacts go in ./build/, leaving section.tex alone
+#
+# Run from this directory:    latexmk -pdf section.tex
+# Clean intermediate files:    latexmk -c
+# Wipe build/ entirely:        latexmk -C
+
+$pdf_mode  = 1;            # 1 = pdflatex
+$bibtex_use = 2;           # always run biber when needed
+$biber     = 'biber %O %B';
+
+$out_dir = 'build';
+$aux_dir = 'build';
+
+$clean_ext = 'bbl bcf run.xml synctex.gz';

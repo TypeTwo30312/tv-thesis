@@ -2391,6 +2391,22 @@
     <bcf:citekey order="26" intorder="1">faltejskovaNonconsensusFlankingSequence2026</bcf:citekey>
     <bcf:citekey order="27" intorder="1">faltejskovaNonconsensusFlankingSequence2026</bcf:citekey>
     <bcf:citekey order="28" intorder="1">faltejskovaNonconsensusFlankingSequence2026</bcf:citekey>
+    <bcf:citekey order="29" intorder="1">grantFIMOScanningOccurrences2011</bcf:citekey>
+    <bcf:citekey order="30" intorder="1">baileyMEMESuite2015</bcf:citekey>
+    <bcf:citekey order="31" intorder="1">heinzSimpleCombinationsLineageDetermining2010</bcf:citekey>
+    <bcf:citekey order="32" intorder="1">ovekbaydarJASPAR2026Expansion2026</bcf:citekey>
+    <bcf:citekey order="33" intorder="1">vorontsovHOCOMOCO2024Rebuild2024</bcf:citekey>
+    <bcf:citekey order="34" intorder="1">faltejskovaNonconsensusFlankingSequence2026</bcf:citekey>
+    <bcf:citekey order="35" intorder="1">siebertBayesianMarkovModels2016</bcf:citekey>
+    <bcf:citekey order="36" intorder="1">eddyWhatHiddenMarkov2004</bcf:citekey>
+    <bcf:citekey order="37" intorder="1">weirauchEvaluationMethodsModeling2013</bcf:citekey>
+    <bcf:citekey order="38" intorder="1">faltejskovaNonconsensusFlankingSequence2026</bcf:citekey>
+    <bcf:citekey order="39" intorder="1">faltejskovaNonconsensusFlankingSequence2026</bcf:citekey>
+    <bcf:citekey order="40" intorder="1">bommasaniOpportunitiesRisksFoundation2022</bcf:citekey>
+    <bcf:citekey order="41" intorder="1">jiDNABERTPretrainedBidirectional2021a</bcf:citekey>
+    <bcf:citekey order="42" intorder="1">dalla-torreNucleotideTransformerBuilding2025</bcf:citekey>
+    <bcf:citekey order="43" intorder="1">nguyenHyenaDNALongRangeGenomic2023</bcf:citekey>
+    <bcf:citekey order="44" intorder="1">brixiGenomeModellingDesign2026</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">

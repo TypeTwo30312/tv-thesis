@@ -1,1 +1,40 @@
+# --- LaTeX build artifacts ---
+*.aux
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.synctex(busy)
+
+# biblatex / biber
+*.bbl
+*.bcf
+*.blg
+*.run.xml
+
+# auxiliary / intermediate
+*.nav
+*.snm
+*.vrb
+*.idx
+*.ilg
+*.ind
+
+# generated PDFs (uncomment to track final PDFs)
+*.pdf
+
+# latexmk build directories
+**/build/
+
+# editor artifacts
+*.swp
+.DS_Store
+
+# --- Python / Jupyter ---
+__pycache__/
+*.pyc
 .ipynb_checkpoints/

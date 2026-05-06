@@ -9,8 +9,8 @@
 
 % \documentclass[11pt,a4paper,oneside,final]{book} %% PRO JEDNOSTRANNY TISK
 % \documentclass[11pt,a4paper,twoside,final]{book} %% PRO OBOUSTRANNY TISK
-% \documentclass[12pt,a4paper,oneside,final]{book} %% PRO JEDNOSTRANNY TISK
-\documentclass[12pt,a4paper,twoside,final]{book} %% PRO OBOUSTRANNY TISK
+\documentclass[12pt,a4paper,oneside,final]{book} %% PRO JEDNOSTRANNY TISK
+% \documentclass[12pt,a4paper,twoside,final]{book} %% PRO OBOUSTRANNY TISK
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ZAKLADNI NASTAVENI %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -141,6 +141,7 @@ s~využitím informačních zdrojů, které jsou v~práci citovány. Prohlašuji
 \newcommand{\mytheta}{$\theta$}
 \newcommand{\mysigma}{$\sigma$}
 \newcommand{\fix}[1]{\textit{#1}}
+\newcommand{\todo}[1]{\textcolor{red}{\textbf{[TODO: #1]}}}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%% VYTVOR POMOCNY SOUBOR PRO REJSTRIK %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
