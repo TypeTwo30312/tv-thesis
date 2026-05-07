@@ -38,3 +38,6 @@
 __pycache__/
 *.pyc
 .ipynb_checkpoints/
+
+# drafting
+./text/scratchpad/
