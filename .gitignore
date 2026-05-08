@@ -40,5 +40,5 @@ __pycache__/
 .ipynb_checkpoints/
 
 # drafting
-./text/scratchpad/
+/text/scratchpad/section.tex
 project_state.md
