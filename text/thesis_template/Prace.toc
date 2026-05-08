@@ -50,10 +50,10 @@
 \contentsline {subsection}{\numberline {3.2.2}Embedding extraction}{21}{subsection.3.2.2}%
 \contentsline {subsection}{\numberline {3.2.3}Computational environment}{21}{subsection.3.2.3}%
 \contentsline {section}{\numberline {3.3}Analyses}{22}{section.3.3}%
-\contentsline {chapter}{\numberline {4}Druhá kapitola s matematikou $\DOTSI \intop \ilimits@ \! f(x)\,\mathrm {d}x$ v~názvu}{23}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Podkapitola}{26}{section.4.1}%
-\contentsline {chapter}{Závěr}{27}{chapter*.6}%
+\contentsline {chapter}{\numberline {4}Results and discussion}{23}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Podkapitola}{23}{section.4.1}%
+\contentsline {chapter}{Závěr}{24}{chapter*.5}%
 \babel@toc {english}{}\relax 
 \babel@toc {czech}{}\relax 
-\contentsline {chapter}{Bibliography}{33}{chapter*.7}%
-\contentsline {chapter}{Appendix}{34}{chapter*.8}%
+\contentsline {chapter}{Bibliography}{28}{chapter*.6}%
+\contentsline {chapter}{Appendix}{29}{chapter*.7}%
