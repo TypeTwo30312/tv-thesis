@@ -42,3 +42,11 @@ __pycache__/
 # drafting
 /text/scratchpad/section.tex
 project_state.md
+text/thesis_template/Prace.aux
+text/thesis_template/Prace.bcf
+text/thesis_template/Prace.fdb_latexmk
+text/thesis_template/Prace.lot
+text/thesis_template/Prace.log
+text/thesis_template/Prace.out
+text/thesis_template/Prace.synctex.gz
+text/thesis_template/Prace.toc
