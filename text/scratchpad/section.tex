@@ -42,76 +42,284 @@
 % --- drafting helpers (scratchpad only; strip before pasting into Prace.tex) ---
 \usepackage{xcolor}
 \newcommand{\todo}[1]{\textcolor{red}{\textbf{[TODO: #1]}}}
+\newcommand{\fix}[1]{\textit{#1}}
 
 \begin{document}
 
-\section{Computer}
-
-\subsection{PWMs}
-
 % \label{sec:working-title}
 
-\todo{TeX rovnice!}
+\section{Transcription factor binding}
+\label{sec:tf-binding}
 
-The standard representation of a TF binding motif is the position weight matrix (PWM), constructed from an aligned set of known binding sequences.
-Counts of each base at each position give the position frequency matrix; dividing by the number of sequences gives the position probability matrix $f_{b,i}$.
-The PWM entries are the log-odds of these probabilities against a background distribution, $w_{b,i} = \log_2 \left( f_{b,i} / p_b \right)$, where $p_b$ is typically $0.25$ for each base or the genome-wide composition.
-The conservation at each position is summarised by the information content $I_i = 2 - H_i$, where $H_i = -\sum_b f_{b,i} \log_2 f_{b,i}$ is the Shannon entropy of the base distribution at position $i$.
-Sequence logos visualise the PWM by stacking letters at each position with heights proportional to $f_{b,i} \cdot I_i$, so that conserved positions appear as tall, near-pure stacks and degenerate positions as short, mixed ones.
-To identify candidate binding sites in a genome, the PWM is slid across the sequence and each $L$-bp window is scored by summing the matrix entries corresponding to its bases: $S = \sum_{i=1}^{L} w_{b_i, i}$.
-Standard scanning tools such as FIMO \cite{grantFIMOScanningOccurrences2011} convert this score into a p-value against the background distribution, and report windows below a chosen significance threshold as hits.
-The additive form of the scoring rule encodes a strong assumption: that each position contributes to binding affinity independently of the others.
-This approximation is known to be violated for many TFs — for example, where the identity of one position constrains which bases are tolerated at a neighbouring position \todo{cite needed} — and motivates the extensions discussed below.
+\subsection{Transcription factors and DNA binding}
 
-Curated PWM models for known TFs are derived computationally from sets of enriched sequences, typically obtained from in vitro selection assays such as HT-SELEX or from high-confidence ChIP-seq peaks.
-The two most widely used discovery tools are MEME \cite{baileyMEMESuite2015}, which identifies over-represented motifs by expectation maximisation, and HOMER \cite{heinzSimpleCombinationsLineageDetermining2010}, which is optimised for ChIP-seq and identifies motifs by differential enrichment against a matched background.
-Both produce PWMs as their primary output.
-Curated databases — JASPAR \cite{ovekbaydarJASPAR2026Expansion2026} for general-purpose use and HOCOMOCO \cite{vorontsovHOCOMOCO2024Rebuild2024} for human and mouse TFs — collect such models across studies and provide reference resources for downstream applications; this thesis uses HOCOMOCO v12, matching the choice of \cite{faltejskovaNonconsensusFlankingSequence2026}.
+Transcription factors (TFs) are proteins that modulate transcription by binding DNA in a sequence-specific manner.
+They act through regulatory elements such as promoters, enhancers, and silencers, recruiting the transcription machinery or modulating its activity.
+Most TFs share a modular architecture: a DNA-binding domain (DBD) that contacts the target sequence, paired with one or more effector domains responsible for transactivation, repression, or dimerisation.
+Because the DBD determines binding specificity, TFs are classified by DBD family rather than by effector function.
+The human genome encodes approximately 1600 sequence-specific TFs distributed across roughly 75 DBD families \cite{lambertHumanTranscriptionFactors2018}.
+The families represented among the TFs studied in this thesis include the C2H2 zinc fingers (the largest human family, exemplified by CTCF), the basic helix-loop-helix proteins (MYC, which binds as an obligate heterodimer with MAX), and the ETS domain family (SPI1).
 
-Several approaches relax the positional independence assumption of PWMs.
-Dinucleotide weight matrices extend the framework minimally, by scoring adjacent pairs of bases rather than single positions, and so capturing nearest-neighbour dependencies \cite{siebertBayesianMarkovModels2016}; hidden Markov models go further, allowing variable-length and internally structured motifs through state transitions \cite{eddyWhatHiddenMarkov2004} \todo{terrible source and i dont have access, fix!}.
-Other extensions — Bayesian networks for arbitrary positional dependencies, and k-mer-based methods that learn from short subsequence frequencies directly — explore the same conceptual space.
-Benchmarking on in vitro binding data has shown that mononucleotide PWMs trained by the best methods perform comparably to more complex models for the majority of TFs, with measurable gains concentrated in a minority of cases \cite{weirauchEvaluationMethodsModeling2013}.
-The fundamental constraint these extensions share is locality: regardless of how the independence assumption is relaxed, the model remains bounded to the motif region itself.
+Target sequences are typically short motifs of 6--20~bp, recognized with tolerance for sequence variation.
+Despite the considerable structural variety across DBD families, all sequence-specific TFs face the same fundamental problem:
+they must locate their short target sequence among a large number of similar but non-functional sites distributed across a genome of several gigabases.
 
-The PWM framework and its extensions are bounded by the binding footprint by design.
-The kilobase-scale gradients described in §1.1.4, however, lie well outside that footprint, and have so far been characterised only with hand-engineered compositional features rather than learned directly from sequence.
-DNA language models — foundation models trained on raw genomic sequence over long contexts — operate at a scale where such gradients fall within their input window, and so could in principle encode them as part of their learned representation.
-The question this thesis addresses is whether a model of this kind, trained on raw sequence with no compositional features supplied, encodes the kilobase-scale signal that \citet{faltejskovaNonconsensusFlankingSequence2026} characterised by other means.
+\subsection{Sequence determinants of binding}
+\label{sec:readout}
 
-\section{Foundation models for genomics}
+The specificity of protein--DNA recognition rests on two complementary mechanisms: direct chemical recognition of bases (base readout) and recognition of sequence-dependent DNA geometry (shape readout).
 
-Foundation models are large neural networks trained on massive unlabelled datasets using self-supervised objectives, yielding general-purpose representations that downstream tasks can draw on \cite{bommasaniOpportunitiesRisksFoundation2022}.
-The two principal objectives are masked language modelling, in which the model recovers hidden tokens from their context, and autoregressive next-token prediction, in which the model predicts each token in sequence given everything to its left.
-This contrasts with supervised learning, which requires task-specific labels and therefore scales with the cost of annotation rather than with the availability of raw data.
-In genomics, this approach has produced models trained on raw nucleotide sequence at scale.
+Base readout operates through direct contacts --- hydrogen bonds and van der Waals interactions --- between amino acid side chains and the Watson--Crick edges of bases, predominantly in the major groove.
+\fix{The major groove presents a distinctive pattern of hydrogen bond donors and acceptors} that permits discrimination between all four base pairs, including the orientation of A:T and T:A \cite{luscombeAminoAcidbaseInteractions2001, seemanSequencespecificRecognitionDouble1976}.
+The C2H2 zinc finger illustrates the mechanism: each $\beta\beta\alpha$ module contacts approximately three base pairs through specificity residues on the recognition helix, and the contributions of successive modules combine to determine the affinity and specificity of the full array.
+Position weight matrices (PWMs) are the natural statistical encoding of base readout, treating each position within the motif as an independent contribution to binding affinity (§\ref{sec:pwm}).
 
-\subsection{the architectures i guess}
+Shape readout depends on sequence context beyond the contact position.
+The geometry at any given base pair --- minor groove width, propeller twist, helical twist, roll, and slide --- is influenced by neighbouring bases over several positions in either direction, and is read by protein contacts that respond to local shape and electrostatics rather than to specific bases.
+The canonical example is recognition of narrow minor grooves by arginine residues: runs of A:T base pairs (A-tracts) produce locally narrowed minor grooves with concentrated negative electrostatic potential, which arginine side chains insert into and stabilise without forming base-specific hydrogen bonds \cite{rohsRoleDNAShape2009}.
 
-Genomic foundation models fall into two architectural families that have developed in parallel: those built on the transformer, and those built on alternatives to attention.
-The first genomic foundation models adapted BERT to nucleotide input: DNABERT \cite{jiDNABERTPretrainedBidirectional2021a} with masked language modelling on k-merised human sequence, and Nucleotide Transformer \cite{dalla-torreNucleotideTransformerBuilding2025} scaling this across multiple species and parameter counts.
-Both were limited in the length of input sequence they could process at once.
-In contrast, HyenaDNA \cite{nguyenHyenaDNALongRangeGenomic2023} replaced attention with the Hyena operator, reaching context lengths in the hundreds of thousands of base pairs.
-Across both families, the design priority has been to extend the context window.
+The two mechanisms are genuinely complementary rather than redundant.
+Crystal structures of TF--DNA complexes routinely show major-groove base-specific contacts and minor-groove shape-based contacts within the same interface, and augmenting PWM-based models with predicted shape features systematically improves binding prediction across TF families \cite{mathelierDNAShapeFeatures2016}.
+Their combined reach is nonetheless bounded by the binding footprint: base readout depends on direct contacts within the 6--20~bp footprint, and shape readout, while sensitive to flanking sequence, is mediated through contacts within and immediately adjacent to it \cite{yangTranscriptionFactorFamilyspecific2017}.
 
-\subsection{Evo2 and how they used it}
+\subsection{The specificity paradox}
+\label{sec:paradox}
 
-Evo 2 \cite{brixiGenomeModellingDesign2026} is a family of genomic foundation models developed by the Arc Institute, built on the StripedHyena 2 architecture.
-Attention scales quadratically in sequence length, which limits transformer-only models;
-StripedHyena 2 addresses this by combining attention with gated convolutional operators that scale linearly while preserving long-range dependencies.
-Evo 2's context window extends to 1 Mb at single-nucleotide resolution, comfortably hosting the kilobase-scale gradients of §1.1.4 within a single input.
-Evo 2 was pretrained autoregressively on OpenGenome2, a dataset of 8.8 trillion DNA tokens drawn from bacteria, archaea, eukarya, and bacteriophage.
-Pretraining proceeded in two phases: a short-context phase on roughly 8 kb windows enriched for genic regions, followed by a long-context phase extending to 1 Mb on whole-genome samples.
-Three capabilities follow: sequence scoring, which assigns a likelihood to an input under the model; generation, which samples new sequences; and embedding extraction, which retrieves representations from intermediate layers.
+The degeneracy of TF motifs means that a typical 10~bp motif at moderate information content matches millions of sites in a mammalian genome, while in vivo occupancy --- assayed by ChIP-seq, the standard method described in §\ref{sec:chipseq} --- typically identifies between a few thousand and a few tens of thousands of bound sites per TF per cell line.
+CTCF in K562 cells, for example, has approximately 52\,000 IDR-thresholded ENCODE peaks, against approximately 870\,000 matches to the canonical CTCF motif in the hg19 genome at standard FIMO thresholds \cite{dozmorovCTCFBioconductorData2022}.
+This discrepancy between motif presence and actual occupancy has been termed the transcription factor specificity paradox; it was formalised for prokaryotic TFs as the futility theorem by \citet{wunderlichDifferentGeneRegulation2009}, who showed that in a sufficiently large genome even highly informative motifs predict more matches than there are TF molecules in the cell, making purely sequence-based recognition statistically insufficient.
+In practice, the paradox is reflected in the weak correlation between intrinsic in vitro affinity (measured by HT-SELEX or protein-binding microarrays) and in vivo occupancy:
+high-affinity sites can remain unbound, while low-affinity sites are often occupied \cite{slatteryAbsenceSimpleCode2014a}.
 
-\todo{simplified StripedHyena 2 diagram, or the one from the paper}
+Several mechanisms partially resolve the discrepancy, each a substantial field in its own right.
+Chromatin accessibility is regarded as the dominant factor: only a small fraction of the genome is accessible to DNA-binding proteins at any given time, the remainder occluded by nucleosomes or compacted into heterochromatin, and most in vivo TF binding occurs within accessible regions \cite{thurmanAccessibleChromatinLandscape2012}.
+Cooperative binding with cofactors restricts binding further: many TFs bind productively only as part of a complex --- homodimers, heterodimers, or larger assemblies --- so the combinatorics of cofactor co-occupancy limit where productive binding can occur \cite{sonmezerMolecularCooccupancyIdentifies2021}.
+Cellular context adds a third layer: TF abundance, post-translational modification, and subcellular localisation are all condition-dependent and regulate the effective concentration of binding-competent protein. \todo{yeah? where did i get this?}
 
-\todo{what they did with TFs, what am i doing?}
+A fourth contribution, less studied than the preceding three, is sequence context beyond the motif itself.
+\citet{drorWidespreadRoleMotif2015} demonstrated, in a systematic analysis of 239 TFs from HT-SELEX and 56 from ChIP-seq data, that the sequence and DNA shape environment surrounding bound motifs differs significantly from that surrounding unbound occurrences of the same motif, with differences extending well beyond the core binding site and exhibiting TF-family-specific patterns. \todo{distinguish from shape readout somehow, read dror again}
+Crucially, the signal was present in both the in vitro and in vivo datasets, ruling out the cellular environment as its sole source and establishing flanking sequence context as a genuine, sequence-encoded contributor to binding discrimination.
+Unlike chromatin accessibility and cooperative binding, this contribution is in principle directly accessible to any model that operates on raw sequence input.
 
-\section{results}
+The spatial scale at which sequence context influences binding spans several orders of magnitude: from the immediate flanks of the core motif \cite{drorWidespreadRoleMotif2015}, through the tens-to-hundreds of base pairs over which sequence composition modulates the nonspecific affinity experienced by a scanning TF \cite{afekGenomewideOrganizationEukaryotic2013, selaDNASequenceCorrelations2011}, \fix{out to the kilobase-scale compositional gradients recently characterised by \citet{faltejskovaNonconsensusFlankingSequence2026}.}
+That last study, and its role as the biological motivation for the analyses in this thesis, is discussed in §\ref{sec:faltejskova} following the description of the experimental data on which both studies are based.
+\todo{soften claim - descriptive? implied?, is this first mention? mention it's a preprint?}
 
-mean-pooled and mean-positional Evo 2 representations of 10 kb peak-centred windows are dominated by L2 magnitude and GC content.
-After regressing both out, no robust non-trivial structure emerges in the PCs that were checked — only a single-experiment artifact and the autoregressive warm-up.
+\section{Next-generation sequencing and ChIP-seq}
+\label{sec:chipseq}
+
+\subsection{Short-read sequencing}
+
+Next-generation sequencing (NGS) refers to high-throughput DNA sequencing technologies that determine the nucleotide sequence of millions to billions of short DNA fragments in parallel.
+The dominant platform in current use is Illumina sequencing-by-synthesis:
+libraries of DNA fragments are clonally amplified on a flow cell surface, and each cycle of synthesis incorporates fluorescently labelled reversible-terminator nucleotides whose identity is read by imaging \cite{bentleyAccurateWholeHuman2008}.
+Typical read lengths are 50--150~bp per end; paired-end protocols sequence both ends of each fragment and are standard for ChIP-seq.
+The output is a set of FASTQ files containing read sequences and per-base quality scores.
+Key limitations are the short read length, which complicates mapping to repetitive regions,
+and a characteristic per-base error rate of approximately $10^{-3}$, dominated by substitution errors.
+
+NGS functions as a platform on which different upstream wet-lab protocols measure different genomic quantities:
+RNA-seq measures transcript abundance, ATAC-seq measures chromatin accessibility, and ChIP-seq measures protein--DNA contacts.
+The platform is otherwise identical across assays; what changes is the biological molecule subjected to fragmentation and \fix{sequencing}.
+
+\subsection{Chromatin immunoprecipitation sequencing}
+
+Chromatin immunoprecipitation followed by sequencing (ChIP-seq) is the standard method for mapping genome-wide protein--DNA contacts at the population level \cite{parkChIPSeqAdvantages2009}. \todo{no acess, substitute}
+In the crosslinking variant used for most TF ChIP-seq experiments, cells are treated with formaldehyde to covalently crosslink protein--DNA complexes in situ, chromatin is then fragmented by sonication or enzymatic digestion to a target size of approximately 200~bp, and an antibody specific to the TF of interest is used to immunoprecipitate the crosslinked complexes.
+After reversal of crosslinks, the co-purified DNA is sequenced.
+The resulting reads are enriched at genomic positions occupied by the protein, producing a coverage signal that is higher at bound sites than at unbound genomic background.
+
+The output of ChIP-seq is interpretable as a population-averaged estimate of contact frequency:
+sites occupied in a large fraction of cells contribute more fragments to the library and produce sharper, higher-amplitude peaks.
+This population averaging is a fundamental limitation: the assay does not report single-cell occupancy, cannot distinguish direct from indirect binding (a TF pulled down as part of a complex is not directly bound to the immunoprecipitated DNA), and is sensitive to antibody quality in ways that are difficult to control post-hoc.
+
+\subsection{Cut\&Tag as a methodological contrast}
+
+An alternative to ChIP-seq that is increasingly used for TF mapping is CUT\&Tag \cite{kaya-okurCUTTagEfficientEpigenomic2019}.
+Rather than immunoprecipitating crosslinked complexes, CUT\&Tag uses a Protein~A--Tn5 transposase fusion, directed to the protein of interest by an antibody, to tagment (cut and insert sequencing adaptors into) the DNA in the immediate vicinity of the bound protein.
+The method requires lower cell inputs, produces lower background, and generates sharper peaks than ChIP-seq, making it particularly attractive for TFs with weak or transient binding.
+One CUT\&Tag dataset (CTCF in K562 cells; \citealt{kaya-okurCUTTagEfficientEpigenomic2019}) is included in the Faltejsková et al.\ dataset to which this thesis refers; all ChIP-seq data used in this thesis are from conventional ChIP-seq experiments.
+
+\subsection{Read alignment and peak calling}
+
+Sequencing reads are aligned to the reference genome using short-read aligners such as BWA \cite{liAligningSequenceReads2013} or Bowtie~2 \cite{langmeadFastGappedreadAlignment2012}, \todo{verify how to cite bowtie - i dont have access} producing coordinate-sorted BAM files with alignment information and mapping quality scores.
+Reads mapping to multiple locations are typically filtered; duplicate reads arising from PCR amplification of the same fragment are also marked and excluded.
+
+Enriched genomic regions (peaks) are identified by peak-calling algorithms that compare local fragment density in the immunoprecipitated sample against a control library, usually input chromatin from the same cells.
+MACS2 is the standard algorithm for TF ChIP-seq \cite{zhangModelbasedAnalysisChIPSeq2008};
+it models the expected fragment distribution, estimates local background from a sliding window, and assigns a $p$-value and $q$-value to each candidate peak under a Poisson model.
+The primary output is a narrowPeak BED-format file containing one row per peak, with columns for chromosomal coordinates, a peak score, $-\log_{10}(p)$, $-\log_{10}(q)$, and the offset of the peak summit from the start coordinate.
+For TF ChIP-seq, peak widths are typically 200--500~bp.
+
+\subsection{Reproducibility filtering and IDR}
+
+Because ChIP-seq is sensitive to antibody efficiency and library  complexity, peaks called from a single experiment may include irreproducible signals.
+The Irreproducible Discovery Rate (IDR) framework provides a principled way to rank peaks by their reproducibility across biological or technical replicates \cite{liMeasuringReproducibilityHighthroughput2011}.
+IDR fits a mixture model to the joint rank distribution of peaks across two replicates and assigns each peak a probability of arising from the reproducible component of the mixture.
+Peaks below an IDR threshold are retained; those above are discarded as likely irreproducible.
+The ENCODE project distributes IDR-thresholded peak calls as the recommended file type for downstream analysis \cite{dunhamIntegratedEncyclopediaDNA2012};
+conservative IDR-thresholded calls, which are thresholded at an IDR of 0.05 applied to the self-consistency ratio as well as the pooled-consistency ratio, are preferred where available.
+All peak files used in this thesis are IDR-thresholded narrowPeak files obtained from the ENCODE portal.
+
+\subsection{Data formats and reference genome}
+
+The narrowPeak format used throughout this thesis is a ten-column extension of the BED format, with the extension columns carrying the MACS2 signal, $p$-value, $q$-value, and summit offset.
+\todo{a few example lines of a narrowPeak file with the columns, for illustration?}
+Reference genome sequences are stored in FASTA format and indexed with \texttt{samtools faidx} to allow efficient random-access retrieval of arbitrary intervals, which is required for the window-extraction step described in §\ref{sec:methods-windows}.
+
+This thesis uses the hg19/GRCh37 human reference assembly throughout, consistent with the Faltejsková et al.\ analysis.
+The hg38/GRCh38 assembly is the current reference standard and differs from hg19 primarily in gap-filling and a small number of chromosome-level corrections;
+coordinates are not directly interchangeable, and liftover is required to transfer annotations between assemblies.
+Non-B DNA and CpG island annotations used by Faltejsková et al.\ are hg38-based and were not used in this thesis.
+
+\subsection{The ENCODE project}
+
+The Encyclopedia of DNA Elements (ENCODE) project is a large-scale, consortium-driven effort to functionally annotate the human genome through systematic application of high-throughput assays including ChIP-seq, ATAC-seq, RNA-seq, and others \cite{dunhamIntegratedEncyclopediaDNA2012}.
+ENCODE enforces standardised experimental protocols, antibody validation requirements, and bioinformatic pipelines, and applies automated quality-control audits to all deposited experiments.
+Experiments flagged by these audits as failing quality thresholds are marked accordingly on the portal; no red-flagged experiments are included in this thesis.
+All data are publicly available through the ENCODE portal (\url{https://www.encodeproject.org}) under permissive data use agreements.\todo{decide if the url is a footnote}
+
+\fix{The TFs and cell lines used in this thesis --- MYC, CTCF, and SPI1 across cell lines GM12878, H1, K562, and MCF-7 --- were selected from the Faltejsková et al.\ supplementary accession list, which is itself drawn from ENCODE.
+Full accession identifiers and selection criteria are given in §\ref{sec:methods-data}.} \todo{consider dropping}
+
+\subsection{Long-range sequence context around binding sites}
+\label{sec:faltejskova}
+
+The ChIP-seq peak calls distributed by ENCODE identify the genomic coordinates of protein--DNA contacts, but the narrowPeak format records only a ~200--500~bp window around the occupied site.
+Whether the broader sequence context surrounding a bound site encodes systematic, non-random features --- and whether those features are consistent with a role in guiding TF recognition --- is a question that cannot be answered from the peak coordinates alone.
+
+\citet{faltejskovaNonconsensusFlankingSequence2026} addressed this question in a recent descriptive study published in \emph{Nucleic Acids Research}.
+They analysed a $\pm$5000~bp window around in vivo binding sites for ten TFs drawn from ENCODE ChIP-seq and one CUT\&Tag dataset, dividing each 10~kb window into 50~bp non-overlapping segments and computing sequence composition features --- GC content, dinucleotide frequencies, predicted DNA shape (via deepDNAshape), and HOCOMOCO-based TF affinity scores --- across the profile from distal flanks to peak centre.
+
+The principal finding is that GC content is significantly elevated in a patch spanning approximately 1--2~kb around the binding site for most of the ten TFs examined, with a typical magnitude of~$\sim$10 percentage points above the distal flank.
+Directional asymmetries in dinucleotide composition, pointing toward the binding site, were observed for several TFs including MYC, FOXK2, and p53, and are absent or weak for CTCF and SPI1.
+DNA shape features predicted from the local sequence context --- in particular roll and helical twist --- change in a manner consistent with increased bendability near the binding site.
+A small but significant enrichment of predicted Z-DNA and G-quadruplex motifs at the binding site was also observed for selected TFs, though the authors note these are insufficient to account for the full dinucleotide pattern.
+
+These findings are interpreted through a ``statistical funnel'' model: broad compositional gradients around binding sites create a low-free-energy landscape that biases TFs undergoing one-dimensional facilitated diffusion toward the target site, complementing the short-range specific recognition described in §\ref{sec:readout}.
+The study explicitly characterises this model as hypothesis-generating.
+Critically, it is a descriptive analysis: no model is tested for whether it can detect or exploit the sequence gradients described.
+
+This descriptive gap is the primary motivation for the present thesis.
+The sequence features characterised by \citet{faltejskovaNonconsensusFlankingSequence2026} extend over 1--2~kb on either side of the binding site --- a spatial scale that is inaccessible to conventional motif-based models by design, but that falls within the context window of recent genomic foundation models operating at single-nucleotide resolution.
+Whether the per-token embeddings of such a model encode the kilobase-scale compositional structure described above is the empirical question taken up in this thesis.
+The foundation model used, Evo~2, is introduced in §\ref{sec:foundation-models}.
+
+% \section{NGS}
+
+% Next-generation sequencing (NGS) refers to a set of technologies dating to..., that enable high throughput sequencing of \todo{scale}.
+% Currently, the forefront platforms include Illumina \todo{cite, short reads}, nanopore \todo{looong, cheap, cite}....
+% The rapidly decreasing cost of sequencing allows for .... also means there is a lot of available data accessible in databases.
+% Despite technological differences, the basic principle is output is signal -> base calling, produces FastQ reads.
+% Standard is quality control using FastQC, (method and format) giving fasta like sequence with quality score per position.
+% Following steps depend on the specific application and include .....
+% For ChIP-seq the following steps are as follows: Mapping to reference (+quality), peak calling against a control, quality measures.
+% The output from this standard analysis workflow is one of two similar formats: narrowPeak or broadPeak.
+% Both are in essence a BED annotation with narrowPeak being the standard BED 6+4 structure.
+\todo{a box with a few lines of narrowPeak} /
+
+\section{Data}
+
+\subsection{Transcription factors}
+
+The descriptive analysis is performed on three human transcription factors selected to span distinct binding modes relevant to the questions posed in this thesis: CTCF, MYC, and SPI1.
+CTCF is an eleven-zinc-finger architectural factor with a long, well-characterised consensus motif and broad genomic occupancy, included as a strong-motif baseline against which embedding-based representations can be evaluated \cite{ongCTCFArchitecturalProtein2014}
+MYC is a basic helix-loop-helix leucine-zipper factor that, in the analysis of \citet{faltejskovaNonconsensusFlankingSequence2026}, displays a pronounced directional dinucleotide asymmetry in the kilobase-scale flanks of its in vivo binding sites, making it a natural target for testing whether long-range sequence structure is reflected in Evo~2 representations \cite{luscherRegulationGeneTranscription2012a}.
+SPI1 (PU.1) is an ETS-family lineage-specific factor that does not exhibit the directional flanking signature reported for MYC and is therefore included as a contrast factor for which the kilobase-scale signal is expected to be weaker or absent \cite{rothenbergMechanismsActionHematopoietic2019}.
+
+\subsection{ChIP-seq data sources}
+
+For each transcription factor, three ChIP-seq experiments are obtained from the ENCODE portal \cite{dunhamIntegratedEncyclopediaDNA2012}, yielding nine BED files in total \todo{cite ENCODE portal / ENCODE3 if a more recent reference is preferred}.
+Conservative IDR-thresholded narrowPeak files \cite{liMeasuringReproducibilityHighthroughput2011} are used where available; otherwise, the IDR-thresholded peak file is used.
+Cell-line selection follows the inclusion criterion adopted by \citet{faltejskovaNonconsensusFlankingSequence2026}, which retains only cell lines appearing in at least three experiments across their panel.
+The accessions, transcription factors, and biosamples comprising the embedded set are listed in Table~\ref{tab:bedfiles}, alongside the number of peaks supplied to the embedding pipeline.
+\begin{table}[h!]
+  \begin{center}
+    \caption{Chosen ChIP-seq experiments}
+    \label{tab:table1}
+    \begin{tabular}{l|c|r} % <-- Alignments: 1st column left, 2nd middle and 3rd right, with vertical lines in between
+      \textbf{TF} & \textbf{Cell line} & \textbf{ENCODE accession}\\
+      \hline
+      MYC & GM12878 & ENCFF765CKK\\
+      MYC & H1 & ENCFF700CXD\\
+      MYC & MCF-7 & ENCFF149BIS\\
+      CTCF & GM12878 & ENCFF017XLW\\
+      CTCF & H1 & ENCFF692RPA\\
+      CTCF & K562 & ENCFF769AUF\\
+      SPI1 & GM12878 & ENCFF881ARS\\
+      SPI1 & GM12878 & ENCFF198SPL\\
+      SPI1 & K562 & ENCFF185DGL\\
+    \end{tabular}
+  \end{center}
+\end{table}
+Sequence is extracted from the human reference assembly hg19 to maintain consistency with \citet{faltejskovaNonconsensusFlankingSequence2026} and to permit direct comparison of per-bin readouts in the sanity check described in Section~\ref{sec:sanity}; this thesis does not consume any of the hg38-based annotation tracks (non-B DB, CpG islands, ENSEMBL regulatory features) used in the published study \todo{cite hg19 / GRCh37 (UCSC or Genome Reference Consortium)}.
+BED files are downloaded programmatically from the ENCODE portal using the URL schema \texttt{https://www.encodeproject.org/files/\{accession\}/@@download/\{accession\}.bed.gz}.
+\todo{fix wrapping?}
+
+\subsection{Cell-line coverage}
+
+The intended design covers the cell lines GM12878, H1, and K562 across all three transcription factors, providing a balanced grid for within-TF and across-TF comparisons.
+The realised design departs from this target in one respect: the MYC K562 file (ENCFF043WTJ) was not embedded within the available compute window, and the MYC MCF-7 file (ENCFF149BIS) was substituted as the third MYC experiment.
+The resulting cell-line coverage is therefore CTCF on GM12878, H1, K562; MYC on GM12878, H1, MCF-7; and SPI1 on GM12878 (two replicates) and K562.
+The interpretive consequences of this imbalance for any TF--cell-line interaction analysis are addressed in the Results and Discussion chapters.
+
+\subsection{Random-windows control}
+\label{sec:randomctrl}
+
+A random-windows control is constructed to provide a non-peak-centred reference that shares the window geometry, sequence preprocessing, and embedding pipeline of the ChIP-seq data and against which TF-centred positional structure can be contrasted.
+Two thousand 10\,kb windows are sampled from hg19 autosomes and chromosome~X, with chromosome selection weighted by usable sequence length and chromosomes Y and M excluded.
+Candidate windows are subjected to rejection sampling against the union of MYC and CTCF peak sets and against previously accepted control windows, ensuring the control is disjoint from those peak sets and internally non-overlapping.
+SPI1 peaks are not included in the rejection set: the control was generated before SPI1 was added to the design and was not subsequently regenerated; given the small genomic footprint of the SPI1 peak set the residual chance of overlap is bounded but non-zero.
+A fixed random seed of~42 is used throughout.
+
+\subsection{Reproducibility and seeding}
+
+Stochastic elements of the pipeline are seeded explicitly to support reproducibility of intermediate quantities.
+A fixed random seed of~42 is applied at every sampling and stochastic-fitting site, including peak subsampling, random-windows generation, and UMAP fitting; this differs from the procedure of \citet{faltejskovaNonconsensusFlankingSequence2026}, in which peak subsampling is performed without a fixed seed.
+The full source code, configuration files, and environment-setup scripts used to produce the embedded set and the analyses reported in subsequent chapters are available at the project repository \citeurl{typetwo30312TypeTwo30312Tvthesis2026} \url{https://github.com/TypeTwo30312/tv-thesis}. % \footnote{\url{...}}??
+
+\section{Pipeline}
+
+This part describes the deterministic chain from ENCODE BED files to per-peak embedding tensors stored on disk.
+The three stages---sequence extraction, embedding extraction, and the computational environment in which they run---are each implemented as a separate Jupyter notebook in the project repository, and are reported here in the order in which they execute.
+
+\subsection{Sequence extraction}
+\label{sec:windows}
+
+Window extraction reads an ENCODE narrowPeak file and outputs a per-peak record containing the peak coordinates and a fixed-length DNA sequence centred on the binding site.
+The 10\,kb window length is chosen to match the $\pm 5000$\,bp range over which \citet{faltejskovaNonconsensusFlankingSequence2026} report statistically significant compositional structure around in vivo binding sites.
+The peak midpoint is used as the binding-site proxy: for the ENCODE narrowPeak files inspected in this thesis, the reported summit coincides with the midpoint of the peak interval (CTCF GM12878 peaks are uniformly $\sim$356\,bp wide, MYC GM12878 peaks $\sim$390\,bp, MYC H1 $\sim$264\,bp), and the midpoint convention matches that used by \citet{faltejskovaNonconsensusFlankingSequence2026}.
+Peaks whose 10\,kb window would extend past a chromosome boundary are dropped rather than padded, since padding with non-biological characters would introduce a fixed-position bias into any subsequent positional analysis.
+Non-ACGT characters in the extracted sequence are masked to N at the extraction stage; the analysis-stage filtering of windows containing fully-N 50\,bp bins is described in Part~3 (Section~\ref{sec:nfilter}). \todo{adjust \ref{sec:nfilter} when Part~3 is drafted}
+For each BED file, peaks are uniformly subsampled to a maximum of $10\,000$ (all peaks are retained if fewer are available), matching the \texttt{MAX\_SIZE\_SAMPLED} parameter used by \citet{faltejskovaNonconsensusFlankingSequence2026} but with a fixed random seed of~42 throughout.
+Each output row carries the columns \texttt{peak\_id}, \texttt{chr}, \texttt{start}, \texttt{end}, \texttt{center}, and \texttt{sequence}, and is written as a gzip-compressed CSV.
+The \texttt{ACCESSION\_\_TF\_\_BIOSAMPLE} naming convention used throughout the pipeline is preserved from the published source code released alongside \citet{faltejskovaNonconsensusFlankingSequence2026}, so that the per-bin feature-extraction scripts from that work remain directly applicable to the sanity check reported in Part~3 (Section~\ref{sec:sanity}). \todo{adjust \ref{sec:sanity} when Part~3 is drafted}
+
+\subsection{Embedding extraction}
+\label{sec:embeddings}
+
+Embedding extraction is performed with the Evo~2 7B checkpoint released by \citet{brixiGenomeModellingDesign2026}; the architecture and pretraining objective are described in the background chapter (Section~\ref{sec:evo2bg}). \todo{adjust \ref{sec:evo2bg} to the actual background-chapter label}
+The 7B family is used because it runs natively in bfloat16 on Ampere-class hardware and does not require Transformer Engine or FP8 support, which are needed for the 20B and 40B variants and are unavailable on the GPUs accessible through the CERIT-SC cluster used in this work. \todo{not true!! fix, reasoning}
+Within the 7B family, the 1\,M-context variant (\texttt{evo2\_7b}) is selected over the 8\,kb-context base variant (\texttt{evo2\_7b\_base}) because the chosen 10\,kb window exceeds the latter's context length.
+A single intermediate-layer embedding is extracted per token from the layer \texttt{blocks.28.mlp.l3}; intermediate layers are recommended over the final layer for representation learning because the final layer is specialised to the next-token prediction objective, and \texttt{blocks.28.mlp.l3} is the layer used by the exon-classifier example in the official Evo~2 repository \cite{brixiGenomeModellingDesign2026}. \todo{either run a comparison or suggest it in discussion}
+Each 10\,kb sequence is tokenised under the Evo~2 byte-level scheme into a $(1, 10000)$ integer tensor (one token per nucleotide), passed through the model in a single forward pass on one GPU, and the resulting $(1, 10000, 4096)$ bfloat16 activation tensor is reshaped into 200 non-overlapping 50\,bp bins and averaged within each bin to yield a $(200, 4096)$ representation per peak, which is cast to fp16 before writing.
+The 50\,bp bin width matches the $k$-mer resolution adopted by \citet{faltejskovaNonconsensusFlankingSequence2026} so that per-bin readouts are directly comparable; non-overlapping bins are used in place of their 25\,bp stride because each bin already integrates 50 input positions of the same forward pass and stride overlap would not contribute additional information.
+Unlike the strictly local hand-engineered features used by \citet{faltejskovaNonconsensusFlankingSequence2026}, each binned embedding has the full 10\,kb window in its causal receptive field via the autoregressive forward pass, and so reflects model-internal aggregation of context up to that point rather than a fixed-window feature of the sequence itself.
+A streaming-write strategy based on \texttt{numpy.memmap} is used for the per-file accumulator together with a checkpoint every 500 peaks, because retaining all per-peak tensors in memory before writing exceeds the per-pod RAM allocation on the cluster for the larger BED files.
+The output of this stage is, per BED file, a single \texttt{.npz} archive containing the $(n_\text{peaks}, 200, 4096)$ fp16 array together with a \texttt{.parquet} sidecar carrying the \texttt{peak\_id} column and BED-derived metadata in the same row order.
+Embedding extraction was performed on a single NVIDIA A40 GPU (46\,GB VRAM) with peak allocation of 19.17\,GB at batch size~1, at an observed throughput of approximately 0.5 peaks per second; the embedded set comprises the 9 ChIP-seq files of Part~1 plus the random-windows control of Section~\ref{sec:randomctrl}, totalling 96.9\,GB of compressed embeddings on disk.
+
+\subsection{Computational environment}
+\label{sec:env}
+
+The embedding stage runs on the CERIT-SC JupyterHub platform under the NVIDIA PyTorch 2.5.0 container image, which provides a Python 3.10, CUDA 12.6, and Ubuntu 22.04 base; a project-specific Python 3.12 virtual environment is layered on top, installed via \texttt{uv} into the persistent home directory and pinning \texttt{torch}~2.7.1+cu128, \texttt{flash-attn}~2.8.0.post2, and \texttt{evo2}.
+A separate CPU-only environment is used for the analyses reported in Part~3, isolating the heavy GPU stack from sessions that do not require it and pinning \texttt{numpy}, \texttt{polars}, \texttt{scikit-learn}, and \texttt{umap-learn} alongside the standard scientific Python packages.
+Both environments are reproduced by setup scripts (\texttt{setup\_evo2\_env.sh}, \texttt{setup\_exploration\_env.sh}) \todo{nope! single evo2 environment, no setup scripts} maintained alongside the source code, and the full code base, configuration files, and notebooks are available at the project repository\footnote{\url{https://github.com/TypeTwo30312/tv-thesis}}.
+
+% \section{results}
+
+% mean-pooled and mean-positional Evo 2 representations of 10 kb peak-centred windows are dominated by L2 magnitude and GC content.
+% After regressing both out, no robust non-trivial structure emerges in the PCs that were checked — only a single-experiment artifact and the autoregressive warm-up.
 
 \printbibliography
 

@@ -1,7 +1,7 @@
 \babel@toc {czech}{}\relax 
-\contentsline {chapter}{List of Figures}{ix}{chapter*.2}%
-\contentsline {chapter}{List of Tables}{x}{chapter*.2}%
-\contentsline {chapter}{List of Abbreviations}{xi}{chapter*.3}%
+\contentsline {chapter}{List of Figures}{x}{chapter*.2}%
+\contentsline {chapter}{List of Tables}{xi}{chapter*.2}%
+\contentsline {chapter}{List of Abbreviations}{xii}{chapter*.3}%
 \contentsline {chapter}{Introduction}{1}{chapter*.4}%
 \contentsline {chapter}{\numberline {1}Theoretical background}{2}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Transcription factors}{2}{section.1.1}%
@@ -11,16 +11,25 @@
 \contentsline {section}{\numberline {1.2}Computational methods for motif analysis}{6}{section.1.2}%
 \contentsline {subsection}{\numberline {1.2.1}PWMs}{6}{subsection.1.2.1}%
 \contentsline {section}{\numberline {1.3}Foundation models for genomics}{7}{section.1.3}%
-\contentsline {subsection}{\numberline {1.3.1}the architectures i guess}{7}{subsection.1.3.1}%
+\contentsline {subsection}{\numberline {1.3.1}the architectures i guess}{8}{subsection.1.3.1}%
 \contentsline {subsection}{\numberline {1.3.2}Evo2 and how they used it}{8}{subsection.1.3.2}%
 \contentsline {section}{\numberline {1.4}NGS data}{8}{section.1.4}%
 \contentsline {chapter}{\numberline {2}Aims of thesis}{9}{chapter.2}%
-\contentsline {chapter}{\numberline {3}Methods $\DOTSI \intop \ilimits@ \! f(x)\,\mathrm {d}x$ v~názvu}{10}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Podkapitola}{13}{section.3.1}%
-\contentsline {chapter}{\numberline {4}Druhá kapitola s matematikou $\DOTSI \intop \ilimits@ \! f(x)\,\mathrm {d}x$ v~názvu}{14}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Podkapitola}{17}{section.4.1}%
-\contentsline {chapter}{Závěr}{18}{chapter*.7}%
+\contentsline {chapter}{\numberline {3}Methods}{10}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Data}{10}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Transcription factors}{10}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}ChIP-seq data sources}{10}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.1.3}Cell-line coverage}{11}{subsection.3.1.3}%
+\contentsline {subsection}{\numberline {3.1.4}Random-windows control}{11}{subsection.3.1.4}%
+\contentsline {subsection}{\numberline {3.1.5}Reproducibility and seeding}{12}{subsection.3.1.5}%
+\contentsline {section}{\numberline {3.2}Pipeline}{12}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Sequence extraction}{12}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Embedding extraction}{13}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Computational environment}{13}{subsection.3.2.3}%
+\contentsline {chapter}{\numberline {4}Druhá kapitola s matematikou $\DOTSI \intop \ilimits@ \! f(x)\,\mathrm {d}x$ v~názvu}{15}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Podkapitola}{18}{section.4.1}%
+\contentsline {chapter}{Závěr}{19}{chapter*.6}%
 \babel@toc {english}{}\relax 
 \babel@toc {czech}{}\relax 
-\contentsline {chapter}{Bibliography}{24}{chapter*.8}%
-\contentsline {chapter}{Appendix}{25}{chapter*.9}%
+\contentsline {chapter}{Bibliography}{25}{chapter*.7}%
+\contentsline {chapter}{Appendix}{26}{chapter*.8}%

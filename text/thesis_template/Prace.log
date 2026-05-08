@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.4.15)  6 MAY 2026 14:47
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.4.15)  8 MAY 2026 04:58
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -855,14 +855,7 @@ Package hyperref Info: Option `unicode' set `true' on input line 159.
 Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO)
 ) (/usr/share/texlive/texmf-dist/tex/generic/stringenc/se-pdfdoc.def
 File: se-pdfdoc.def 2019/11/29 v1.12 stringenc: PDFDocEncoding
-) (./Prace.aux
-
-LaTeX Warning: Label `E' multiply defined.
-
-
-LaTeX Warning: Label `EE' multiply defined.
-
-)
+) (./Prace.aux)
 \openout1 = `Prace.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 159.
@@ -999,7 +992,7 @@ LaTeX Font Info:    Trying to load font information for T1+qhv on input line 164
 File: t1qhv.fd 2009/09/25 v1.2 font definition file for T1/qhv
 )
 \sirkafakultaorig=\skip130
-<loga/MUNI_(black).pdf, id=131, 229.12602pt x 77.75047pt>
+<loga/MUNI_(black).pdf, id=167, 229.12602pt x 77.75047pt>
 File: loga/MUNI_(black).pdf Graphic file (type pdf)
 <use loga/MUNI_(black).pdf>
 Package pdftex.def Info: loga/MUNI_(black).pdf  used on input line 164.
@@ -1051,25 +1044,25 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 ] [7
 
-] (./Prace.toc)
+] (./Prace.toc [8
+
+])
 \tf@toc=\write6
 \openout6 = `Prace.toc'.
 
- [8
-
-] (./Prace.lof)
+ [9] (./Prace.lof)
 \tf@lof=\write7
 \openout7 = `Prace.lof'.
 
- [9
+ [10
 
 ] (./Prace.lot)
 \tf@lot=\write8
 \openout8 = `Prace.lot'.
 
- [10
+ [11
 
-] (./text_prace/01_Znaceni.tex) [11
+] (./text_prace/01_Znaceni.tex) [12
 
 
 ] (./text_prace/02_Uvod.tex) [1
@@ -1086,22 +1079,22 @@ Overfull \hbox (2.50432pt too wide) in paragraph at lines 18--19
 
 
 ] [3] [4]
-Overfull \hbox (0.38324pt too wide) in paragraph at lines 89--92
+Overfull \hbox (0.38324pt too wide) in paragraph at lines 91--94
 []\T1/futs/m/n/12 Single-replicate peak calls con-tain false po-si-ti-ves. The Irre-pro-du-ci-ble Dis-co-very Rate|
  []
 
 [5] [6]
-Overfull \hbox (0.69962pt too wide) in paragraph at lines 124--129
+Overfull \hbox (0.69962pt too wide) in paragraph at lines 126--131
 \T1/futs/m/n/12 cies (Sie-bert a Sö-ding, [][]2016[][]); hi-d-den Mar-kov mo-dels go further, allowing variable-length|
  []
 
 
-Overfull \hbox (11.36282pt too wide) in paragraph at lines 130--134
+Overfull \hbox (11.36282pt too wide) in paragraph at lines 132--136
 \T1/futs/m/n/12 with hand-engineered com-posi-ti-o-nal fe-a-tu-res rather than lear-ned di-rectly from sequence.|
  []
 
 
-Overfull \hbox (4.97884pt too wide) in paragraph at lines 137--141
+Overfull \hbox (4.97884pt too wide) in paragraph at lines 139--143
 \T1/futs/m/n/12 which requi-res task-specific la-bels and the-re-fore sca-les with the cost of an-no-tation rather|
  []
 
@@ -1112,41 +1105,135 @@ Chapter 2.
 
 ]
 Chapter 3.
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 22.88956pt on input line 1.
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 15.89755pt on input line 1.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 22.88956pt on input line 1.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 15.89755pt on input line 1.
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 12.
+
+LaTeX Warning: Citation 'ongCTCFArchitecturalProtein2014' on page 10 undefined on input line 9.
+
+
+LaTeX Warning: Citation 'luscherRegulationGeneTranscription2012a' on page 10 undefined on input line 10.
+
+
+LaTeX Warning: Citation 'rothenbergMechanismsActionHematopoietic2019' on page 10 undefined on input line 11.
+
+
+Overfull \hbox (156.88669pt too wide) in paragraph at lines 8--12
+\T1/futs/m/n/12 motif base-line aga-inst which embedding-based re-pre-sen-tati-ons can be eva-lua-ted ([])|
+ []
+
+
+Overfull \hbox (131.87878pt too wide) in paragraph at lines 8--12
+\T1/futs/m/n/12 long-range sequence structure is re-flec-ted in Evo 2 re-pre-sen-tati-ons ([]).|
+ []
+
+
+Overfull \hbox (161.6268pt too wide) in paragraph at lines 8--12
+\T1/futs/m/n/12 which the kilobase-scale sig-nal is ex-pec-ted to be wea-ker or ab-sent ([]). |
+ []
+
+
+LaTeX Warning: Citation 'dunhamIntegratedEncyclopediaDNA2012' on page 10 undefined on input line 15.
+
+
+LaTeX Warning: Reference `tab:bedfiles' on page 10 undefined on input line 18.
+
+
+LaTeX Warning: Reference `sec:sanity' on page 10 undefined on input line 38.
+
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 39.
 (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
-) [10
+)
+Overfull \hbox (48.65028pt too wide) in paragraph at lines 15--41
+\T1/cmtt/m/n/12 https://www.encodeproject.org/files/{accession}/@@download/{accession}.bed.gz\T1/futs/m/n/12 .|
+ []
 
-{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[10
+
+]
+Overfull \hbox (14.1121pt too wide) in paragraph at lines 44--48
+\T1/futs/m/n/12 The in-ten-ded de-sign co-vers the cell li-nes GM12878, H1, and K562 across all three transcrip-|
+ []
+
+
+Overfull \hbox (7.26003pt too wide) in paragraph at lines 44--48
+\T1/futs/m/n/12 re-a-li-sed de-sign de-parts from this tar-get in one re-spect: the MYC K562 file (EN-CFF043WTJ)|
+ []
+
+[11{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}]
+
+LaTeX Warning: Reference `sec:nfilter' on page 12 undefined on input line 77.
+
+
+LaTeX Warning: Reference `sec:nfilter' on page 12 undefined on input line 77.
+
+
+LaTeX Warning: Reference `sec:sanity' on page 12 undefined on input line 80.
+
+
+LaTeX Warning: Reference `sec:sanity' on page 12 undefined on input line 80.
+
+
+LaTeX Warning: Reference `sec:evo2bg' on page 12 undefined on input line 85.
+
+
+LaTeX Warning: Reference `sec:evo2bg' on page 12 undefined on input line 85.
+
+
+Overfull \hbox (9.47585pt too wide) in paragraph at lines 85--95
+\T1/futs/m/n/12 window fe-a-ture of the sequence itself. A streaming-write stra-tegy based on \T1/cmtt/m/n/12 numpy.memmap|
+ []
+
+[12]
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 10.07397pt on input line 26.
+(Font)              scaled to size 9.19998pt on input line 101.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 7.63599pt on input line 26.
+(Font)              scaled to size 6.99199pt on input line 101.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 26.
+(Font)              scaled to size 5.51999pt on input line 101.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 10.07397pt on input line 26.
+(Font)              scaled to size 9.19998pt on input line 101.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 7.63599pt on input line 26.
+(Font)              scaled to size 6.99199pt on input line 101.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 26.
- [11] [12]) [13] (./text_prace/06_Vysledky_Diskuse.tex
+(Font)              scaled to size 5.51999pt on input line 101.
+
+Overfull \hbox (85.14883pt too wide) in paragraph at lines 99--102
+\T1/futs/m/n/12 stalled via \T1/cmtt/m/n/12 uv \T1/futs/m/n/12 into the per-si-s-tent home di-rec-tory and pin-ning \T1/cmtt/m/n/12 torch \T1/futs/m/n/12 2.7.1+cu128, \T1/cmtt/m/n/12 flash-attn \T1/futs/m/n/12 2.8.0.post2,|
+ []
+
+
+Overfull \hbox (121.93237pt too wide) in paragraph at lines 99--102
+\T1/futs/m/n/12 kages. Both en-vi-ron-ments are re-pro-du-ced by setup scripts (\T1/cmtt/m/n/12 setup_evo2_env.sh\T1/futs/m/n/12 , \T1/cmtt/m/n/12 setup_exploration_env.sh\T1/futs/m/n/12 )|
+ []
+
+[13]) [14] (./text_prace/06_Vysledky_Diskuse.tex
 Chapter 4.
-[14
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 22.88956pt on input line 1.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 15.89755pt on input line 1.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 22.88956pt on input line 1.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 15.89755pt on input line 1.
+[15
 
 
-] [15] [16]) [17] (./text_prace/07_Zaver.tex [18
+]
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 10.07397pt on input line 42.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 7.63599pt on input line 42.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 10.07397pt on input line 42.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 7.63599pt on input line 42.
+ [16] [17]) [18] (./text_prace/07_Zaver.tex [19
 
 
-] [19]) [20]
+] [20]) [21]
 Overfull \hbox (129.30466pt too wide) in paragraph at lines 250--250
 \T1/futs/m/it/12 Initiation Com-plex Is In-flu-enced by Non-con-sen-sus Protein-DNA Bind-ing\T1/futs/m/n/12 . https://arxiv.org/abs/1303.1302v1.|
  []
@@ -1156,7 +1243,7 @@ Overfull \hbox (18.09683pt too wide) in paragraph at lines 250--250
 \T1/futs/m/n/12 vbac097. \T1/futs/m/sc/12 issn\T1/futs/m/n/12 : 2635-0041. \T1/futs/m/sc/12 doi\T1/futs/m/n/12 : [][]$\T1/cmtt/m/n/12 10 . 1093 / bioadv / vbac097$[][]\T1/futs/m/n/12 . (Vis-ited on 04/30/2026). |
  []
 
-[21
+[22
 
 
 ]
@@ -1179,7 +1266,7 @@ Overfull \hbox (4.3963pt too wide) in paragraph at lines 250--250
 []\T1/futs/m/n/12 Anthony Math-e-lier et al. ^^R  DNA Shape Fea-tures Im-prove Tran-scrip-tion Fac-tor Bind-|
  []
 
-[22]
+[23]
 Overfull \hbox (0.64072pt too wide) in paragraph at lines 250--250
 \T1/futs/m/n/12 cil-i-tated Tar-get Lo-ca-tion in Sequence-Dependent Po-ten-tial^^P. In: \T1/futs/m/it/12 Bio-phys-i-cal Jour-|
  []
@@ -1189,37 +1276,42 @@ Overfull \hbox (1.68588pt too wide) in paragraph at lines 250--250
 \T1/futs/m/n/12 Bind-ing to De-vel-op-men-tal Con-trol^^P. In: \T1/futs/m/it/12 Na-ture Re-views Ge-net-ics \T1/futs/m/n/12 13.9 (Sept. 2012),|
  []
 
-[23] [24] (./text_prace/09_Priloha.tex [25
+[24] [25] (./text_prace/09_Priloha.tex [26
 
 
-] [26]) [27] [28] (./Prace.aux)
+] [27]) [28] [29] (./Prace.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
 
 
-LaTeX Warning: There were multiply-defined labels.
+LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `Prace.out' has not changed.
-(rerunfilecheck)             Checksum: 374A1880EA3AA1FE26DC5298C67F526B;2253.
+(rerunfilecheck)             Checksum: 2DE4A3C8791F9038A4B840D8A1C88E89;2896.
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                Prace
+(biblatex)                and rerun LaTeX afterwards.
+
 Package logreq Info: Writing requests to 'Prace.run.xml'.
 \openout1 = `Prace.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 23347 strings out of 474222
- 406893 string characters out of 5748733
+ 23394 strings out of 474222
+ 407601 string characters out of 5748733
  1940975 words of memory out of 5000000
- 45066 multiletter control sequences out of 15000+600000
- 709399 words of font info for 165 fonts, out of 8000000 for 9000
+ 45099 multiletter control sequences out of 15000+600000
+ 725374 words of font info for 184 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  80i,13n,93p,2471b,3305s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/fourier/fourier-bb.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fourier/fourier-mex.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qhvb.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qhvr.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on Prace.pdf (39 pages, 370891 bytes).
+</usr/share/texlive/texmf-dist/fonts/type1/public/fourier/fourier-bb.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fourier/fourier-mex.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qhvb.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qhvr.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1200.pfb>
+Output written on Prace.pdf (41 pages, 409308 bytes).
 PDF statistics:
- 572 PDF objects out of 1000 (max. 8388607)
- 495 compressed objects within 5 object streams
- 110 named destinations out of 1000 (max. 500000)
- 262 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 660 PDF objects out of 1000 (max. 8388607)
+ 578 compressed objects within 6 object streams
+ 121 named destinations out of 1000 (max. 500000)
+ 334 words of extra memory for PDF output out of 10000 (max. 10000000)
 
