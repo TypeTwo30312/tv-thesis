@@ -98,10 +98,12 @@ Embedding extraction was performed on a single NVIDIA A40 GPU (46\,GB VRAM) with
 
 The embedding stage runs on the CERIT-SC JupyterHub platform under the NVIDIA PyTorch 2.5.0 container image, which provides a Python 3.10, CUDA 12.6, and Ubuntu 22.04 base; a project-specific Python 3.12 virtual environment is layered on top, installed via \texttt{uv} into the persistent home directory and pinning \texttt{torch}~2.7.1+cu128, \texttt{flash-attn}~2.8.0.post2, and \texttt{evo2}.
 A separate CPU-only environment is used for the analyses reported in Part~3, isolating the heavy GPU stack from sessions that do not require it and pinning \texttt{numpy}, \texttt{polars}, \texttt{scikit-learn}, and \texttt{umap-learn} alongside the standard scientific Python packages.
-Both environments are reproduced by setup scripts (\texttt{setup\_evo2\_env.sh}, \texttt{setup\_exploration\_env.sh}) \todo{nope! single evo2 environment, no setup scripts} maintained alongside the source code, and the full code base, configuration files, and notebooks are available at the project repository\footnote{\url{https://github.com/TypeTwo30312/tv-thesis}}.
+Both environments are reproduced by setup scripts \todo{nope! single evo2 environment, no setup scripts} maintained alongside the source code, and the full code base, configuration files, and notebooks are available at the project repository\footnote{\url{https://github.com/TypeTwo30312/tv-thesis}}.
 
 \section{Analyses}
 
+
+\todo{probably the LDA, possibly the reverse sequence pass}
 \shorthandon{-} 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
