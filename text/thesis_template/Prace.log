@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.4.15)  8 MAY 2026 08:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.4.15)  8 MAY 2026 08:47
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1092,93 +1092,93 @@ Overfull \hbox (2.1109pt too wide) in paragraph at lines 27--31
 
 
 ] [3]
-Overfull \hbox (1.69453pt too wide) in paragraph at lines 54--58
+Overfull \hbox (1.69453pt too wide) in paragraph at lines 56--60
 \T1/futs/m/n/12 bin-ding site and exhi-bi-ting TF-family-specific pat-terns. []\T1/futs/b/n/12 [TODO: dis-tingu-ish from shape|
  []
 
-
-Overfull \hbox (12.2149pt too wide) in paragraph at lines 54--58
-\T1/futs/m/n/12 con-tri-bu-tion is in prin-ci-ple di-rectly ac-ces-si-ble to any mo-del that ope-ra-tes on raw sequence|
- []
-
 [4]
-Package biblatex Info: Delimiter 'nameyeardelim' in context '' already defined, overwriting on input line 97.
+Package biblatex Info: Delimiter 'nameyeardelim' in context '' already defined, overwriting on input line 99.
 
 
-LaTeX Warning: Citation 'langmeadFastGappedreadAlignment2012' on page 5 undefined on input line 101.
+LaTeX Warning: Citation 'langmeadFastGappedreadAlignment2012' on page 5 undefined on input line 103.
 
 [5]
-Overfull \hbox (0.59949pt too wide) in paragraph at lines 112--119
+Overfull \hbox (0.59949pt too wide) in paragraph at lines 114--121
 \T1/futs/m/n/12 Because ChIP-seq is sensi-tive to an-ti-body ef-fi-ci-ency and lib-rary com-ple-xity, pe-aks called|
  []
 
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 124.
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 126.
 (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
 
-LaTeX Warning: Reference `sec:methods-windows' on page 6 undefined on input line 124.
+LaTeX Warning: Reference `sec:methods-windows' on page 6 undefined on input line 126.
 
 
-Overfull \hbox (18.096pt too wide) in paragraph at lines 133--137
+Overfull \hbox (18.096pt too wide) in paragraph at lines 135--139
 \T1/futs/m/n/12 body va-li-dation requi-re-ments, and bi-o-in-for-ma-tic pi-pe-li-nes, and ap-plies au-to-ma-ted quality-|
  []
 
 
-Overfull \hbox (22.22627pt too wide) in paragraph at lines 133--137
+Overfull \hbox (22.22627pt too wide) in paragraph at lines 135--139
 \T1/futs/m/n/12 por-tal ([][]$\T1/cmtt/m/n/12 https : / / www . encodeproject . org$[][]\T1/futs/m/n/12 ) un-der per-mis-sive data use agre-e-ments.[]\T1/futs/b/n/12 [TODO:|
  []
 
 [6{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}]
 
-LaTeX Warning: Reference `sec:methods-data' on page 7 undefined on input line 139.
+LaTeX Warning: Reference `sec:methods-data' on page 7 undefined on input line 141.
 
 
-Overfull \hbox (0.95895pt too wide) in paragraph at lines 147--149
+Overfull \hbox (0.95895pt too wide) in paragraph at lines 149--151
 \T1/futs/m/n/12 ding each 10 kb win-dow into 50 bp non-overlapping seg-ments and com-pu-ting sequence|
  []
 
 [7]
-Overfull \hbox (13.28345pt too wide) in paragraph at lines 177--180
+Overfull \hbox (13.28345pt too wide) in paragraph at lines 179--182
 \T1/futs/m/n/12 both sequence and structu-ral terms --- but the mo-del is com-pu-tati-o-nally tractable, transfe-|
  []
 
 
-Overfull \hbox (4.64526pt too wide) in paragraph at lines 183--185
+Overfull \hbox (4.64526pt too wide) in paragraph at lines 185--187
 \T1/futs/m/n/12 Given a set of ChIP-seq peak sequen-ces, two re-la-ted tasks arise: dis-co-ve-ring the sequence|
  []
 
 [8]
-Overfull \hbox (17.87883pt too wide) in paragraph at lines 195--202
+Overfull \hbox (17.87883pt too wide) in paragraph at lines 197--204
 \T1/futs/m/n/12 Several ap-pro-a-ches have been de-ve-lo-ped to re-lax the po-si-ti-o-nal in-de-pen-dence as-sumption.|
  []
 
 
-Overfull \hbox (4.63812pt too wide) in paragraph at lines 223--223
+Overfull \hbox (4.63812pt too wide) in paragraph at lines 225--225
 []\T1/futs/b/n/14.4 Self-supervised pre-tra-i-ning and the foun-dation mo-del pa-ra-digm |
  []
 
 
-Overfull \hbox (7.13037pt too wide) in paragraph at lines 225--239
+Overfull \hbox (7.13037pt too wide) in paragraph at lines 227--241
 \T1/futs/b/n/12 sequence mo-del-ling. bo-m-ma-sani is ge-ne-ral about foun-dation mo-del][] \T1/futs/m/n/12 is self-supervised|
  []
 
 [9]
-Overfull \hbox (0.79146pt too wide) in paragraph at lines 269--274
+Overfull \hbox (0.79146pt too wide) in paragraph at lines 271--276
 \T1/futs/m/n/12 species tra-i-ning cor-pus, de-mon-stra-ting that scale im-pro-ves transfer per-for-mance across|
  []
 
-[10] [11]
+[10]
+Overfull \hbox (11.8429pt too wide) in paragraph at lines 315--319
+\T1/futs/m/n/12 the per-token em-bed-dings of Evo 2 en-code the kilobase-scale flanking-sequence structure|
+ []
 
-LaTeX Warning: Reference `sec:methods-embedding' on page 12 undefined on input line 350.
+[11]
+
+LaTeX Warning: Reference `sec:methods-embedding' on page 12 undefined on input line 351.
 
 
-Overfull \hbox (8.94592pt too wide) in paragraph at lines 342--351
+Overfull \hbox (8.94592pt too wide) in paragraph at lines 343--352
 \T1/futs/m/n/12 for-ward pass through \T1/cmtt/m/n/12 evo2_7b\T1/futs/m/n/12 , and the per-token hi-d-den sta-tes from \T1/cmtt/m/n/12 blocks.28.mlp.l3|
  []
 
 
-LaTeX Warning: Reference `sec:results-block2' on page 12 undefined on input line 365.
+LaTeX Warning: Reference `sec:results-block2' on page 12 undefined on input line 366.
 
 ) [12] (./text_prace/04_Cile.tex
 Chapter 2.
@@ -1296,17 +1296,27 @@ Overfull \hbox (16.21672pt too wide) in paragraph at lines 251--251
 \T1/futs/m/n/12 37.15 (Aug. 2021), pp. 2112^^U2120. \T1/futs/m/sc/12 issn\T1/futs/m/n/12 : 1367-4803. \T1/futs/m/sc/12 doi\T1/futs/m/n/12 : [][]$\T1/cmtt/m/n/12 10 . 1093 / bioinformatics /|
  []
 
-
+[22]
 Overfull \hbox (4.3963pt too wide) in paragraph at lines 251--251
 []\T1/futs/m/n/12 Anthony Math-e-lier et al. ^^R  DNA Shape Fea-tures Im-prove Tran-scrip-tion Fac-tor Bind-|
  []
 
-[22]
+[23]
 Overfull \hbox (8.34587pt too wide) in paragraph at lines 251--251
 \T1/futs/m/sc/12 issn\T1/futs/m/n/12 : 1097-2765. \T1/futs/m/sc/12 doi\T1/futs/m/n/12 : [][]$\T1/cmtt/m/n/12 10 . 1016 / j . molcel . 2020 . 11 . 015$[][]\T1/futs/m/n/12 . (Vis-ited on 05/08/2026). |
  []
 
-[23] [24] (./text_prace/09_Priloha.tex [25
+
+Overfull \hbox (1.68588pt too wide) in paragraph at lines 251--251
+\T1/futs/m/n/12 Bind-ing to De-vel-op-men-tal Con-trol^^P. In: \T1/futs/m/it/12 Na-ture Re-views Ge-net-ics \T1/futs/m/n/12 13.9 (Sept. 2012),|
+ []
+
+
+Overfull \hbox (16.66882pt too wide) in paragraph at lines 251--251
+\T1/futs/m/n/12 lqab019. \T1/futs/m/sc/12 issn\T1/futs/m/n/12 : 2631-9268. \T1/futs/m/sc/12 doi\T1/futs/m/n/12 : [][]$\T1/cmtt/m/n/12 10 . 1093 / nargab / lqab019$[][]\T1/futs/m/n/12 . (Vis-ited on 05/08/2026). |
+ []
+
+[24] (./text_prace/09_Priloha.tex [25
 
 
 ] [26]) [27] [28] (./Prace.aux)
@@ -1319,24 +1329,24 @@ L3 programming layer <2024-01-22>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `Prace.out' has not changed.
-(rerunfilecheck)             Checksum: 2F3909AB7508301D009B4E8A8A416AD2;4388.
+(rerunfilecheck)             Checksum: 9DD4954996C8ABB334547154B9883F1F;4388.
 Package logreq Info: Writing requests to 'Prace.run.xml'.
 \openout1 = `Prace.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 23457 strings out of 474222
- 410881 string characters out of 5748733
+ 23477 strings out of 474222
+ 411969 string characters out of 5748733
  1941975 words of memory out of 5000000
- 45152 multiletter control sequences out of 15000+600000
+ 45168 multiletter control sequences out of 15000+600000
  704231 words of font info for 143 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  80i,12n,93p,2471b,3306s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/fourier/fourier-bb.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fourier/fourier-mex.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qhvb.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qhvr.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfit1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on Prace.pdf (40 pages, 423692 bytes).
+Output written on Prace.pdf (40 pages, 425721 bytes).
 PDF statistics:
- 795 PDF objects out of 1000 (max. 8388607)
- 710 compressed objects within 8 object streams
- 143 named destinations out of 1000 (max. 500000)
+ 811 PDF objects out of 1000 (max. 8388607)
+ 726 compressed objects within 8 object streams
+ 147 named destinations out of 1000 (max. 500000)
  454 words of extra memory for PDF output out of 10000 (max. 10000000)
 

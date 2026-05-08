@@ -11,7 +11,7 @@
 \contentsline {section}{\numberline {1.2}Next-generation sequencing and ChIP-seq}{4}{section.1.2}%
 \contentsline {subsection}{\numberline {1.2.1}Short-read sequencing}{4}{subsection.1.2.1}%
 \contentsline {subsection}{\numberline {1.2.2}Chromatin immunoprecipitation sequencing}{5}{subsection.1.2.2}%
-\contentsline {subsection}{\numberline {1.2.3}Cut\&Tag as a methodological contrast}{5}{subsection.1.2.3}%
+\contentsline {subsection}{\numberline {1.2.3}CUT\&Tag as a methodological contrast}{5}{subsection.1.2.3}%
 \contentsline {subsection}{\numberline {1.2.4}Read alignment and peak calling}{5}{subsection.1.2.4}%
 \contentsline {subsection}{\numberline {1.2.5}Reproducibility filtering and IDR}{6}{subsection.1.2.5}%
 \contentsline {subsection}{\numberline {1.2.6}Data formats and reference genome}{6}{subsection.1.2.6}%

@@ -26,7 +26,7 @@ The specificity of protein--DNA recognition rests on two complementary mechanism
 
 Base readout operates through direct contacts --- hydrogen bonds and van der Waals interactions --- between amino acid side chains and the Watson--Crick edges of bases, predominantly in the major groove.
 \fix{The major groove presents a distinctive pattern of hydrogen bond donors and acceptors} that permits discrimination between all four base pairs, including the orientation of A:T and T:A \cite{luscombeAminoAcidbaseInteractions2001, seemanSequencespecificRecognitionDouble1976}.
-The C2H2 zinc finger illustrates the mechanism: each $\beta\beta\alpha$ module contacts approximately three base pairs through specificity residues on the recognition helix, and the contributions of successive modules combine to determine the affinity and specificity of the full array.
+The C2H2 zinc finger illustrates the mechanism: each $\beta\beta\alpha$ module contacts approximately three base pairs through specificity residues on the recognition helix, and the contributions of successive modules combine to determine the affinity and specificity of the full array \cite{pavletichZincFingerDNARecognition1991}.
 Position weight matrices (PWMs) are the natural statistical encoding of base readout, treating each position within the motif as an independent contribution to binding affinity (§\ref{sec:pwm}).
 
 Shape readout depends on sequence context beyond the contact position.
@@ -40,20 +40,22 @@ Their combined reach is nonetheless bounded by the binding footprint: base reado
 \subsection{The specificity paradox}
 \label{sec:paradox}
 
-The degeneracy of TF motifs means that a typical 10~bp motif at moderate information content matches millions of sites in a mammalian genome, while in vivo occupancy --- assayed by ChIP-seq, the standard method described in §\ref{sec:chipseq} --- typically identifies between a few thousand and a few tens of thousands of bound sites per TF per cell line.
+The degeneracy of TF motifs means that a typical 10~bp motif at moderate information content matches millions of sites in a mammalian genome, while in vivo occupancy --- assayed by ChIP-seq, the standard method described in §\ref{sec:chipseq} --- typically identifies between a few thousand and a few tens of thousands of bound sites per TF per cell line. \todo{cite ENCODE probably}
 CTCF in K562 cells, for example, has approximately 52\,000 IDR-thresholded ENCODE peaks, against approximately 870\,000 matches to the canonical CTCF motif in the hg19 genome at standard FIMO thresholds \cite{dozmorovCTCFBioconductorData2022}.
-This discrepancy between motif presence and actual occupancy has been termed the transcription factor specificity paradox; it was formalised for prokaryotic TFs as the futility theorem by \citet{wunderlichDifferentGeneRegulation2009}, who showed that in a sufficiently large genome even highly informative motifs predict more matches than there are TF molecules in the cell, making purely sequence-based recognition statistically insufficient.
+This discrepancy between motif presence and actual occupancy has been termed the transcription factor specificity paradox;
+\todo{if keep, reformulate, cite \cite{kribelbauerLowAffinityBindingSites2019}}% it was formalised for prokaryotic TFs as the futility theorem by \citet{wunderlichDifferentGeneRegulation2009}, who showed that in a sufficiently large genome even highly informative motifs predict more matches than there are TF molecules in the cell, making purely sequence-based recognition statistically insufficient. TODO: rephrase, for eukaryotes - prokaryotes have enough information.
 In practice, the paradox is reflected in the weak correlation between intrinsic in vitro affinity (measured by HT-SELEX or protein-binding microarrays) and in vivo occupancy:
 high-affinity sites can remain unbound, while low-affinity sites are often occupied \cite{slatteryAbsenceSimpleCode2014a}.
 
 Several mechanisms partially resolve the discrepancy, each a substantial field in its own right.
 Chromatin accessibility is regarded as the dominant factor: only a small fraction of the genome is accessible to DNA-binding proteins at any given time, the remainder occluded by nucleosomes or compacted into heterochromatin, and most in vivo TF binding occurs within accessible regions \cite{thurmanAccessibleChromatinLandscape2012}.
 Cooperative binding with cofactors restricts binding further: many TFs bind productively only as part of a complex --- homodimers, heterodimers, or larger assemblies --- so the combinatorics of cofactor co-occupancy limit where productive binding can occur \cite{sonmezerMolecularCooccupancyIdentifies2021}.
-Cellular context adds a third layer: TF abundance, post-translational modification, and subcellular localisation are all condition-dependent and regulate the effective concentration of binding-competent protein. \todo{yeah? where did i get this?}
+Cellular context adds a third layer: TF abundance, post-translational modification, and subcellular localisation are all condition-dependent and regulate the effective concentration of binding-competent protein \cite{spitzTranscriptionFactorsEnhancer2012}.
+\todo{find alternative reference ideally}
 
 A fourth contribution, less studied than the preceding three, is sequence context beyond the motif itself.
 \citet{drorWidespreadRoleMotif2015} demonstrated, in a systematic analysis of 239 TFs from HT-SELEX and 56 from ChIP-seq data, that the sequence and DNA shape environment surrounding bound motifs differs significantly from that surrounding unbound occurrences of the same motif, with differences extending well beyond the core binding site and exhibiting TF-family-specific patterns. \todo{distinguish from shape readout somehow, read dror again}
-Crucially, the signal new was present in both the in vitro and in vivo datasets, ruling out the cellular environment as its sole source and establishing flanking sequence context as a genuine, sequence-encoded contributor to binding discrimination.
+Crucially, the signal was present in both the in vitro and in vivo datasets, ruling out the cellular environment as its sole source and establishing flanking sequence context as a genuine, sequence-encoded contributor to binding discrimination.
 Unlike chromatin accessibility and cooperative binding, this contribution is in principle directly accessible to any model that operates on raw sequence input.
 
 The spatial scale at which sequence context influences binding spans several orders of magnitude: from the immediate flanks of the core motif \cite{drorWidespreadRoleMotif2015}, through the tens-to-hundreds of base pairs over which sequence composition modulates the nonspecific affinity experienced by a scanning TF \cite{afekGenomewideOrganizationEukaryotic2013, selaDNASequenceCorrelations2011}, \fix{out to the kilobase-scale compositional gradients recently characterised by \citet{faltejskovaNonconsensusFlankingSequence2026}.}
@@ -71,7 +73,7 @@ libraries of DNA fragments are clonally amplified on a flow cell surface, and ea
 Typical read lengths are 50--150~bp per end; paired-end protocols sequence both ends of each fragment and are standard for ChIP-seq.
 The output is a set of FASTQ files containing read sequences and per-base quality scores.
 Key limitations are the short read length, which complicates mapping to repetitive regions,
-and a characteristic per-base error rate of approximately $10^{-3}$, dominated by substitution errors.
+and a characteristic per-base error rate of approximately $10^{-3}$, dominated by substitution errors \cite{stolerSequencingErrorProfiles2021}.
 
 NGS functions as a platform on which different upstream wet-lab protocols measure different genomic quantities:
 RNA-seq measures transcript abundance, ATAC-seq measures chromatin accessibility, and ChIP-seq measures protein--DNA contacts.
@@ -88,7 +90,7 @@ The output of ChIP-seq is interpretable as a population-averaged estimate of con
 sites occupied in a large fraction of cells contribute more fragments to the library and produce sharper, higher-amplitude peaks.
 This population averaging is a fundamental limitation: the assay does not report single-cell occupancy, cannot distinguish direct from indirect binding (a TF pulled down as part of a complex is not directly bound to the immunoprecipitated DNA), and is sensitive to antibody quality in ways that are difficult to control post-hoc.
 
-\subsection{Cut\&Tag as a methodological contrast}
+\subsection{CUT\&Tag as a methodological contrast}
 
 \todo{cut or not? decide! not really relevant to thesis}
 An alternative to ChIP-seq that is increasingly used for TF mapping is CUT\&Tag \cite{kaya-okurCUTTagEfficientEpigenomic2019}.
@@ -109,13 +111,13 @@ For TF ChIP-seq, peak widths are typically 200--500~bp.
 
 \subsection{Reproducibility filtering and IDR}
 
-Because ChIP-seq is sensitive to antibody efficiency and library  complexity, peaks called from a single experiment may include irreproducible signals.
+Because ChIP-seq is sensitive to antibody efficiency and library complexity, peaks called from a single experiment may include irreproducible signals.
 The Irreproducible Discovery Rate (IDR) framework provides a principled way to rank peaks by their reproducibility across biological or technical replicates \cite{liMeasuringReproducibilityHighthroughput2011}.
 IDR fits a mixture model to the joint rank distribution of peaks across two replicates and assigns each peak a probability of arising from the reproducible component of the mixture.
 Peaks below an IDR threshold are retained; those above are discarded as likely irreproducible.
 The ENCODE project distributes IDR-thresholded peak calls as the recommended file type for downstream analysis \cite{dunhamIntegratedEncyclopediaDNA2012};
 conservative IDR-thresholded calls, which are thresholded at an IDR of 0.05 applied to the self-consistency ratio as well as the pooled-consistency ratio, are preferred where available.
-All peak files used in this thesis are IDR-thresholded narrowPeak files obtained from the ENCODE portal.
+All peak files used in this thesis are IDR-thresholded narrowPeak files obtained from the ENCODE portal \todo{maybe a cite}.
 
 \subsection{Data formats and reference genome}
 
@@ -183,7 +185,7 @@ It remains the standard representation in curated databases such as JASPAR \cite
 Given a set of ChIP-seq peak sequences, two related tasks arise:
 discovering the sequence motif enriched in the peaks (motif discovery), and testing whether a known motif is significantly enriched relative to a background set (motif enrichment).
 
-MEME (Multiple Em for Motif Elicitation) addresses the discovery task using expectation maximisation to identify the PWM that best explains an overrepresented pattern across the input sequences \cite{baileyUnsupervisedLearningMultiple1995};
+MEME (Multiple EM for Motif Elicitation) addresses the discovery task using expectation maximisation to identify the PWM that best explains an overrepresented pattern across the input sequences \cite{baileyUnsupervisedLearningMultiple1995};
 the broader MEME Suite extends this to enrichment testing, scanning, and comparative analysis \cite{baileyMEMESuite2015}.
 HOMER (Hypergeometric Optimization of Motif EnRichment) is widely used for ChIP-seq specifically:
 it optimises motif enrichment relative to a GC-matched background set, making it robust to the GC bias that is characteristic of many TF binding sites \cite{heinzSimpleCombinationsLineageDetermining2010}.
@@ -194,7 +196,7 @@ this is the operation used to count the motif matches discussed in §\ref{sec:pa
 
 Several approaches have been developed to relax the positional independence assumption.
 Dinucleotide weight matrices (DWMs) model pairwise dependencies between adjacent positions, capturing the nearest-neighbour sequence correlations that are mechanistically important for
-shape readout.
+shape readout \cite{siebertBayesianMarkovModels2016}.
 Hidden Markov models and related probabilistic graphical models can represent variable-length motifs with internal positional dependencies, at the cost of increased model complexity and training data requirements. \todo{citation}
 Convolutional neural networks trained on ChIP-seq data learn sequence representations that implicitly capture multi-position dependencies and outperform PWMs on held-out binding
 prediction benchmarks \cite{alipanahiPredictingSequenceSpecificities2015};
@@ -313,8 +315,7 @@ checkpoint, the extended-context \texttt{evo2\_7b} checkpoint is used throughout
 Evo~2 has been benchmarked on variant effect prediction across coding and non-coding variants,
 zero-shot fitness prediction for proteins and ncRNA, and generative sequence design;
 these evaluations are described in the original publication.
-Whether and how Evo~2 embeddings represent the sequence context around in vivo TF binding
-sites has not been examined.
+Whether the per-token embeddings of Evo 2 encode the kilobase-scale flanking-sequence structure characterised by Faltejsková et al. has not been examined.
 
 \subsection{Embedding extraction and layer selection}
 \label{sec:embedding-extraction}

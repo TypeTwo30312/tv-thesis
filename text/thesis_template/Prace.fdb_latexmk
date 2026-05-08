@@ -1,20 +1,20 @@
 # Fdb version 4
-["biber Prace"] 1778220339.71282 "Prace.bcf" "Prace.bbl" "Prace" 1778220343.87083 0
-  "../../DP_VamberskyT.bib" 1778216185.67665 169106 f41c26233039bd985508ccce68111f48 ""
-  "Prace.bcf" 1778220343.77018 115512 16a0becf6629be965009af1034bcbb9d "pdflatex"
+["biber Prace"] 1778222239.37494 "Prace.bcf" "Prace.bbl" "Prace" 1778222849.79074 0
+  "../../DP_VamberskyT.bib" 1778222235.10056 174247 7943c9a69138ed486337603cb572a010 ""
+  "Prace.bcf" 1778222849.65089 115782 6d69427db7121924c798ca32d92f1b36 "pdflatex"
   (generated)
   "Prace.bbl"
   "Prace.blg"
   (rewritten before read)
-["makeindex Prace.idx"] 1778218052.91279 "Prace.idx" "Prace.ind" "Prace" 1778220343.87071 0
-  "Prace.idx" 1778220342.58318 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+["makeindex Prace.idx"] 1778218052.91279 "Prace.idx" "Prace.ind" "Prace" 1778222849.79061 0
+  "Prace.idx" 1778222848.1939 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   (generated)
   "Prace.ilg"
   "Prace.ind"
   (rewritten before read)
-["pdflatex"] 1778220341.82029 "/home/vambersky_t/Projects/tv-thesis/text/thesis_template/Prace.tex" "Prace.pdf" "Prace" 1778220343.87105 0
+["pdflatex"] 1778222847.34335 "/home/vambersky_t/Projects/tv-thesis/text/thesis_template/Prace.tex" "Prace.pdf" "Prace" 1778222849.79096 0
   "/etc/texmf/web2c/texmf.cnf" 1776261776.4046 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/vambersky_t/Projects/tv-thesis/text/thesis_template/Prace.tex" 1778220341.82651 10448 1e6079de51b881038d9cd0cb3edc836c ""
+  "/home/vambersky_t/Projects/tv-thesis/text/thesis_template/Prace.tex" 1778222847.3521 10448 1e6079de51b881038d9cd0cb3edc836c ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecit1200.tfm" 1136768653 1536 931f72ad28a2b51c41231609a9d95d3a ""
@@ -193,20 +193,20 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1707919699 40399 f2c302f7d2af602abb742093540a5834 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1776261807.3191 5472669 54eaf61a88b6b7896ebd0dac973cb29c ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1776261954 8211853 8eec2c162a0a970e6c39bac936441c21 ""
-  "Prace.aux" 1778220343.75343 21872 4763311967e03db34fe5dad7bebeb988 "pdflatex"
-  "Prace.bbl" 1778220341.78708 352368 1831d31d5719f2171f904fe01b11071a "biber Prace"
+  "Prace.aux" 1778222849.63089 22574 08226315e00762ca1c355ecf451385fe "pdflatex"
+  "Prace.bbl" 1778222241.30135 366303 1fd39a6654cfa467f58d4c88876802fe "biber Prace"
   "Prace.ind" 1778218053.05496 0 d41d8cd98f00b204e9800998ecf8427e "makeindex Prace.idx"
-  "Prace.lof" 1778220343.77189 166 6f1c1d23f2c99d29bd9fb27979e3db51 "pdflatex"
-  "Prace.lot" 1778220343.77189 266 d838dbd6bc19fd88ea2deb0ecef9ac68 "pdflatex"
-  "Prace.out" 1778220343.76918 4388 2f3909ab7508301d009b4e8a8a416ad2 "pdflatex"
-  "Prace.run.xml" 1778220343.77189 2392 eab03688c38f9b30605ea3d6008ba10d "pdflatex"
-  "Prace.tex" 1778220341.82651 10448 1e6079de51b881038d9cd0cb3edc836c ""
-  "Prace.toc" 1778220343.77189 4260 5c6f47c3f7dc2f8f2bcc4e6f2d9a15f6 "pdflatex"
+  "Prace.lof" 1778222849.65307 166 6f1c1d23f2c99d29bd9fb27979e3db51 "pdflatex"
+  "Prace.lot" 1778222849.65307 266 d838dbd6bc19fd88ea2deb0ecef9ac68 "pdflatex"
+  "Prace.out" 1778222849.64889 4388 9dd4954996c8abb334547154b9883f1f "pdflatex"
+  "Prace.run.xml" 1778222849.65307 2392 eab03688c38f9b30605ea3d6008ba10d "pdflatex"
+  "Prace.tex" 1778222847.3521 10448 1e6079de51b881038d9cd0cb3edc836c ""
+  "Prace.toc" 1778222849.65307 4260 bdc73b5de5110e839430edc2f68b7cc7 "pdflatex"
   "loga/MUNI_(black).pdf" 1776952232.17072 155452 64dd7ac38e8296e47c840d6ada477839 ""
   "sci.muni.thesis.sty" 1776947162.36603 23797 4b3badc4b64bc56e214114ee205adb58 ""
   "text_prace/01_Znaceni.tex" 1776952224.29874 519 f4755af43bd358020db0bd647a77d60c ""
   "text_prace/02_Uvod.tex" 1777972399.15371 142 208645bcaf671352cad18d1e7c532ee1 ""
-  "text_prace/03_Teorie.tex" 1778220337.32321 40020 540dc1cf279d0d097f532440068ed0a4 ""
+  "text_prace/03_Teorie.tex" 1778222847.11412 40428 49db653ad73992e40db6ab1676bba6bf ""
   "text_prace/04_Cile.tex" 1776952224.30202 221 96d0bc5279c16ecd13d1304bae3d1abb ""
   "text_prace/05_Metody.tex" 1778215633.04498 13126 420e15a030c4b8466f3c193ee7e73a2d ""
   "text_prace/06_Vysledky_Diskuse.tex" 1778218049.02798 1979 70fa99f033dfe0cf3f777e4e2c51f0ea ""

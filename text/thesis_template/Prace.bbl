@@ -5026,6 +5026,65 @@
       \endverb
       \keyw{Biological techniques,Biotechnology,Chromatin analysis,Epigenetics analysis,Genomics}
     \endentry
+    \entry{kribelbauerLowAffinityBindingSites2019}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=d59b3442123c28fcf0629fea902a0fc7}{%
+           family={Kribelbauer},
+           familyi={K\bibinitperiod},
+           given={Judith\bibnamedelima F.},
+           giveni={J\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=08a3c2a89003015771407ffa63f3970e}{%
+           family={Rastogi},
+           familyi={R\bibinitperiod},
+           given={Chaitanya},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8cadb4e6971d10f7fb5f714b982d47e4}{%
+           family={Bussemaker},
+           familyi={B\bibinitperiod},
+           given={Harmen\bibnamedelima J.},
+           giveni={H\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1a3bf8d8272b3d6a5a7b2f486723c209}{%
+           family={Mann},
+           familyi={M\bibinitperiod},
+           given={Richard\bibnamedelima S.},
+           giveni={R\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{0434eb0eb16c720bbcbd42bc83857811}
+      \strng{fullhash}{2715097fa7caac453f664a90f7e34542}
+      \strng{bibnamehash}{0434eb0eb16c720bbcbd42bc83857811}
+      \strng{authorbibnamehash}{0434eb0eb16c720bbcbd42bc83857811}
+      \strng{authornamehash}{0434eb0eb16c720bbcbd42bc83857811}
+      \strng{authorfullhash}{2715097fa7caac453f664a90f7e34542}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Eukaryotic transcription factors (TFs) from the same structural family tend to bind similar DNA sequences, despite the ability of these TFs to execute distinct functions in vivo. The cell partly resolves this specificity paradox through combinatorial strategies and the use of low-affinity binding sites, which are better able to distinguish between similar TFs. However, because these sites have low affinity, it is challenging to understand how TFs recognize them in vivo. Here, we summarize recent findings and technological advancements that allow for the quantification and mechanistic interpretation of TF recognition across a wide range of affinities. We propose a model that integrates insights from the fields of genetics and cell biology to provide further conceptual understanding of TF binding specificity. We argue that in eukaryotes, target specificity is driven by an inhomogeneous 3D nuclear distribution of TFs and by variation in DNA binding affinity such that locally elevated TF concentration allows low-affinity binding sites to be functional.}
+      \field{issn}{1081-0706}
+      \field{journaltitle}{Annual review of cell and developmental biology}
+      \field{month}{10}
+      \field{title}{Low-{{Affinity Binding Sites}} and the {{Transcription Factor Specificity Paradox}} in {{Eukaryotes}}}
+      \field{urlday}{17}
+      \field{urlmonth}{4}
+      \field{urlyear}{2026}
+      \field{volume}{35}
+      \field{year}{2019}
+      \field{urldateera}{ce}
+      \field{pages}{357\bibrangedash 379}
+      \range{pages}{23}
+      \verb{doi}
+      \verb 10.1146/annurev-cellbio-100617-062719
+      \endverb
+      \verb{file}
+      \verb /home/vambersky_t/Zotero/storage/BTSEGQWG/Kribelbauer et al. - 2019 - Low-Affinity Binding Sites and the Transcription Factor Specificity Paradox in Eukaryotes.pdf
+      \endverb
+    \endentry
     \entry{lambertHumanTranscriptionFactors2018}{article}{}
       \name{author}{10}{}{%
         {{un=0,uniquepart=base,hash=33cb7c8834e975b1ba121e820fad5c20}{%
@@ -6073,6 +6132,57 @@
       \endverb
       \keyw{Agriculture,Animal Genetics and Genomics,Biomedicine,Cancer Research,Gene Function,general,Human Genetics}
     \endentry
+    \entry{pavletichZincFingerDNARecognition1991}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=366f0d88c6b522686220eea288707911}{%
+           family={Pavletich},
+           familyi={P\bibinitperiod},
+           given={Nikola\bibnamedelima P.},
+           giveni={N\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=39777e5986d4e78fdc80bee8a08a0884}{%
+           family={Pabo},
+           familyi={P\bibinitperiod},
+           given={Carl\bibnamedelima O.},
+           giveni={C\bibinitperiod\bibinitdelim O\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {American Association for the Advancement of Science}%
+      }
+      \strng{namehash}{d8256bfb7fe20ef0bd35c6d6490ececa}
+      \strng{fullhash}{d8256bfb7fe20ef0bd35c6d6490ececa}
+      \strng{bibnamehash}{d8256bfb7fe20ef0bd35c6d6490ececa}
+      \strng{authorbibnamehash}{d8256bfb7fe20ef0bd35c6d6490ececa}
+      \strng{authornamehash}{d8256bfb7fe20ef0bd35c6d6490ececa}
+      \strng{authorfullhash}{d8256bfb7fe20ef0bd35c6d6490ececa}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{The zinc finger DNA-binding motif occurs in many proteins that regulate eukaryotic gene expression. The crystal structure of a complex containing the three zinc fingers from Zif268 (a mouse immediate early protein) and a consensus DNA-binding site has been determined at 2.1 angstroms resolution and refined to a crystallographic R factor of 18.2 percent. In this complex, the zinc fingers bind in the major groove of B-DNA and wrap partway around the double helix. Each finger has a similar relation to the DNA and makes its primary contacts in a three-base pair subsite. Residues from the amino-terminal portion of an {$\alpha$} helix contact the bases, and most of the contacts are made with the guanine-rich strand of the DNA. This structure provides a framework for understanding how zinc fingers recognize DNA and suggests that this motif may provide a useful basis for the design of novel DNA-binding proteins.}
+      \field{journaltitle}{Science}
+      \field{month}{5}
+      \field{number}{5007}
+      \field{shorttitle}{Zinc {{Finger-DNA Recognition}}}
+      \field{title}{Zinc {{Finger-DNA Recognition}}: {{Crystal Structure}} of a {{Zif268-DNA Complex}} at 2.1 {{Å}}}
+      \field{urlday}{8}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{volume}{252}
+      \field{year}{1991}
+      \field{urldateera}{ce}
+      \field{pages}{809\bibrangedash 817}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1126/science.2028256
+      \endverb
+      \verb{file}
+      \verb /home/vambersky_t/Zotero/storage/AGFHHW8B/Pavletich and Pabo - 1991 - Zinc Finger-DNA Recognition Crystal Structure of a Zif268-DNA Complex at 2.1 Å.pdf
+      \endverb
+    \endentry
     \entry{rohsRoleDNAShape2009}{article}{}
       \name{author}{6}{}{%
         {{un=0,uniquepart=base,hash=c8fe275a7f8960db9fd0bab64ecab23f}{%
@@ -6362,6 +6472,54 @@
       \verb /home/vambersky_t/Zotero/storage/6K6NK2DK/Schneider and Stephens - 1990 - Sequence logos a new way to display consensus sequences.pdf;/home/vambersky_t/Zotero/storage/RBBKVGLS/18.20.html
       \endverb
     \endentry
+    \entry{siebertBayesianMarkovModels2016}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=0b20306219a571f23b39582fcd5e8db1}{%
+           family={Siebert},
+           familyi={S\bibinitperiod},
+           given={Matthias},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e67661e270ffc979f77600b3904f2e9c}{%
+           family={Söding},
+           familyi={S\bibinitperiod},
+           given={Johannes},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{5071f44438ff1bc7093200dbaffe5746}
+      \strng{fullhash}{5071f44438ff1bc7093200dbaffe5746}
+      \strng{bibnamehash}{5071f44438ff1bc7093200dbaffe5746}
+      \strng{authorbibnamehash}{5071f44438ff1bc7093200dbaffe5746}
+      \strng{authornamehash}{5071f44438ff1bc7093200dbaffe5746}
+      \strng{authorfullhash}{5071f44438ff1bc7093200dbaffe5746}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Position weight matrices (PWMs) are the standard model for DNA and RNA regulatory motifs. In PWMs nucleotide probabilities are independent of nucleotides at other positions. Models that account for dependencies need many parameters and are prone to overfitting. We have developed a Bayesian approach for motif discovery using Markov models in which conditional probabilities of order k - 1 act as priors for those of order k. This Bayesian Markov model (BaMM) training automatically adapts model complexity to the amount of available data. We also derive an EM algorithm for de-novo discovery of enriched motifs. For transcription factor binding, BaMMs achieve significantly (P \, \,= \,1/16) higher cross-validated partial AUC than PWMs in 97\% of 446 ChIP-seq ENCODE datasets and improve performance by 36\% on average. BaMMs also learn complex multipartite motifs, improving predictions of transcription start sites, polyadenylation sites, bacterial pause sites, and RNA binding sites by 26--101\%. BaMMs never performed worse than PWMs. These robust improvements argue in favour of generally replacing PWMs by BaMMs.}
+      \field{issn}{0305-1048}
+      \field{journaltitle}{Nucleic Acids Research}
+      \field{month}{7}
+      \field{number}{13}
+      \field{title}{Bayesian {{Markov}} Models Consistently Outperform {{PWMs}} at Predicting Motifs in Nucleotide Sequences}
+      \field{urlday}{4}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{volume}{44}
+      \field{year}{2016}
+      \field{urldateera}{ce}
+      \field{pages}{6055\bibrangedash 6069}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.1093/nar/gkw521
+      \endverb
+      \verb{file}
+      \verb /home/vambersky_t/Zotero/storage/TWKNKX2U/Siebert and Söding - 2016 - Bayesian Markov models consistently outperform PWMs at predicting motifs in nucleotide sequences.pdf;/home/vambersky_t/Zotero/storage/ZX6Z4YK6/gkw521.html
+      \endverb
+    \endentry
     \entry{slatteryAbsenceSimpleCode2014a}{article}{}
       \name{author}{6}{}{%
         {{un=0,uniquepart=base,hash=2a944a9ccafd9c24ea5aaa60819691ac}{%
@@ -6523,6 +6681,105 @@
       \endverb
       \verb{file}
       \verb /home/vambersky_t/Zotero/storage/IK2I5H6R/Sönmezer et al. - 2021 - Molecular co-occupancy identifies transcription factor binding cooperativity in vivo.pdf
+      \endverb
+    \endentry
+    \entry{spitzTranscriptionFactorsEnhancer2012}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=1c589f36d81834e4e7d39939103700bb}{%
+           family={Spitz},
+           familyi={S\bibinitperiod},
+           given={François},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9c4849c3d4c7a14d8defa2c33ed73d19}{%
+           family={Furlong},
+           familyi={F\bibinitperiod},
+           given={Eileen\bibnamedelimb E.\bibnamedelimi M.},
+           giveni={E\bibinitperiod\bibinitdelim E\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Nature Publishing Group}%
+      }
+      \strng{namehash}{ba2ceaa14ad411361df104ce17d43f80}
+      \strng{fullhash}{ba2ceaa14ad411361df104ce17d43f80}
+      \strng{bibnamehash}{ba2ceaa14ad411361df104ce17d43f80}
+      \strng{authorbibnamehash}{ba2ceaa14ad411361df104ce17d43f80}
+      \strng{authornamehash}{ba2ceaa14ad411361df104ce17d43f80}
+      \strng{authorfullhash}{ba2ceaa14ad411361df104ce17d43f80}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Genetic studies during the past decades have revealed tightly regulated transcriptional networks that control robust developmental programs. However, this deterministic view of development contrasts with recent genomic studies that suggest that the multiple steps of transcription are by themselves rather leaky.Although any single transcription factor (TF) can typically bind to thousands of sites throughout the genome, cis-regulatory activity at enhancers requires the concerted action of multiple binding events (which can be homotypic or heterotypic).TFs bind to enhancers in a combinatorial manner, which is facilitated through direct and indirect cooperative mechanisms. The combinatorial nature of enhancer occupancy allows genes to be regulated in complex patterns in both space and time.DNA and proteins can act together as a scaffold to cooperatively recruit TFs to enhancers.Enhancers undergo progressive changes during development, in which their occupancy by TFs, and the position of nucleosomes with or without post-translational modifications, reflect their inactive, poised or active state.Pioneer TFs recruit chromatin-remodelling factors to reposition nucleosomes, thus facilitating the occupancy of other TFs at subsequent developmental stages.Enhancer priming can occur through many different mechanisms. For example, some TF binding events may serve as placeholders to prevent nucleosome repositioning.Partially redundant enhancers can act to buffer changes in environmental conditions to ensure robust developmental progression.Multiple elements regulating the same gene seem to assemble in a three-dimensional structure with the promoter, and can have synergistic or repressive influences on each other.}
+      \field{issn}{1471-0064}
+      \field{journaltitle}{Nature Reviews Genetics}
+      \field{langid}{english}
+      \field{month}{9}
+      \field{number}{9}
+      \field{shorttitle}{Transcription Factors}
+      \field{title}{Transcription Factors: From Enhancer Binding to Developmental Control}
+      \field{urlday}{4}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{volume}{13}
+      \field{year}{2012}
+      \field{urldateera}{ce}
+      \field{pages}{613\bibrangedash 626}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1038/nrg3207
+      \endverb
+      \keyw{Developmental biology,Functional genomics,Gene expression,Gene regulation,Transcription factors}
+    \endentry
+    \entry{stolerSequencingErrorProfiles2021}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=ba28e7b96ba1e9422db64cc27d903106}{%
+           family={Stoler},
+           familyi={S\bibinitperiod},
+           given={Nicholas},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2727c13f5ad7e4c404f2553e4c15f567}{%
+           family={Nekrutenko},
+           familyi={N\bibinitperiod},
+           given={Anton},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{9a417b7702a20cff2b756ff9ba88fd87}
+      \strng{fullhash}{9a417b7702a20cff2b756ff9ba88fd87}
+      \strng{bibnamehash}{9a417b7702a20cff2b756ff9ba88fd87}
+      \strng{authorbibnamehash}{9a417b7702a20cff2b756ff9ba88fd87}
+      \strng{authornamehash}{9a417b7702a20cff2b756ff9ba88fd87}
+      \strng{authorfullhash}{9a417b7702a20cff2b756ff9ba88fd87}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Sequencing technology has achieved great advances in the past decade. Studies have previously shown the quality of specific instruments in controlled conditions. Here, we developed a method able to retroactively determine the error rate of most public sequencing datasets. To do this, we utilized the overlaps between reads that are a feature of many sequencing libraries. With this method, we surveyed 1943 different datasets from seven different sequencing instruments produced by Illumina. We show that among public datasets, the more expensive platforms like HiSeq and NovaSeq have a lower error rate and less variation. But we also discovered that there is great variation within each platform, with the accuracy of a sequencing experiment depending greatly on the experimenter. We show the importance of sequence context, especially the phenomenon where preceding bases bias the following bases toward the same identity. We also show the difference in patterns of sequence bias between instruments. Contrary to expectations based on the underlying chemistry, HiSeq X Ten and NovaSeq 6000 share notable exceptions to the preceding-base bias. Our results demonstrate the importance of the specific circumstances of every sequencing experiment, and the importance of evaluating the quality of each one.}
+      \field{issn}{2631-9268}
+      \field{journaltitle}{NAR Genomics and Bioinformatics}
+      \field{month}{3}
+      \field{number}{1}
+      \field{title}{Sequencing Error Profiles of {{Illumina}} Sequencing Instruments}
+      \field{urlday}{8}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{volume}{3}
+      \field{year}{2021}
+      \field{urldateera}{ce}
+      \field{pages}{lqab019}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1093/nargab/lqab019
+      \endverb
+      \verb{file}
+      \verb /home/vambersky_t/Zotero/storage/4XN3M2F9/Stoler and Nekrutenko - 2021 - Sequencing error profiles of Illumina sequencing instruments.pdf
       \endverb
     \endentry
     \entry{stormoDNABindingSites2000}{article}{}
@@ -7199,54 +7456,6 @@
       \endverb
       \verb{file}
       \verb /home/vambersky_t/Zotero/storage/Y5YSAPZV/Vorontsov et al. - 2024 - HOCOMOCO in 2024 a rebuild of the curated collection of binding models for human and mouse transcri.pdf;/home/vambersky_t/Zotero/storage/VIEBYSN8/gkad1077.html
-      \endverb
-    \endentry
-    \entry{wunderlichDifferentGeneRegulation2009}{article}{}
-      \name{author}{2}{}{%
-        {{un=0,uniquepart=base,hash=6f52f7df3a055b989f8f34d6b879fa5d}{%
-           family={Wunderlich},
-           familyi={W\bibinitperiod},
-           given={Zeba},
-           giveni={Z\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=3d7fe04d09f08b82f608fd67ad034a3d}{%
-           family={Mirny},
-           familyi={M\bibinitperiod},
-           given={Leonid\bibnamedelima A.},
-           giveni={L\bibinitperiod\bibinitdelim A\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{1b8c82bcc99328dfb7dd411ea962cbca}
-      \strng{fullhash}{1b8c82bcc99328dfb7dd411ea962cbca}
-      \strng{bibnamehash}{1b8c82bcc99328dfb7dd411ea962cbca}
-      \strng{authorbibnamehash}{1b8c82bcc99328dfb7dd411ea962cbca}
-      \strng{authornamehash}{1b8c82bcc99328dfb7dd411ea962cbca}
-      \strng{authorfullhash}{1b8c82bcc99328dfb7dd411ea962cbca}
-      \field{sortinit}{W}
-      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{Coordinated regulation of gene expression relies on transcription factors (TFs) binding to specific DNA sites. Our large-scale information--theoretical analysis of {$>$}950 TF-binding motifs demonstrates that prokaryotes and eukaryotes use strikingly different strategies to target TFs to specific genome locations. Although bacterial TFs can recognize a specific DNA site in the genomic background, eukaryotic TFs exhibit widespread, nonfunctional binding and require clustering of sites to achieve specificity. We find support for this mechanism in a range of experimental studies and in our evolutionary analysis of DNA-binding domains. Our systematic characterization of binding motifs provides a quantitative assessment of the differences in transcription regulation in prokaryotes and eukaryotes.}
-      \field{issn}{0168-9525}
-      \field{journaltitle}{Trends in Genetics}
-      \field{month}{10}
-      \field{number}{10}
-      \field{title}{Different Gene Regulation Strategies Revealed by Analysis of Binding Motifs}
-      \field{urlday}{4}
-      \field{urlmonth}{5}
-      \field{urlyear}{2026}
-      \field{volume}{25}
-      \field{year}{2009}
-      \field{urldateera}{ce}
-      \field{pages}{434\bibrangedash 440}
-      \range{pages}{7}
-      \verb{doi}
-      \verb 10.1016/j.tig.2009.08.003
-      \endverb
-      \verb{file}
-      \verb /home/vambersky_t/Zotero/storage/V7C9GKBE/Wunderlich and Mirny - 2009 - Different gene regulation strategies revealed by analysis of binding motifs.pdf;/home/vambersky_t/Zotero/storage/C9RPGA7T/S0168952509001656.html
       \endverb
     \endentry
     \entry{yangTranscriptionFactorFamilyspecific2017}{article}{}
