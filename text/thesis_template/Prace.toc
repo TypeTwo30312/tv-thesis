@@ -17,27 +17,43 @@
 \contentsline {subsection}{\numberline {1.2.6}Data formats and reference genome}{6}{subsection.1.2.6}%
 \contentsline {subsection}{\numberline {1.2.7}The ENCODE project}{6}{subsection.1.2.7}%
 \contentsline {subsection}{\numberline {1.2.8}Long-range sequence context around binding sites}{7}{subsection.1.2.8}%
-\contentsline {section}{\numberline {1.3}Computational methods for motif analysis}{8}{section.1.3}%
-\contentsline {subsection}{\numberline {1.3.1}PWMs}{8}{subsection.1.3.1}%
-\contentsline {section}{\numberline {1.4}Foundation models for genomics}{9}{section.1.4}%
-\contentsline {subsection}{\numberline {1.4.1}the architectures i guess}{9}{subsection.1.4.1}%
-\contentsline {subsection}{\numberline {1.4.2}Evo2 and how they used it}{10}{subsection.1.4.2}%
-\contentsline {chapter}{\numberline {2}Aims of thesis}{11}{chapter.2}%
-\contentsline {chapter}{\numberline {3}Methods}{12}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Data}{12}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}Transcription factors}{12}{subsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.1.2}ChIP-seq data sources}{12}{subsection.3.1.2}%
-\contentsline {subsection}{\numberline {3.1.3}Cell-line coverage}{13}{subsection.3.1.3}%
-\contentsline {subsection}{\numberline {3.1.4}Random-windows control}{13}{subsection.3.1.4}%
-\contentsline {subsection}{\numberline {3.1.5}Reproducibility and seeding}{14}{subsection.3.1.5}%
-\contentsline {section}{\numberline {3.2}Pipeline}{14}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Sequence extraction}{14}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Embedding extraction}{15}{subsection.3.2.2}%
-\contentsline {subsection}{\numberline {3.2.3}Computational environment}{15}{subsection.3.2.3}%
-\contentsline {chapter}{\numberline {4}Druhá kapitola s matematikou $\DOTSI \intop \ilimits@ \! f(x)\,\mathrm {d}x$ v~názvu}{17}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Podkapitola}{20}{section.4.1}%
-\contentsline {chapter}{Závěr}{21}{chapter*.6}%
+\contentsline {section}{\numberline {1.3}Next-generation sequencing and ChIP-seq}{8}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}Short-read sequencing}{8}{subsection.1.3.1}%
+\contentsline {subsection}{\numberline {1.3.2}Chromatin immunoprecipitation sequencing}{8}{subsection.1.3.2}%
+\contentsline {subsection}{\numberline {1.3.3}Cut\&Tag as a methodological contrast}{9}{subsection.1.3.3}%
+\contentsline {subsection}{\numberline {1.3.4}Read alignment and peak calling}{9}{subsection.1.3.4}%
+\contentsline {subsection}{\numberline {1.3.5}Reproducibility filtering and IDR}{9}{subsection.1.3.5}%
+\contentsline {subsection}{\numberline {1.3.6}Data formats and reference genome}{10}{subsection.1.3.6}%
+\contentsline {subsection}{\numberline {1.3.7}The ENCODE project}{10}{subsection.1.3.7}%
+\contentsline {subsection}{\numberline {1.3.8}Long-range sequence context around binding sites}{10}{subsection.1.3.8}%
+\contentsline {section}{\numberline {1.4}Computational approaches to TF binding site analysis}{11}{section.1.4}%
+\contentsline {subsection}{\numberline {1.4.1}Position weight matrices}{11}{subsection.1.4.1}%
+\contentsline {subsection}{\numberline {1.4.2}Motif discovery and enrichment analysis}{12}{subsection.1.4.2}%
+\contentsline {subsection}{\numberline {1.4.3}Extensions beyond the independence model}{12}{subsection.1.4.3}%
+\contentsline {subsection}{\numberline {1.4.4}The kilobase-scale context gap}{13}{subsection.1.4.4}%
+\contentsline {section}{\numberline {1.5}Genomic foundation models}{13}{section.1.5}%
+\contentsline {subsection}{\numberline {1.5.1}Self-supervised pretraining and the foundation model paradigm}{13}{subsection.1.5.1}%
+\contentsline {subsection}{\numberline {1.5.2}Genomic foundation models: a brief landscape}{14}{subsection.1.5.2}%
+\contentsline {subsection}{\numberline {1.5.3}Evo and Evo 2}{14}{subsection.1.5.3}%
+\contentsline {subsection}{\numberline {1.5.4}Embedding extraction and layer selection}{15}{subsection.1.5.4}%
+\contentsline {subsection}{\numberline {1.5.5}Autoregressive context and its implications}{16}{subsection.1.5.5}%
+\contentsline {chapter}{\numberline {2}Aims of thesis}{17}{chapter.2}%
+\contentsline {chapter}{\numberline {3}Methods}{18}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Data}{18}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Transcription factors}{18}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}ChIP-seq data sources}{18}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.1.3}Cell-line coverage}{19}{subsection.3.1.3}%
+\contentsline {subsection}{\numberline {3.1.4}Random-windows control}{19}{subsection.3.1.4}%
+\contentsline {subsection}{\numberline {3.1.5}Reproducibility and seeding}{20}{subsection.3.1.5}%
+\contentsline {section}{\numberline {3.2}Pipeline}{20}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Sequence extraction}{20}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Embedding extraction}{21}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Computational environment}{21}{subsection.3.2.3}%
+\contentsline {section}{\numberline {3.3}Analyses}{22}{section.3.3}%
+\contentsline {chapter}{\numberline {4}Druhá kapitola s matematikou $\DOTSI \intop \ilimits@ \! f(x)\,\mathrm {d}x$ v~názvu}{23}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Podkapitola}{26}{section.4.1}%
+\contentsline {chapter}{Závěr}{27}{chapter*.6}%
 \babel@toc {english}{}\relax 
 \babel@toc {czech}{}\relax 
-\contentsline {chapter}{Bibliography}{27}{chapter*.7}%
-\contentsline {chapter}{Appendix}{28}{chapter*.8}%
+\contentsline {chapter}{Bibliography}{33}{chapter*.7}%
+\contentsline {chapter}{Appendix}{34}{chapter*.8}%

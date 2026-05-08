@@ -64,8 +64,123 @@
       \verb /home/vambersky_t/Zotero/storage/LU2UVDMW/Afek and Lukatsky - 2013 - Genome-wide organization of eukaryotic pre-initiation complex is influenced by nonconsensus protein-.pdf
       \endverb
     \endentry
-    \entry{baileyMEMESuite2015}{article}{}
+    \entry{alipanahiPredictingSequenceSpecificities2015}{article}{}
       \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=a10fd25c36668c3dac36aaf945c578cd}{%
+           family={Alipanahi},
+           familyi={A\bibinitperiod},
+           given={Babak},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=93420f1aceda7495e39ae1327ddafc45}{%
+           family={Delong},
+           familyi={D\bibinitperiod},
+           given={Andrew},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=90b6e27f43d7cfbe186b0da22f6e48d8}{%
+           family={Weirauch},
+           familyi={W\bibinitperiod},
+           given={Matthew\bibnamedelima T.},
+           giveni={M\bibinitperiod\bibinitdelim T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=11002922cf690abf8522c8fbb1eb5b92}{%
+           family={Frey},
+           familyi={F\bibinitperiod},
+           given={Brendan\bibnamedelima J.},
+           giveni={B\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Nature Publishing Group}%
+      }
+      \strng{namehash}{8107c7eb7f23c19098fd90e742fcc4f0}
+      \strng{fullhash}{32df76c62931fd99fcafaa2e2bfd1338}
+      \strng{bibnamehash}{8107c7eb7f23c19098fd90e742fcc4f0}
+      \strng{authorbibnamehash}{8107c7eb7f23c19098fd90e742fcc4f0}
+      \strng{authornamehash}{8107c7eb7f23c19098fd90e742fcc4f0}
+      \strng{authorfullhash}{32df76c62931fd99fcafaa2e2bfd1338}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The binding specificities of RNA- and DNA-binding proteins are determined from experimental data using a `deep learning' approach.}
+      \field{issn}{1546-1696}
+      \field{journaltitle}{Nature Biotechnology}
+      \field{langid}{english}
+      \field{month}{8}
+      \field{number}{8}
+      \field{title}{Predicting the Sequence Specificities of {{DNA-}} and {{RNA-binding}} Proteins by Deep Learning}
+      \field{urlday}{8}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{volume}{33}
+      \field{year}{2015}
+      \field{urldateera}{ce}
+      \field{pages}{831\bibrangedash 838}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1038/nbt.3300
+      \endverb
+      \verb{file}
+      \verb /home/vambersky_t/Zotero/storage/ESEPRQKH/Alipanahi et al. - 2015 - Predicting the sequence specificities of DNA- and RNA-binding proteins by deep learning.pdf
+      \endverb
+      \keyw{Computational biology and bioinformatics,Gene regulatory networks,Genome informatics}
+    \endentry
+    \entry{baileyUnsupervisedLearningMultiple1995}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=861858a023c69df54c8435f473e1f2cc}{%
+           family={Bailey},
+           familyi={B\bibinitperiod},
+           given={Timothy\bibnamedelima L.},
+           giveni={T\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4a515be7c49aeeb68dfe1388be237a23}{%
+           family={Elkan},
+           familyi={E\bibinitperiod},
+           given={Charles},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{cf917ff9564dd8b8ae12632f015c4e6d}
+      \strng{fullhash}{cf917ff9564dd8b8ae12632f015c4e6d}
+      \strng{bibnamehash}{cf917ff9564dd8b8ae12632f015c4e6d}
+      \strng{authorbibnamehash}{cf917ff9564dd8b8ae12632f015c4e6d}
+      \strng{authornamehash}{cf917ff9564dd8b8ae12632f015c4e6d}
+      \strng{authorfullhash}{cf917ff9564dd8b8ae12632f015c4e6d}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The MEME algorithm extends the expectation maximization (EM) algorithm for identifying motifs in unaligned biopolymer sequences. The aim of MEME is to discover new motifs in a set of biopolymer sequences where little or nothing is known in advance about any motifs that may be present. MEME innovations expand the range of problems which can be solved using EM and increase the chance of finding good solutions. First, subsequences which actually occur in the biopolymer sequences are used as starting points for the EM algorithm to increase the probability of finding globally optimal motifs. Second, the assumption that each sequence contains exactly one occurrence of the shared motif is removed. This allows multiple appearances of a motif to occur in any sequence and permits the algorithm to ignore sequences with no appearance of the shared motif, increasing its resistance to noisy data. Third, a method for probabilistically erasing shared motifs after they are found is incorporated so that several distinct motifs can be found in the same set of sequences, both when different motifs appear in different sequences and when a single sequence may contain multiple motifs. Experiments show that MEME can discover both the CRP and LexA binding sites from a set of sequences which contain one or both sites, and that MEME can discover both the -10 and -35 promoter regions in a set ofE. coli sequences.}
+      \field{issn}{1573-0565}
+      \field{journaltitle}{Machine Learning}
+      \field{langid}{english}
+      \field{month}{10}
+      \field{number}{1}
+      \field{title}{Unsupervised Learning of Multiple Motifs in Biopolymers Using Expectation Maximization}
+      \field{urlday}{4}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{volume}{21}
+      \field{year}{1995}
+      \field{urldateera}{ce}
+      \field{pages}{51\bibrangedash 80}
+      \range{pages}{30}
+      \verb{doi}
+      \verb 10.1007/BF00993379
+      \endverb
+      \verb{file}
+      \verb /home/vambersky_t/Zotero/storage/S44NMBLG/Bailey and Elkan - 1995 - Unsupervised learning of multiple motifs in biopolymers using expectation maximization.pdf
+      \endverb
+      \keyw{binding site,biopolymer,consensus sequence,DNA,expectation maximization,motif,promoter,protein,sequence analysis,Unsupervised learning}
+    \endentry
+    \entry{baileyMEMESuite2015}{article}{}
+      \name{author}{4}{ul=2}{%
         {{un=0,uniquepart=base,hash=861858a023c69df54c8435f473e1f2cc}{%
            family={Bailey},
            familyi={B\bibinitperiod},
@@ -91,11 +206,11 @@
            giveni={W\bibinitperiod\bibinitdelim S\bibinitperiod},
            givenun=0}}%
       }
-      \strng{namehash}{17478e9d0deb27eee86232ba4dd08f9c}
+      \strng{namehash}{286fcd547ba2540ef556bc60c4541c23}
       \strng{fullhash}{027f068a906e7dc305c82863bee5ffaf}
-      \strng{bibnamehash}{17478e9d0deb27eee86232ba4dd08f9c}
-      \strng{authorbibnamehash}{17478e9d0deb27eee86232ba4dd08f9c}
-      \strng{authornamehash}{17478e9d0deb27eee86232ba4dd08f9c}
+      \strng{bibnamehash}{286fcd547ba2540ef556bc60c4541c23}
+      \strng{authorbibnamehash}{286fcd547ba2540ef556bc60c4541c23}
+      \strng{authornamehash}{286fcd547ba2540ef556bc60c4541c23}
       \strng{authorfullhash}{027f068a906e7dc305c82863bee5ffaf}
       \field{sortinit}{B}
       \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
@@ -4550,50 +4665,6 @@
       \endverb
       \keyw{Functional genomics,Genetic variation,Genome-wide association studies,Molecular biology}
     \endentry
-    \entry{eddyWhatHiddenMarkov2004}{article}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=5947569a3edff4e41b4b23548dc4b505}{%
-           family={Eddy},
-           familyi={E\bibinitperiod},
-           given={Sean\bibnamedelima R.},
-           giveni={S\bibinitperiod\bibinitdelim R\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{publisher}{1}{%
-        {Nature Publishing Group}%
-      }
-      \strng{namehash}{5947569a3edff4e41b4b23548dc4b505}
-      \strng{fullhash}{5947569a3edff4e41b4b23548dc4b505}
-      \strng{bibnamehash}{5947569a3edff4e41b4b23548dc4b505}
-      \strng{authorbibnamehash}{5947569a3edff4e41b4b23548dc4b505}
-      \strng{authornamehash}{5947569a3edff4e41b4b23548dc4b505}
-      \strng{authorfullhash}{5947569a3edff4e41b4b23548dc4b505}
-      \field{sortinit}{E}
-      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{Statistical models called hidden Markov models are a recurring theme in computational biology. What are hidden Markov models, and why are they so useful for so many different problems?}
-      \field{issn}{1546-1696}
-      \field{journaltitle}{Nature Biotechnology}
-      \field{langid}{english}
-      \field{month}{10}
-      \field{number}{10}
-      \field{title}{What Is a Hidden {{Markov}} Model?}
-      \field{urlday}{4}
-      \field{urlmonth}{5}
-      \field{urlyear}{2026}
-      \field{volume}{22}
-      \field{year}{2004}
-      \field{urldateera}{ce}
-      \field{pages}{1315\bibrangedash 1316}
-      \range{pages}{2}
-      \verb{doi}
-      \verb 10.1038/nbt1004-1315
-      \endverb
-      \keyw{Agriculture,Bioinformatics,Biomedical Engineering/Biotechnology,Biomedicine,Biotechnology,general,Life Sciences}
-    \endentry
     \entry{faltejskovaNonconsensusFlankingSequence2026}{misc}{}
       \name{author}{3}{}{%
         {{un=0,uniquepart=base,hash=1af9a0292ca44827eb3d1da61acf2c03}{%
@@ -5097,6 +5168,65 @@
       \endverb
       \keyw{Quantitative Biology - Genomics}
     \endentry
+    \entry{liPredictingDNAStructure2024}{article}{}
+      \name{author}{3}{}{%
+        {{un=1,uniquepart=given,hash=cf2ac73b48bbfcde6f80ca7578617ca8}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Jinsen},
+           giveni={J\bibinitperiod},
+           givenun=1}}%
+        {{un=0,uniquepart=base,hash=23eb2e0dc9987c93f4b2d8f335913226}{%
+           family={Chiu},
+           familyi={C\bibinitperiod},
+           given={Tsu-Pei},
+           giveni={T\bibinithyphendelim P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c8fe275a7f8960db9fd0bab64ecab23f}{%
+           family={Rohs},
+           familyi={R\bibinitperiod},
+           given={Remo},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Nature Publishing Group}%
+      }
+      \strng{namehash}{9c4532920239573a330f4d076f5fad33}
+      \strng{fullhash}{9de97c220a9225fc85314cd8618e079f}
+      \strng{bibnamehash}{9de97c220a9225fc85314cd8618e079f}
+      \strng{authorbibnamehash}{9de97c220a9225fc85314cd8618e079f}
+      \strng{authornamehash}{9c4532920239573a330f4d076f5fad33}
+      \strng{authorfullhash}{9de97c220a9225fc85314cd8618e079f}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Understanding the mechanisms of protein-DNA binding is critical in comprehending gene regulation. Three-dimensional DNA structure, also described as DNA shape, plays a key role in these mechanisms. In this study, we present a deep learning-based method, Deep DNAshape, that fundamentally changes the current k-mer based high-throughput prediction of DNA shape features by accurately accounting for the influence of extended flanking regions, without the need for extensive molecular simulations or structural biology experiments. By using the Deep DNAshape method, DNA structural features can be predicted for any length and number of DNA sequences in a high-throughput manner, providing an understanding of the effects of flanking regions on DNA structure in a target region of a sequence. The Deep DNAshape method provides access to the influence of distant flanking regions on a region of interest. Our findings reveal that DNA shape readout mechanisms of a core target are quantitatively affected by flanking regions, including extended flanking regions, providing valuable insights into the detailed structural readout mechanisms of protein-DNA binding. Furthermore, when incorporated in machine learning models, the features generated by Deep DNAshape improve the model prediction accuracy. Collectively, Deep DNAshape can serve as versatile and powerful tool for diverse DNA structure-related studies.}
+      \field{issn}{2041-1723}
+      \field{journaltitle}{Nature Communications}
+      \field{langid}{english}
+      \field{month}{2}
+      \field{number}{1}
+      \field{title}{Predicting {{DNA}} Structure Using a Deep Learning Method}
+      \field{urlday}{8}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{volume}{15}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \field{pages}{1243}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1038/s41467-024-45191-5
+      \endverb
+      \verb{file}
+      \verb /home/vambersky_t/Zotero/storage/9VSUSXKT/Li et al. - 2024 - Predicting DNA structure using a deep learning method.pdf
+      \endverb
+      \keyw{Machine learning,Molecular conformation,Transcriptional regulatory elements}
+    \endentry
     \entry{liMeasuringReproducibilityHighthroughput2011}{article}{}
       \name{author}{4}{}{%
         {{un=1,uniquepart=given,hash=648f941baf22576f7a907f38049cfbec}{%
@@ -5336,8 +5466,163 @@
       \verb /home/vambersky_t/Zotero/storage/Q5MA9AML/Mathelier et al. - 2016 - DNA Shape Features Improve Transcription Factor Binding Site Predictions In Vivo.pdf;/home/vambersky_t/Zotero/storage/MDA76HNZ/S2405471216302186.html
       \endverb
     \endentry
+    \entry{nguyenSequenceModelingDesign2024}{article}{}
+      \name{author}{20}{ul=3}{%
+        {{un=0,uniquepart=base,hash=0fb373363226d716930436af913726a9}{%
+           family={Nguyen},
+           familyi={N\bibinitperiod},
+           given={Eric},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=50420925da4c6d3ce1553c77f3a3253d}{%
+           family={Poli},
+           familyi={P\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c41f2f32208b14e557be31b9a4f5d894}{%
+           family={Durrant},
+           familyi={D\bibinitperiod},
+           given={Matthew\bibnamedelima G.},
+           giveni={M\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=977837755de0428a6c90ceb0a19e8ec1}{%
+           family={Kang},
+           familyi={K\bibinitperiod},
+           given={Brian},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1890d245d6d00035994ecd495d419f61}{%
+           family={Katrekar},
+           familyi={K\bibinitperiod},
+           given={Dhruva},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a0c5e30672d0b4ec8efb4ea752b7415d}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={David\bibnamedelima B.},
+           giveni={D\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=511f72a198fd306ae225fb23eaee6a4c}{%
+           family={Bartie},
+           familyi={B\bibinitperiod},
+           given={Liam\bibnamedelima J.},
+           giveni={L\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7bc57e0261c064c9e837697f8b5fc22e}{%
+           family={Thomas},
+           familyi={T\bibinitperiod},
+           given={Armin\bibnamedelima W.},
+           giveni={A\bibinitperiod\bibinitdelim W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=26e127649c598f781a4edd51b53a8d6c}{%
+           family={King},
+           familyi={K\bibinitperiod},
+           given={Samuel\bibnamedelima H.},
+           giveni={S\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3c3bb91ce950a40057f1a0fb849489e7}{%
+           family={Brixi},
+           familyi={B\bibinitperiod},
+           given={Garyk},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3ed4a94d580df844e7aadeb04877c68a}{%
+           family={Sullivan},
+           familyi={S\bibinitperiod},
+           given={Jeremy},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f29ffd72deac25f930d8fd47ebe862f8}{%
+           family={Ng},
+           familyi={N\bibinitperiod},
+           given={Madelena\bibnamedelima Y.},
+           giveni={M\bibinitperiod\bibinitdelim Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9f56d3d69d8478de7fc2ae00a0938dcc}{%
+           family={Lewis},
+           familyi={L\bibinitperiod},
+           given={Ashley},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=97ef91a99fa28d7b819d8a18ecb8cb1c}{%
+           family={Lou},
+           familyi={L\bibinitperiod},
+           given={Aaron},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=160929a7e6ceecdf3f7c9a13abd5ea35}{%
+           family={Ermon},
+           familyi={E\bibinitperiod},
+           given={Stefano},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2e199c56e275d39beb6e24fdd63b1ef1}{%
+           family={Baccus},
+           familyi={B\bibinitperiod},
+           given={Stephen\bibnamedelima A.},
+           giveni={S\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c976976b9f5618a71e125e9adb518c46}{%
+           family={{Hernandez-Boussard}},
+           familyi={H\bibinitperiod},
+           given={Tina},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=eb1f5a2ba08ea12db36c871fe601f5f1}{%
+           family={Ré},
+           familyi={R\bibinitperiod},
+           given={Christopher},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f92bee55282b37c3aa0912c6f9c9077f}{%
+           family={Hsu},
+           familyi={H\bibinitperiod},
+           given={Patrick\bibnamedelima D.},
+           giveni={P\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1ff3e9cb32cd247fb9c7d08a9e9b2371}{%
+           family={Hie},
+           familyi={H\bibinitperiod},
+           given={Brian\bibnamedelima L.},
+           giveni={B\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {American Association for the Advancement of Science}%
+      }
+      \strng{namehash}{97d1883107fa64295dd56d03786b4033}
+      \strng{fullhash}{2124b89d3d2d486dc84f1042ca1b1d99}
+      \strng{bibnamehash}{97d1883107fa64295dd56d03786b4033}
+      \strng{authorbibnamehash}{97d1883107fa64295dd56d03786b4033}
+      \strng{authornamehash}{97d1883107fa64295dd56d03786b4033}
+      \strng{authorfullhash}{2124b89d3d2d486dc84f1042ca1b1d99}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The genome is a sequence that encodes the DNA, RNA, and proteins that orchestrate an organism's function. We present Evo, a long-context genomic foundation model with a frontier architecture trained on millions of prokaryotic and phage genomes, and report scaling laws on DNA to complement observations in language and vision. Evo generalizes across DNA, RNA, and proteins, enabling zero-shot function prediction competitive with domain-specific language models and the generation of functional CRISPR-Cas and transposon systems, representing the first examples of protein-RNA and protein-DNA codesign with a language model. Evo also learns how small mutations affect whole-organism fitness and generates megabase-scale sequences with plausible genomic architecture. These prediction and generation capabilities span molecular to genomic scales of complexity, advancing our understanding and control of biology.}
+      \field{journaltitle}{Science}
+      \field{month}{11}
+      \field{number}{6723}
+      \field{title}{Sequence Modeling and Design from Molecular to Genome Scale with {{Evo}}}
+      \field{urlday}{17}
+      \field{urlmonth}{3}
+      \field{urlyear}{2025}
+      \field{volume}{386}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \field{pages}{eado9336}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1126/science.ado9336
+      \endverb
+    \endentry
     \entry{nguyenHyenaDNALongRangeGenomic2023}{misc}{}
-      \name{author}{13}{}{%
+      \name{author}{13}{ul=3}{%
         {{un=0,uniquepart=base,hash=0fb373363226d716930436af913726a9}{%
            family={Nguyen},
            familyi={N\bibinitperiod},
@@ -5420,11 +5705,11 @@
       \list{publisher}{1}{%
         {arXiv}%
       }
-      \strng{namehash}{59c42cf501e58c60d11b1099a1e672e0}
+      \strng{namehash}{95fab62c06114d20a6dd4b3e9fdd3012}
       \strng{fullhash}{228c5cac8449f934a2a62018526d21a1}
-      \strng{bibnamehash}{59c42cf501e58c60d11b1099a1e672e0}
-      \strng{authorbibnamehash}{59c42cf501e58c60d11b1099a1e672e0}
-      \strng{authornamehash}{59c42cf501e58c60d11b1099a1e672e0}
+      \strng{bibnamehash}{95fab62c06114d20a6dd4b3e9fdd3012}
+      \strng{authorbibnamehash}{95fab62c06114d20a6dd4b3e9fdd3012}
+      \strng{authornamehash}{95fab62c06114d20a6dd4b3e9fdd3012}
       \strng{authorfullhash}{228c5cac8449f934a2a62018526d21a1}
       \field{sortinit}{N}
       \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
@@ -6028,52 +6313,53 @@
       \verb /home/vambersky_t/Zotero/storage/VAF7DS5Z/Sela and Lukatsky - 2011 - DNA Sequence Correlations Shape Nonspecific Transcription Factor-DNA Binding Affinity.pdf
       \endverb
     \endentry
-    \entry{siebertBayesianMarkovModels2016}{article}{}
+    \entry{schneiderSequenceLogosNew1990}{article}{}
       \name{author}{2}{}{%
-        {{un=0,uniquepart=base,hash=0b20306219a571f23b39582fcd5e8db1}{%
-           family={Siebert},
+        {{un=0,uniquepart=base,hash=895a2d6979f7e15f0bf354413b80b9af}{%
+           family={Schneider},
            familyi={S\bibinitperiod},
-           given={Matthias},
-           giveni={M\bibinitperiod},
+           given={Thomas\bibnamedelima D.},
+           giveni={T\bibinitperiod\bibinitdelim D\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=e67661e270ffc979f77600b3904f2e9c}{%
-           family={Söding},
+        {{un=0,uniquepart=base,hash=a5d470abcf3617f982fcb3a17cc2a425}{%
+           family={Stephens},
            familyi={S\bibinitperiod},
-           given={Johannes},
-           giveni={J\bibinitperiod},
+           given={R.Michael},
+           giveni={R\bibinitperiod},
            givenun=0}}%
       }
-      \strng{namehash}{5071f44438ff1bc7093200dbaffe5746}
-      \strng{fullhash}{5071f44438ff1bc7093200dbaffe5746}
-      \strng{bibnamehash}{5071f44438ff1bc7093200dbaffe5746}
-      \strng{authorbibnamehash}{5071f44438ff1bc7093200dbaffe5746}
-      \strng{authornamehash}{5071f44438ff1bc7093200dbaffe5746}
-      \strng{authorfullhash}{5071f44438ff1bc7093200dbaffe5746}
+      \strng{namehash}{c56e3d367e346d8c7b6c6e1383e04bd9}
+      \strng{fullhash}{c56e3d367e346d8c7b6c6e1383e04bd9}
+      \strng{bibnamehash}{c56e3d367e346d8c7b6c6e1383e04bd9}
+      \strng{authorbibnamehash}{c56e3d367e346d8c7b6c6e1383e04bd9}
+      \strng{authornamehash}{c56e3d367e346d8c7b6c6e1383e04bd9}
+      \strng{authorfullhash}{c56e3d367e346d8c7b6c6e1383e04bd9}
       \field{sortinit}{S}
       \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
       \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{Position weight matrices (PWMs) are the standard model for DNA and RNA regulatory motifs. In PWMs nucleotide probabilities are independent of nucleotides at other positions. Models that account for dependencies need many parameters and are prone to overfitting. We have developed a Bayesian approach for motif discovery using Markov models in which conditional probabilities of order k - 1 act as priors for those of order k. This Bayesian Markov model (BaMM) training automatically adapts model complexity to the amount of available data. We also derive an EM algorithm for de-novo discovery of enriched motifs. For transcription factor binding, BaMMs achieve significantly (P \, \,= \,1/16) higher cross-validated partial AUC than PWMs in 97\% of 446 ChIP-seq ENCODE datasets and improve performance by 36\% on average. BaMMs also learn complex multipartite motifs, improving predictions of transcription start sites, polyadenylation sites, bacterial pause sites, and RNA binding sites by 26--101\%. BaMMs never performed worse than PWMs. These robust improvements argue in favour of generally replacing PWMs by BaMMs.}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{A graphical method is presented for displaying the patterns in a set of aligned sequences. The characters representing the sequence are stacked on top of each other for each position in the aligned sequences. The height of each letter is made proportional to Its frequency, and the letters are sorted so the most common one is on top. The height of the entire stack is then adjusted to signify the information content of the sequences at that position. From these `sequence logos', one can determine not only the consensus sequence but also the relative frequency of bases and the information content (measured In bits) at every position in a site or sequence. The logo displays both significant residues and subtle sequence patterns.}
       \field{issn}{0305-1048}
       \field{journaltitle}{Nucleic Acids Research}
-      \field{month}{7}
-      \field{number}{13}
-      \field{title}{Bayesian {{Markov}} Models Consistently Outperform {{PWMs}} at Predicting Motifs in Nucleotide Sequences}
-      \field{urlday}{4}
+      \field{month}{10}
+      \field{number}{20}
+      \field{shorttitle}{Sequence Logos}
+      \field{title}{Sequence Logos: A New Way to Display Consensus Sequences}
+      \field{urlday}{8}
       \field{urlmonth}{5}
       \field{urlyear}{2026}
-      \field{volume}{44}
-      \field{year}{2016}
+      \field{volume}{18}
+      \field{year}{1990}
       \field{urldateera}{ce}
-      \field{pages}{6055\bibrangedash 6069}
-      \range{pages}{15}
+      \field{pages}{6097\bibrangedash 6100}
+      \range{pages}{4}
       \verb{doi}
-      \verb 10.1093/nar/gkw521
+      \verb 10.1093/nar/18.20.6097
       \endverb
       \verb{file}
-      \verb /home/vambersky_t/Zotero/storage/TWKNKX2U/Siebert and Söding - 2016 - Bayesian Markov models consistently outperform PWMs at predicting motifs in nucleotide sequences.pdf;/home/vambersky_t/Zotero/storage/ZX6Z4YK6/gkw521.html
+      \verb /home/vambersky_t/Zotero/storage/6K6NK2DK/Schneider and Stephens - 1990 - Sequence logos a new way to display consensus sequences.pdf;/home/vambersky_t/Zotero/storage/RBBKVGLS/18.20.html
       \endverb
     \endentry
     \entry{slatteryAbsenceSimpleCode2014a}{article}{}
@@ -6237,6 +6523,50 @@
       \endverb
       \verb{file}
       \verb /home/vambersky_t/Zotero/storage/IK2I5H6R/Sönmezer et al. - 2021 - Molecular co-occupancy identifies transcription factor binding cooperativity in vivo.pdf
+      \endverb
+    \endentry
+    \entry{stormoDNABindingSites2000}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=8f039d97052451b4d8ed716a2f1ce9f9}{%
+           family={Stormo},
+           familyi={S\bibinitperiod},
+           given={Gary\bibnamedelima D.},
+           giveni={G\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{8f039d97052451b4d8ed716a2f1ce9f9}
+      \strng{fullhash}{8f039d97052451b4d8ed716a2f1ce9f9}
+      \strng{bibnamehash}{8f039d97052451b4d8ed716a2f1ce9f9}
+      \strng{authorbibnamehash}{8f039d97052451b4d8ed716a2f1ce9f9}
+      \strng{authornamehash}{8f039d97052451b4d8ed716a2f1ce9f9}
+      \strng{authorfullhash}{8f039d97052451b4d8ed716a2f1ce9f9}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{The purpose of this article is to provide a brief history of the development and application of computer algorithms for the analysis and prediction of DNA binding sites. This problem can be conveniently divided into two subproblems. The first is, given a collection of known binding sites, develop a representation of those sites that can be used to search new sequences and reliably predict where additional binding sites occur. The second is, given a set of sequences known to contain binding sites for a common factor, but not knowing where the sites are, discover the location of the sites in each sequence and a representation for the specificity of the protein.}
+      \field{issn}{1367-4811, 1367-4803}
+      \field{journaltitle}{Bioinformatics}
+      \field{langid}{english}
+      \field{month}{1}
+      \field{number}{1}
+      \field{shorttitle}{{{DNA}} Binding Sites}
+      \field{title}{{{DNA}} Binding Sites: Representation and Discovery}
+      \field{urlday}{24}
+      \field{urlmonth}{4}
+      \field{urlyear}{2026}
+      \field{volume}{16}
+      \field{year}{2000}
+      \field{urldateera}{ce}
+      \field{pages}{16\bibrangedash 23}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1093/bioinformatics/16.1.16
+      \endverb
+      \verb{file}
+      \verb /home/vambersky_t/Zotero/storage/C6IBZTDB/Stormo - 2000 - DNA binding sites representation and discovery.pdf
       \endverb
     \endentry
     \entry{thurmanAccessibleChromatinLandscape2012}{article}{}
@@ -6652,6 +6982,92 @@
       \endverb
       \keyw{Chromatin structure,Genetic variation,Genomics}
     \endentry
+    \entry{vaswaniAttentionAllYou2017}{inproceedings}{}
+      \name{author}{8}{}{%
+        {{un=0,uniquepart=base,hash=7f28e84700536646dd6620a0db07ad09}{%
+           family={Vaswani},
+           familyi={V\bibinitperiod},
+           given={Ashish},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=62efade83d70f0323fe248755e6c90c5}{%
+           family={Shazeer},
+           familyi={S\bibinitperiod},
+           given={Noam},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=06649ebab1ea5cac0250746a19764975}{%
+           family={Parmar},
+           familyi={P\bibinitperiod},
+           given={Niki},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=831027ee0ebf22375e2a86afc1881909}{%
+           family={Uszkoreit},
+           familyi={U\bibinitperiod},
+           given={Jakob},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2fd2982e30ebcec93ec1cf76e0d797fd}{%
+           family={Jones},
+           familyi={J\bibinitperiod},
+           given={Llion},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=27b07e4eacbf4ef7a1438e3badb7dd8d}{%
+           family={Gomez},
+           familyi={G\bibinitperiod},
+           given={Aidan\bibnamedelima N.},
+           giveni={A\bibinitperiod\bibinitdelim N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=540fcd72e1fa4bbed46604f4e6cff817}{%
+           family={Kaiser},
+           familyi={K\bibinitperiod},
+           given={{Ł}ukasz},
+           giveni={Ł\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=95595a0fefb86187cbc36e551017d332}{%
+           family={Polosukhin},
+           familyi={P\bibinitperiod},
+           given={Illia},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Red Hook, NY, USA}%
+      }
+      \list{publisher}{1}{%
+        {Curran Associates Inc.}%
+      }
+      \strng{namehash}{ee273ab30cfb889666f8c4d806eb9ce7}
+      \strng{fullhash}{cb26e47f6b8133865271fc8483132297}
+      \strng{bibnamehash}{ee273ab30cfb889666f8c4d806eb9ce7}
+      \strng{authorbibnamehash}{ee273ab30cfb889666f8c4d806eb9ce7}
+      \strng{authornamehash}{ee273ab30cfb889666f8c4d806eb9ce7}
+      \strng{authorfullhash}{cb26e47f6b8133865271fc8483132297}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The dominant sequence transduction models are based on complex recurrent or convolutional neural networks that include an encoder and a decoder. The best performing models also connect the encoder and decoder through an attention mechanism. We propose a new simple network architecture, the Transformer, based solely on attention mechanisms, dispensing with recurrence and convolutions entirely. Experiments on two machine translation tasks show these models to be superior in quality while being more parallelizable and requiring significantly less time to train. Our model achieves 28.4 BLEU on the WMT 2014 English-to-German translation task, improving over the existing best results, including ensembles, by over 2 BLEU. On the WMT 2014 English-to-French translation task, our model establishes a new single-model state-of-the-art BLEU score of 41.0 after training for 3.5 days on eight GPUs, a small fraction of the training costs of the best models from the literature.}
+      \field{booktitle}{Proceedings of the 31st {{International Conference}} on {{Neural Information Processing Systems}}}
+      \field{isbn}{978-1-5108-6096-4}
+      \field{month}{12}
+      \field{series}{{{NIPS}}'17}
+      \field{title}{Attention Is All You Need}
+      \field{urlday}{18}
+      \field{urlmonth}{3}
+      \field{urlyear}{2025}
+      \field{year}{2017}
+      \field{urldateera}{ce}
+      \field{pages}{6000\bibrangedash 6010}
+      \range{pages}{11}
+      \verb{file}
+      \verb /home/vambersky_t/Zotero/storage/DPMMFQL7/Vaswani et al. - 2017 - Attention is all you need.pdf
+      \endverb
+    \endentry
     \entry{vorontsovHOCOMOCO2024Rebuild2024}{article}{}
       \name{author}{16}{}{%
         {{un=0,uniquepart=base,hash=7e7763b70f302173ed9280f15fd76c1e}{%
@@ -6784,137 +7200,6 @@
       \verb{file}
       \verb /home/vambersky_t/Zotero/storage/Y5YSAPZV/Vorontsov et al. - 2024 - HOCOMOCO in 2024 a rebuild of the curated collection of binding models for human and mouse transcri.pdf;/home/vambersky_t/Zotero/storage/VIEBYSN8/gkad1077.html
       \endverb
-    \endentry
-    \entry{weirauchEvaluationMethodsModeling2013}{article}{}
-      \name{author}{15}{}{%
-        {{un=0,uniquepart=base,hash=90b6e27f43d7cfbe186b0da22f6e48d8}{%
-           family={Weirauch},
-           familyi={W\bibinitperiod},
-           given={Matthew\bibnamedelima T.},
-           giveni={M\bibinitperiod\bibinitdelim T\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=a4bffc3cdd1e3d9ca0858b0bad69beca}{%
-           family={Cote},
-           familyi={C\bibinitperiod},
-           given={Atina},
-           giveni={A\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=ce4b9c86403e2bd684b7160c523bf445}{%
-           family={Norel},
-           familyi={N\bibinitperiod},
-           given={Raquel},
-           giveni={R\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=4d91b7d0822a07853fdd8d9889d1789c}{%
-           family={Annala},
-           familyi={A\bibinitperiod},
-           given={Matti},
-           giveni={M\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=ba51490fdfee4e053d199f28e82dad4f}{%
-           family={Zhao},
-           familyi={Z\bibinitperiod},
-           given={Yue},
-           giveni={Y\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=2f21e6f8eb6c7c736f12e4b255ae2094}{%
-           family={Riley},
-           familyi={R\bibinitperiod},
-           given={Todd\bibnamedelima R.},
-           giveni={T\bibinitperiod\bibinitdelim R\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=db9c0fd92e5f4a78c7a2788cc1bae9c3}{%
-           family={{Saez-Rodriguez}},
-           familyi={S\bibinitperiod},
-           given={Julio},
-           giveni={J\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=cb3de5c819261f113ecfb3ac6dd2a58a}{%
-           family={Cokelaer},
-           familyi={C\bibinitperiod},
-           given={Thomas},
-           giveni={T\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=21f9467919682ef00faf45dfe5177f12}{%
-           family={Vedenko},
-           familyi={V\bibinitperiod},
-           given={Anastasia},
-           giveni={A\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=cfedc518a0db62ab5f07f33b849b15ba}{%
-           family={Talukder},
-           familyi={T\bibinitperiod},
-           given={Shaheynoor},
-           giveni={S\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=8cadb4e6971d10f7fb5f714b982d47e4}{%
-           family={Bussemaker},
-           familyi={B\bibinitperiod},
-           given={Harmen\bibnamedelima J.},
-           giveni={H\bibinitperiod\bibinitdelim J\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=01fa3b38bb788ba0b55de6a6d13e8655}{%
-           family={Morris},
-           familyi={M\bibinitperiod},
-           given={Quaid\bibnamedelima D.},
-           giveni={Q\bibinitperiod\bibinitdelim D\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=5d5aea848883062d01c38845c34968c9}{%
-           family={Bulyk},
-           familyi={B\bibinitperiod},
-           given={Martha\bibnamedelima L.},
-           giveni={M\bibinitperiod\bibinitdelim L\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=354be337a5cc745ab39ab463dbc357f6}{%
-           family={Stolovitzky},
-           familyi={S\bibinitperiod},
-           given={Gustavo},
-           giveni={G\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=1d94d8b59b86986eb9ea7a04e38fa3f6}{%
-           family={Hughes},
-           familyi={H\bibinitperiod},
-           given={Timothy\bibnamedelima R.},
-           giveni={T\bibinitperiod\bibinitdelim R\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{publisher}{1}{%
-        {Nature Publishing Group}%
-      }
-      \strng{namehash}{97ff4acd3711a531955c0f6c38cf3513}
-      \strng{fullhash}{46e8a44766f59257c211807e5553df88}
-      \strng{bibnamehash}{97ff4acd3711a531955c0f6c38cf3513}
-      \strng{authorbibnamehash}{97ff4acd3711a531955c0f6c38cf3513}
-      \strng{authornamehash}{97ff4acd3711a531955c0f6c38cf3513}
-      \strng{authorfullhash}{46e8a44766f59257c211807e5553df88}
-      \field{sortinit}{W}
-      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{The most comprehensive analysis to date of models of transcription-factor binding specificity reveals the best methods for predicting in vivo binding from in vitro data.}
-      \field{issn}{1546-1696}
-      \field{journaltitle}{Nature Biotechnology}
-      \field{langid}{english}
-      \field{month}{2}
-      \field{number}{2}
-      \field{title}{Evaluation of Methods for Modeling Transcription Factor Sequence Specificity}
-      \field{urlday}{4}
-      \field{urlmonth}{5}
-      \field{urlyear}{2026}
-      \field{volume}{31}
-      \field{year}{2013}
-      \field{urldateera}{ce}
-      \field{pages}{126\bibrangedash 134}
-      \range{pages}{9}
-      \verb{doi}
-      \verb 10.1038/nbt.2486
-      \endverb
-      \verb{file}
-      \verb /home/vambersky_t/Zotero/storage/VY5BY5JD/Weirauch et al. - 2013 - Evaluation of methods for modeling transcription factor sequence specificity.pdf
-      \endverb
-      \keyw{Computational biology and bioinformatics,Functional genomics,Transcription factors}
     \endentry
     \entry{wunderlichDifferentGeneRegulation2009}{article}{}
       \name{author}{2}{}{%

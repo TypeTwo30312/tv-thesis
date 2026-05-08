@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.4.15)  8 MAY 2026 05:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.4.15)  8 MAY 2026 07:18
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -847,57 +847,64 @@ Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'czech'.
-Package hyperref Info: Option `unicode' set `true' on input line 159.
-Package hyperref Info: Option `breaklinks' set `true' on input line 159.
-Package hyperref Info: Option `colorlinks' set `true' on input line 159.
-Package hyperref Info: Option `unicode' set `true' on input line 159.
+Package hyperref Info: Option `unicode' set `true' on input line 160.
+Package hyperref Info: Option `breaklinks' set `true' on input line 160.
+Package hyperref Info: Option `colorlinks' set `true' on input line 160.
+Package hyperref Info: Option `unicode' set `true' on input line 160.
 (/usr/share/texlive/texmf-dist/tex/generic/stringenc/stringenc.sty
 Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO)
 ) (/usr/share/texlive/texmf-dist/tex/generic/stringenc/se-pdfdoc.def
 File: se-pdfdoc.def 2019/11/29 v1.12 stringenc: PDFDocEncoding
-) (./Prace.aux)
+) (./Prace.aux
+
+LaTeX Warning: Label `sec:chipseq' multiply defined.
+
+
+LaTeX Warning: Label `sec:faltejskova' multiply defined.
+
+)
 \openout1 = `Prace.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 159.
-LaTeX Font Info:    ... okay on input line 159.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 159.
-LaTeX Font Info:    ... okay on input line 159.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 159.
-LaTeX Font Info:    ... okay on input line 159.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 159.
-LaTeX Font Info:    ... okay on input line 159.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 159.
-LaTeX Font Info:    ... okay on input line 159.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 159.
-LaTeX Font Info:    ... okay on input line 159.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 159.
-LaTeX Font Info:    ... okay on input line 159.
-LaTeX Font Info:    Checking defaults for IL2/cmr/m/n on input line 159.
-LaTeX Font Info:    ... okay on input line 159.
-LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 159.
-LaTeX Font Info:    Trying to load font information for FML+futm on input line 159.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 160.
+LaTeX Font Info:    ... okay on input line 160.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 160.
+LaTeX Font Info:    ... okay on input line 160.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 160.
+LaTeX Font Info:    ... okay on input line 160.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 160.
+LaTeX Font Info:    ... okay on input line 160.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 160.
+LaTeX Font Info:    ... okay on input line 160.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 160.
+LaTeX Font Info:    ... okay on input line 160.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 160.
+LaTeX Font Info:    ... okay on input line 160.
+LaTeX Font Info:    Checking defaults for IL2/cmr/m/n on input line 160.
+LaTeX Font Info:    ... okay on input line 160.
+LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 160.
+LaTeX Font Info:    Trying to load font information for FML+futm on input line 160.
  (/usr/share/texlive/texmf-dist/tex/latex/fourier/fmlfutm.fd
 File: fmlfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futm.
 )
-LaTeX Font Info:    ... okay on input line 159.
-LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 159.
-LaTeX Font Info:    Trying to load font information for FMS+futm on input line 159.
+LaTeX Font Info:    ... okay on input line 160.
+LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 160.
+LaTeX Font Info:    Trying to load font information for FMS+futm on input line 160.
  (/usr/share/texlive/texmf-dist/tex/latex/fourier/fmsfutm.fd
 File: fmsfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FMS/futm.
 )
-LaTeX Font Info:    ... okay on input line 159.
-LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 159.
-LaTeX Font Info:    Trying to load font information for FMX+futm on input line 159.
+LaTeX Font Info:    ... okay on input line 160.
+LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 160.
+LaTeX Font Info:    Trying to load font information for FMX+futm on input line 160.
  (/usr/share/texlive/texmf-dist/tex/latex/fourier/fmxfutm.fd
 File: fmxfutm.fd futm-extension
 )
-LaTeX Font Info:    ... okay on input line 159.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 159.
-LaTeX Font Info:    ... okay on input line 159.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 159.
-LaTeX Font Info:    ... okay on input line 159.
-LaTeX Font Info:    Redeclaring math accent \widehat on input line 159.
-LaTeX Font Info:    Redeclaring math accent \widetilde on input line 159.
+LaTeX Font Info:    ... okay on input line 160.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 160.
+LaTeX Font Info:    ... okay on input line 160.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 160.
+LaTeX Font Info:    ... okay on input line 160.
+LaTeX Font Info:    Redeclaring math accent \widehat on input line 160.
+LaTeX Font Info:    Redeclaring math accent \widetilde on input line 160.
  (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count448
@@ -943,8 +950,8 @@ Package biblatex Warning: The following entry could not be found
 (biblatex)                LaTeX afterwards.
 
 )
-Package biblatex Info: Reference section=0 on input line 159.
-Package biblatex Info: Reference segment=0 on input line 159.
+Package biblatex Info: Reference section=0 on input line 160.
+Package biblatex Info: Reference segment=0 on input line 160.
  (/usr/share/texlive/texmf-dist/tex/latex/pdflscape/pdflscape.sty
 Package: pdflscape 2022-10-27 v0.13 Display of landscape pages in PDF
  (/usr/share/texlive/texmf-dist/tex/latex/pdflscape/pdflscape-nometadata.sty
@@ -954,7 +961,7 @@ Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 ))
-Package hyperref Info: Link coloring ON on input line 159.
+Package hyperref Info: Link coloring ON on input line 160.
  (./Prace.out) (./Prace.out)
 \@outlinefile=\write5
 \openout5 = `Prace.out'.
@@ -995,15 +1002,15 @@ Package hyperref Info: Link coloring ON on input line 159.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 \sirkaustavorig=\skip129
-LaTeX Font Info:    Trying to load font information for T1+qhv on input line 164.
+LaTeX Font Info:    Trying to load font information for T1+qhv on input line 165.
 (/usr/share/texmf/tex/latex/tex-gyre/t1qhv.fd
 File: t1qhv.fd 2009/09/25 v1.2 font definition file for T1/qhv
 )
 \sirkafakultaorig=\skip130
-<loga/MUNI_(black).pdf, id=199, 229.12602pt x 77.75047pt>
+<loga/MUNI_(black).pdf, id=264, 229.12602pt x 77.75047pt>
 File: loga/MUNI_(black).pdf Graphic file (type pdf)
 <use loga/MUNI_(black).pdf>
-Package pdftex.def Info: loga/MUNI_(black).pdf  used on input line 164.
+Package pdftex.def Info: loga/MUNI_(black).pdf  used on input line 165.
 (pdftex.def)             Requested size: 214.81831pt x 72.89444pt.
 \autororig=\skip131
 \sirkatitulkaorig=\skip132
@@ -1014,27 +1021,27 @@ Package pdftex.def Info: loga/MUNI_(black).pdf  used on input line 164.
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf/fonts/enc/dvips/tex-gyre/q-ec-sc.enc}{/usr/share/texmf/fonts/enc/dvips/tex-gyre/q-ec.enc} <./loga/MUNI_(black).pdf>]
 \LevySloupecCZ=\skip133
 \PravySloupecCZ=\skip134
-LaTeX Font Info:    Trying to load font information for FML+futmi on input line 164.
+LaTeX Font Info:    Trying to load font information for FML+futmi on input line 165.
  (/usr/share/texlive/texmf-dist/tex/latex/fourier/fmlfutmi.fd
 File: fmlfutmi.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futmi.
 )
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 11.03998pt on input line 164.
+(Font)              scaled to size 11.03998pt on input line 165.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 164.
+(Font)              scaled to size 8.27998pt on input line 165.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.43999pt on input line 164.
+(Font)              scaled to size 6.43999pt on input line 165.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 11.03998pt on input line 164.
+(Font)              scaled to size 11.03998pt on input line 165.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 164.
+(Font)              scaled to size 8.27998pt on input line 165.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.43999pt on input line 164.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 164.
+(Font)              scaled to size 6.43999pt on input line 165.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 165.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 164.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 165.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [2
@@ -1084,9 +1091,6 @@ Overfull \hbox (21.09486pt too wide) in paragraph at lines 25--26
  []
 
 
-LaTeX Warning: Reference `sec:pwm' on page 2 undefined on input line 30.
-
-
 Overfull \hbox (2.1109pt too wide) in paragraph at lines 27--31
 \T1/futs/m/n/12 als in-ter-acti-ons --- be-tween amino acid side cha-ins and the Watson--Crick ed-ges of bases,|
  []
@@ -1097,6 +1101,11 @@ Overfull \hbox (2.1109pt too wide) in paragraph at lines 27--31
 ] [3]
 Overfull \hbox (1.69453pt too wide) in paragraph at lines 54--58
 \T1/futs/m/n/12 bin-ding site and exhi-bi-ting TF-family-specific pat-terns. []\T1/futs/b/n/12 [TODO: dis-tingu-ish from shape|
+ []
+
+
+Overfull \hbox (12.2149pt too wide) in paragraph at lines 54--58
+\T1/futs/m/n/12 con-tri-bu-tion is in prin-ci-ple di-rectly ac-ces-si-ble to any mo-del that ope-ra-tes on raw sequence|
  []
 
 [4]
@@ -1136,36 +1145,93 @@ Overfull \hbox (0.95895pt too wide) in paragraph at lines 146--148
 \T1/futs/m/n/12 ding each 10 kb win-dow into 50 bp non-overlapping seg-ments and com-pu-ting sequence|
  []
 
+[7] [8]
+Package biblatex Info: Delimiter 'nameyeardelim' in context '' already defined, overwriting on input line 196.
 
-LaTeX Warning: Reference `sec:foundation-models' on page 7 undefined on input line 161.
 
-[7]
-Overfull \hbox (0.69962pt too wide) in paragraph at lines 188--193
-\T1/futs/m/n/12 cies (Sie-bert a Sö-ding, [][]2016[][]); hi-d-den Mar-kov mo-dels go further, allowing variable-length|
+LaTeX Warning: Citation 'langmeadFastGappedreadAlignment2012' on page 9 undefined on input line 200.
+
+
+Overfull \hbox (0.59949pt too wide) in paragraph at lines 211--218
+\T1/futs/m/n/12 Because ChIP-seq is sensi-tive to an-ti-body ef-fi-ci-ency and lib-rary com-ple-xity, pe-aks called|
  []
 
-[8]
-Overfull \hbox (11.36282pt too wide) in paragraph at lines 194--198
-\T1/futs/m/n/12 with hand-engineered com-posi-ti-o-nal fe-a-tu-res rather than lear-ned di-rectly from sequence.|
+[9]
+
+LaTeX Warning: Reference `sec:methods-windows' on page 10 undefined on input line 223.
+
+
+Overfull \hbox (18.096pt too wide) in paragraph at lines 232--236
+\T1/futs/m/n/12 body va-li-dation requi-re-ments, and bi-o-in-for-ma-tic pi-pe-li-nes, and ap-plies au-to-ma-ted quality-|
  []
 
 
-Overfull \hbox (4.97884pt too wide) in paragraph at lines 201--205
-\T1/futs/m/n/12 which requi-res task-specific la-bels and the-re-fore sca-les with the cost of an-no-tation rather|
+Overfull \hbox (22.22627pt too wide) in paragraph at lines 232--236
+\T1/futs/m/n/12 por-tal ([][]$\T1/cmtt/m/n/12 https : / / www . encodeproject . org$[][]\T1/futs/m/n/12 ) un-der per-mis-sive data use agre-e-ments.[]\T1/futs/b/n/12 [TODO:|
  []
 
-[9]) [10] (./text_prace/04_Cile.tex
+
+LaTeX Warning: Reference `sec:methods-data' on page 10 undefined on input line 238.
+
+
+Overfull \hbox (0.95895pt too wide) in paragraph at lines 246--248
+\T1/futs/m/n/12 ding each 10 kb win-dow into 50 bp non-overlapping seg-ments and com-pu-ting sequence|
+ []
+
+[10] [11]
+Overfull \hbox (13.28345pt too wide) in paragraph at lines 276--279
+\T1/futs/m/n/12 both sequence and structu-ral terms --- but the mo-del is com-pu-tati-o-nally tractable, transfe-|
+ []
+
+
+Overfull \hbox (4.64526pt too wide) in paragraph at lines 282--284
+\T1/futs/m/n/12 Given a set of ChIP-seq peak sequen-ces, two re-la-ted tasks arise: dis-co-ve-ring the sequence|
+ []
+
+
+Overfull \hbox (17.87883pt too wide) in paragraph at lines 294--301
+\T1/futs/m/n/12 Several ap-pro-a-ches have been de-ve-lo-ped to re-lax the po-si-ti-o-nal in-de-pen-dence as-sumption.|
+ []
+
+[12]
+Overfull \hbox (4.63812pt too wide) in paragraph at lines 322--322
+[]\T1/futs/b/n/14.4 Self-supervised pre-tra-i-ning and the foun-dation mo-del pa-ra-digm |
+ []
+
+
+Overfull \hbox (7.13037pt too wide) in paragraph at lines 324--338
+\T1/futs/b/n/12 sequence mo-del-ling. bo-m-ma-sani is ge-ne-ral about foun-dation mo-del][] \T1/futs/m/n/12 is self-supervised|
+ []
+
+[13]
+Overfull \hbox (0.79146pt too wide) in paragraph at lines 368--373
+\T1/futs/m/n/12 species tra-i-ning cor-pus, de-mon-stra-ting that scale im-pro-ves transfer per-for-mance across|
+ []
+
+[14]
+
+LaTeX Warning: Reference `sec:methods-embedding' on page 15 undefined on input line 449.
+
+
+Overfull \hbox (8.94592pt too wide) in paragraph at lines 441--450
+\T1/futs/m/n/12 for-ward pass through \T1/cmtt/m/n/12 evo2_7b\T1/futs/m/n/12 , and the per-token hi-d-den sta-tes from \T1/cmtt/m/n/12 blocks.28.mlp.l3|
+ []
+
+
+LaTeX Warning: Reference `sec:results-block2' on page 15 undefined on input line 464.
+
+[15]) [16] (./text_prace/04_Cile.tex
 Chapter 2.
-) (./text_prace/05_Metody.tex [11
+) (./text_prace/05_Metody.tex [17
 
 
 ]
 Chapter 3.
 
-LaTeX Warning: Reference `tab:bedfiles' on page 12 undefined on input line 18.
+LaTeX Warning: Reference `tab:bedfiles' on page 18 undefined on input line 18.
 
 
-LaTeX Warning: Reference `sec:sanity' on page 12 undefined on input line 38.
+LaTeX Warning: Reference `sec:sanity' on page 18 undefined on input line 38.
 
 
 Overfull \hbox (48.65028pt too wide) in paragraph at lines 15--41
@@ -1175,7 +1241,7 @@ Overfull \hbox (48.65028pt too wide) in paragraph at lines 15--41
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[12
+[18
 
 ]
 Overfull \hbox (14.1121pt too wide) in paragraph at lines 44--48
@@ -1187,31 +1253,31 @@ Overfull \hbox (7.26003pt too wide) in paragraph at lines 44--48
 \T1/futs/m/n/12 re-a-li-sed de-sign de-parts from this tar-get in one re-spect: the MYC K562 file (EN-CFF043WTJ)|
  []
 
-[13]
+[19]
 
-LaTeX Warning: Reference `sec:nfilter' on page 14 undefined on input line 77.
-
-
-LaTeX Warning: Reference `sec:nfilter' on page 14 undefined on input line 77.
+LaTeX Warning: Reference `sec:nfilter' on page 20 undefined on input line 77.
 
 
-LaTeX Warning: Reference `sec:sanity' on page 14 undefined on input line 80.
+LaTeX Warning: Reference `sec:nfilter' on page 20 undefined on input line 77.
 
 
-LaTeX Warning: Reference `sec:sanity' on page 14 undefined on input line 80.
+LaTeX Warning: Reference `sec:sanity' on page 20 undefined on input line 80.
 
 
-LaTeX Warning: Reference `sec:evo2bg' on page 14 undefined on input line 85.
+LaTeX Warning: Reference `sec:sanity' on page 20 undefined on input line 80.
 
 
-LaTeX Warning: Reference `sec:evo2bg' on page 14 undefined on input line 85.
+LaTeX Warning: Reference `sec:evo2bg' on page 20 undefined on input line 85.
+
+
+LaTeX Warning: Reference `sec:evo2bg' on page 20 undefined on input line 85.
 
 
 Overfull \hbox (9.47585pt too wide) in paragraph at lines 85--95
 \T1/futs/m/n/12 window fe-a-ture of the sequence itself. A streaming-write stra-tegy based on \T1/cmtt/m/n/12 numpy.memmap|
  []
 
-[14]
+[20]
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
 (Font)              scaled to size 9.19998pt on input line 101.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
@@ -1234,7 +1300,7 @@ Overfull \hbox (121.93237pt too wide) in paragraph at lines 99--102
 \T1/futs/m/n/12 kages. Both en-vi-ron-ments are re-pro-du-ced by setup scripts (\T1/cmtt/m/n/12 setup_evo2_env.sh\T1/futs/m/n/12 , \T1/cmtt/m/n/12 setup_exploration_env.sh\T1/futs/m/n/12 )|
  []
 
-[15]) [16] (./text_prace/06_Vysledky_Diskuse.tex
+[21]) [22] (./text_prace/06_Vysledky_Diskuse.tex
 Chapter 4.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
 (Font)              scaled to size 22.88956pt on input line 1.
@@ -1244,7 +1310,7 @@ LaTeX Font Info:    Font shape `U/futm/m/n' will be
 (Font)              scaled to size 22.88956pt on input line 1.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
 (Font)              scaled to size 15.89755pt on input line 1.
-[17
+[23
 
 
 ]
@@ -1256,51 +1322,51 @@ LaTeX Font Info:    Font shape `U/futm/m/n' will be
 (Font)              scaled to size 10.07397pt on input line 42.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
 (Font)              scaled to size 7.63599pt on input line 42.
- [18] [19]) [20] (./text_prace/07_Zaver.tex [21
+ [24] [25]) [26] (./text_prace/07_Zaver.tex [27
 
 
-] [22]) [23]
-Overfull \hbox (129.30466pt too wide) in paragraph at lines 250--250
+] [28]) [29]
+Overfull \hbox (129.30466pt too wide) in paragraph at lines 251--251
 \T1/futs/m/it/12 Initiation Com-plex Is In-flu-enced by Non-con-sen-sus Protein-DNA Bind-ing\T1/futs/m/n/12 . https://arxiv.org/abs/1303.1302v1.|
  []
 
 
-Overfull \hbox (18.09683pt too wide) in paragraph at lines 250--250
+Overfull \hbox (18.09683pt too wide) in paragraph at lines 251--251
 \T1/futs/m/n/12 vbac097. \T1/futs/m/sc/12 issn\T1/futs/m/n/12 : 2635-0041. \T1/futs/m/sc/12 doi\T1/futs/m/n/12 : [][]$\T1/cmtt/m/n/12 10 . 1093 / bioadv / vbac097$[][]\T1/futs/m/n/12 . (Vis-ited on 04/30/2026). |
  []
 
-[24
+[30
 
 
 ]
-Overfull \hbox (10.96307pt too wide) in paragraph at lines 250--250
+Overfull \hbox (10.96307pt too wide) in paragraph at lines 251--251
 \T1/futs/m/n/12 ning for Oc-cur-rences of a given Mo-tif^^P. In: \T1/futs/m/it/12 Bioin-for-mat-ics \T1/futs/m/n/12 27.7 (Apr. 2011), pp. 1017^^U|
  []
 
 
-Overfull \hbox (1.47672pt too wide) in paragraph at lines 250--250
+Overfull \hbox (1.47672pt too wide) in paragraph at lines 251--251
 \T1/futs/m/n/12 Fac-tors Prime \T1/futs/m/it/12 Cis\T1/futs/m/n/12 -Regulatory El-e-ments Re-quired for Macrophage and B Cell Iden-|
  []
 
 
-Overfull \hbox (16.21672pt too wide) in paragraph at lines 250--250
+Overfull \hbox (16.21672pt too wide) in paragraph at lines 251--251
 \T1/futs/m/n/12 37.15 (Aug. 2021), pp. 2112^^U2120. \T1/futs/m/sc/12 issn\T1/futs/m/n/12 : 1367-4803. \T1/futs/m/sc/12 doi\T1/futs/m/n/12 : [][]$\T1/cmtt/m/n/12 10 . 1093 / bioinformatics /|
  []
 
 
-Overfull \hbox (4.3963pt too wide) in paragraph at lines 250--250
+Overfull \hbox (4.3963pt too wide) in paragraph at lines 251--251
 []\T1/futs/m/n/12 Anthony Math-e-lier et al. ^^R  DNA Shape Fea-tures Im-prove Tran-scrip-tion Fac-tor Bind-|
  []
 
-[25]
-Overfull \hbox (8.34587pt too wide) in paragraph at lines 250--250
+[31]
+Overfull \hbox (8.34587pt too wide) in paragraph at lines 251--251
 \T1/futs/m/sc/12 issn\T1/futs/m/n/12 : 1097-2765. \T1/futs/m/sc/12 doi\T1/futs/m/n/12 : [][]$\T1/cmtt/m/n/12 10 . 1016 / j . molcel . 2020 . 11 . 015$[][]\T1/futs/m/n/12 . (Vis-ited on 05/08/2026). |
  []
 
-[26] [27] (./text_prace/09_Priloha.tex [28
+[32] [33] (./text_prace/09_Priloha.tex [34
 
 
-] [29]) [30] [31] (./Prace.aux)
+] [35]) [36] [37] (./Prace.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
@@ -1309,25 +1375,28 @@ L3 programming layer <2024-01-22>
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package rerunfilecheck Info: File `Prace.out' has not changed.
-(rerunfilecheck)             Checksum: 49E6C9EDFA1EE54047CCB3EF9A7167D9;3690.
+(rerunfilecheck)             Checksum: 25595715D991895D9088CA02954BB61A;5302.
 Package logreq Info: Writing requests to 'Prace.run.xml'.
 \openout1 = `Prace.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 23463 strings out of 474222
- 410107 string characters out of 5748733
- 1940975 words of memory out of 5000000
- 45152 multiletter control sequences out of 15000+600000
- 725374 words of font info for 184 fonts, out of 8000000 for 9000
+ 23530 strings out of 474222
+ 411958 string characters out of 5748733
+ 1941975 words of memory out of 5000000
+ 45196 multiletter control sequences out of 15000+600000
+ 724341 words of font info for 181 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 80i,13n,93p,2471b,3307s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/fourier/fourier-bb.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fourier/fourier-mex.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qhvb.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qhvr.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on Prace.pdf (43 pages, 421480 bytes).
+ 80i,13n,93p,2471b,3308s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/fourier/fourier-bb.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fourier/fourier-mex.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qhvb.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qhvr.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfit1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1200.pfb>
+Output written on Prace.pdf (49 pages, 464826 bytes).
 PDF statistics:
- 745 PDF objects out of 1000 (max. 8388607)
- 660 compressed objects within 7 object streams
- 137 named destinations out of 1000 (max. 500000)
- 398 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 911 PDF objects out of 1000 (max. 8388607)
+ 816 compressed objects within 9 object streams
+ 163 named destinations out of 1000 (max. 500000)
+ 526 words of extra memory for PDF output out of 10000 (max. 10000000)
 

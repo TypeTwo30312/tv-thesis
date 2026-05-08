@@ -205,6 +205,209 @@ The sequence features characterised by \citet{faltejskovaNonconsensusFlankingSeq
 Whether the per-token embeddings of such a model encode the kilobase-scale compositional structure described above is the empirical question taken up in this thesis.
 The foundation model used, Evo~2, is introduced in §\ref{sec:foundation-models}.
 
+\section{Computational approaches to TF binding site analysis}
+\label{sec:pwm}
+
+\subsection{Position weight matrices}
+
+The dominant computational representation of TF binding specificity is the position weight matrix (PWM), \fix{also called a position-specific scoring matrix (PSSM).}
+A PWM is derived from a set of aligned binding sequences of fixed width $L$:
+at each position $i \in \{1, \ldots, L\}$ and nucleotide $b \in \{A, C, G, T\}$, the log-odds score $w_{i,b} = \log_2 (f_{i,b} / p_b)$ is computed, where $f_{i,b}$ is the observed frequency of nucleotide $b$ at position $i$ among the training sequences and $p_b$ is the background frequency of $b$ \cite{stormoDNABindingSites2000}.
+The score of a candidate sequence is the sum of per-position log-odds terms;
+a threshold on this score determines whether the sequence is called a binding site.
+The information content of the matrix, $\mathrm{IC} = \sum_{i} \sum_b f_{i,b} \log_2(f_{i,b}/p_b)$, is a measure of the specificity of the motif and is used to produce the familiar sequence logo visualisation \cite{schneiderSequenceLogosNew1990}.
+\todo{sequence logo visual}
+
+The PWM model rests on an independence assumption: the contribution of each position to the total score is treated as additive, with no coupling between positions.
+This assumption is biologically inaccurate --- adjacent nucleotides are correlated in both sequence and structural terms --- but the model is computationally tractable, transferable across organisms, and sufficiently accurate for many applications.
+It remains the standard representation in curated databases such as JASPAR \cite{ovekbaydarJASPAR2026Expansion2026} and HOCOMOCO \cite{vorontsovHOCOMOCO2024Rebuild2024}, which together provide PWM models for the large majority of human TFs.
+
+\subsection{Motif discovery and enrichment analysis}
+
+Given a set of ChIP-seq peak sequences, two related tasks arise:
+discovering the sequence motif enriched in the peaks (motif discovery), and testing whether a known motif is significantly enriched relative to a background set (motif enrichment).
+
+MEME (Multiple Em for Motif Elicitation) addresses the discovery task using expectation maximisation to identify the PWM that best explains an overrepresented pattern across the input sequences \cite{baileyUnsupervisedLearningMultiple1995};
+the broader MEME Suite extends this to enrichment testing, scanning, and comparative analysis \cite{baileyMEMESuite2015}.
+HOMER (Hypergeometric Optimization of Motif EnRichment) is widely used for ChIP-seq specifically:
+it optimises motif enrichment relative to a GC-matched background set, making it robust to the GC bias that is characteristic of many TF binding sites \cite{heinzSimpleCombinationsLineageDetermining2010}.
+Scanning a genome with a known PWM to identify all sites above a score threshold is performed by tools such as FIMO \cite{grantFIMOScanningOccurrences2011};
+this is the operation used to count the motif matches discussed in §\ref{sec:paradox}.
+
+\subsection{Extensions beyond the independence model}
+
+Several approaches have been developed to relax the positional independence assumption.
+Dinucleotide weight matrices (DWMs) model pairwise dependencies between adjacent positions, capturing the nearest-neighbour sequence correlations that are mechanistically important for
+shape readout.
+Hidden Markov models and related probabilistic graphical models can represent variable-length motifs with internal positional dependencies, at the cost of increased model complexity and training data requirements. \todo{citation}
+Convolutional neural networks trained on ChIP-seq data learn sequence representations that implicitly capture multi-position dependencies and outperform PWMs on held-out binding
+prediction benchmarks \cite{alipanahiPredictingSequenceSpecificities2015};
+however, such models are typically trained in a supervised setting and require labelled positive and negative sequences.
+
+A complementary line of work incorporates predicted DNA shape features alongside sequence features.
+\citet{mathelierDNAShapeFeatures2016} showed that adding per-position shape predictions (minor groove width, propeller twist, roll, and helical twist computed by DNAshape) as features alongside the PWM score systematically improves in vivo binding prediction across a broad range of TF families.
+The deepDNAshape model \cite{liPredictingDNAStructure2024}, which predicts the same structural features from sequence using a neural network trained on molecular dynamics simulations, is used by \citet{faltejskovaNonconsensusFlankingSequence2026} to characterise shape changes across the 10~kb window around binding sites.
+
+\subsection{The kilobase-scale context gap}
+\label{sec:motif-gap}
+
+All methods described above share a fundamental constraint:
+they operate on a fixed window whose width is determined by the binding footprint of the TF.
+PWMs typically span 6--20~bp; even extended models incorporating shape features or positional dependencies are anchored to the core motif and its immediate neighbourhood, typically within 50~bp.
+By construction, these methods cannot represent the kilobase-scale sequence composition gradients described in §\ref{sec:faltejskova}, because they have no mechanism for incorporating sequence at that distance from the binding site.
+
+This constraint is not a limitation of any specific algorithm but is inherent to the class of models:
+the binding site itself is defined as a short sequence, and the model is designed to score that sequence.
+Capturing kilobase-scale context requires a qualitatively different modelling approach --- one that processes the full sequence window and produces representations that integrate information across its entire length.
+Genomic foundation models, described in the following section, are a natural candidate for this role.
+
+\section{Genomic foundation models}
+\label{sec:foundation-models}
+
+\subsection{Self-supervised pretraining and the foundation model paradigm}
+
+\fix{The dominant paradigm in modern sequence modelling} \todo{this is not specific to sequence modelling. bommasani is general about foundation model} is self-supervised pretraining on large
+unlabelled corpora, followed by task-specific adaptation.
+A model is trained to predict held-out portions of the input sequence from the remaining
+context:
+in masked language modelling, randomly selected tokens are replaced with a mask symbol and
+the model is trained to recover them;
+in autoregressive modelling, the model is trained to predict each token from all preceding
+tokens.
+Neither objective requires labelled data;
+the supervision signal is derived entirely from the sequence itself.
+The resulting model learns distributed representations that encode statistical regularities of
+the training corpus and that can be transferred to downstream tasks by fine-tuning on small
+labelled datasets or by extracting intermediate-layer embeddings for use as features
+\cite{bommasaniOpportunitiesRisksFoundation2022}.
+
+The transformer architecture \cite{vaswaniAttentionAllYou2017} is the backbone of most
+current foundation models.
+Its core mechanism, scaled dot-product attention, computes pairwise interactions between all
+positions in the input sequence, allowing each position's representation to integrate
+information from arbitrarily distant context.
+This property makes transformers well-suited for tasks that require long-range dependencies;
+however, the computational and memory cost of full attention scales quadratically with
+sequence length, which places a practical ceiling on the context window at training time.
+For DNA, where biologically relevant interactions can span thousands to millions of base
+pairs, this is a fundamental constraint.
+
+\todo{Consider a schematic here contrasting the limited receptive field of a PWM scanner
+against the full-context attention of a transformer, to visually motivate why architecture
+matters for the kilobase-scale problem.}
+
+\subsection{Genomic foundation models: a brief landscape}
+
+The first genomic foundation model applied to regulatory sequence was DNABERT
+\cite{jiDNABERTPretrainedBidirectional2021a}, which adapted the BERT masked language
+modelling objective to the human reference genome.
+DNABERT tokenises the genome into overlapping $k$-mers (default $k = 6$) and pretrains a
+bidirectional transformer on the resulting token sequences.
+The pretrained model was shown to transfer to promoter prediction, splice site detection, and
+TF binding site prediction by fine-tuning on small labelled datasets.
+A limitation of the $k$-mer tokenisation is that it conflates sequence position with token
+identity and produces a highly redundant vocabulary;
+the context window at inference time was also limited to 512 tokens, corresponding to
+roughly 512~bp of genomic sequence.
+
+The Nucleotide Transformer \cite{dalla-torreNucleotideTransformerBuilding2025} scaled the
+masked language modelling approach to larger model sizes (up to 2.5~billion parameters) and a
+multi-species training corpus, demonstrating that scale improves transfer performance across a
+broad panel of regulatory prediction benchmarks.
+Its context window remains limited to a few kilobases at inference.
+
+HyenaDNA \cite{nguyenHyenaDNALongRangeGenomic2023} addressed the context length problem by
+replacing the attention mechanism with the Hyena operator, a data-controlled convolutional
+recurrence that scales linearly in sequence length.
+Trained autoregressively on the human reference genome at single-nucleotide resolution,
+HyenaDNA extended the practical context window to up to 1~million base pairs, demonstrating
+for the first time that a genomic foundation model could be trained and evaluated at the scale
+of entire chromosomal regions.
+Performance on short-range benchmarks was competitive with transformer-based models;
+the primary advance was the demonstration that linear-scaling architectures could handle
+genomic context lengths that are infeasible for full attention.
+
+\subsection{Evo and Evo 2}
+
+Evo \cite{nguyenSequenceModelingDesign2024} extended the long-context autoregressive
+paradigm to a multi-kingdom training corpus, pretraining a 7~billion parameter model on
+prokaryotic, viral, and eukaryotic genomes using the StripedHyena architecture.
+StripedHyena interleaves multi-head attention layers with Hyena convolutional layers,
+combining the strong local feature extraction of attention with the linear-scaling long-range
+context capture of the Hyena operator.
+Evo demonstrated capabilities in zero-shot variant effect prediction, coding sequence
+generation, and CRISPR guide RNA design.
+
+Evo~2 \cite{brixiGenomeModellingDesign2026} is the successor model, published in
+\emph{Nature} in 2026.
+It is trained autoregressively on OpenGenome2, a curated dataset of 8.8~trillion nucleotide
+tokens drawn from organisms across all domains of life, including prokaryotes, archaea, and
+eukaryotes.
+The architecture is StripedHyena~2, an updated version that further improves the integration
+of attention and gated convolutional layers.
+Models are available in three sizes:
+1~billion, 7~billion, and 40~billion parameters.
+The 7~billion parameter checkpoint used in this thesis operates at single-nucleotide
+resolution with a context window of up to 1~million base pairs in its extended-context
+configuration (\texttt{evo2\_7b}), or 8192 tokens in its base configuration
+(\texttt{evo2\_7b\_base}).
+Because the 10~kb windows used in this thesis exceed the 8192-token limit of the base
+checkpoint, the extended-context \texttt{evo2\_7b} checkpoint is used throughout.
+
+Evo~2 has been benchmarked on variant effect prediction across coding and non-coding variants,
+zero-shot fitness prediction for proteins and ncRNA, and generative sequence design;
+these evaluations are described in the original publication.
+Whether and how Evo~2 embeddings represent the sequence context around in vivo TF binding
+sites has not been examined.
+
+\subsection{Embedding extraction and layer selection}
+\label{sec:embedding-extraction}
+
+Foundation models trained autoregressively produce, at each token position, a hidden-state
+vector whose dimensionality equals the model's embedding dimension.
+These per-token hidden states are the primary substrate for embedding-based analyses:
+they can be mean-pooled across the sequence to produce a single fixed-length representation,
+or retained at full resolution to carry positional information.
+
+For Evo~2 with a 7~billion parameter model, the embedding dimension is 4096.
+Each token (nucleotide) at each sequence position produces a 4096-dimensional vector;
+a 10~kb sequence therefore yields a $(10{,}000 \times 4096)$ matrix of hidden states before
+any pooling.
+
+The choice of which layer's hidden states to extract is consequential.
+The final layer is specialised for the next-token prediction objective and carries
+information optimised for that task rather than for general-purpose representation.
+Intermediate layers have been shown empirically to produce more transferable representations
+for downstream tasks;
+\fix{the exon classifier notebook distributed with Evo~2 uses layer \texttt{blocks.28.mlp.l3} as
+the embedding source for a classification task} \todo{what else do they use it for?}, and this layer is used in the present thesis
+for the same reason.
+
+\todo{consider cutting}
+In this thesis, each 10~kb sequence is processed in a single forward pass through
+\texttt{evo2\_7b}, and the per-token hidden states from \texttt{blocks.28.mlp.l3} are
+extracted and mean-pooled within non-overlapping 50~bp bins to yield a
+$(200 \times 4096)$ positional embedding profile per peak.
+This binning resolution matches the 50~bp window size used by \citet{faltejskovaNonconsensusFlankingSequence2026}
+for hand-engineered feature extraction, allowing a direct spatial correspondence between
+the two analyses.
+The technical details of the embedding pipeline are described in §\ref{sec:methods-embedding}.
+
+\subsection{Autoregressive context and its implications}
+
+A property of autoregressive models that is directly relevant to the interpretation of
+positional embedding profiles is the asymmetry of context:
+at any token position $t$, the hidden state is computed from all preceding tokens
+$1, \ldots, t-1$ but has no access to tokens at positions $t+1, \ldots, L$.
+Tokens near the beginning of the sequence therefore have little or no left context, and their
+representations may differ systematically from tokens in the interior of the sequence where
+left context is rich.
+This warm-up effect is a model-level property, not a sequence-biological signal, and must be
+accounted for when interpreting positional embedding profiles derived from fixed-start 10~kb
+windows.
+The practical consequence for this thesis --- and the trimming strategy adopted to address it
+--- is described in §\ref{sec:results-block2}.
+
 % \section{NGS}
 
 % Next-generation sequencing (NGS) refers to a set of technologies dating to..., that enable high throughput sequencing of \todo{scale}.
