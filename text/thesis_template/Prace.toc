@@ -1,4 +1,4 @@
-\babel@toc {czech}{}\relax 
+\babel@toc {english}{}\relax 
 \contentsline {chapter}{List of Figures}{x}{chapter*.2}%
 \contentsline {chapter}{List of Tables}{xi}{chapter*.2}%
 \contentsline {chapter}{List of Abbreviations}{xii}{chapter*.3}%
@@ -8,15 +8,12 @@
 \contentsline {subsection}{\numberline {1.1.1}Transcription factors and DNA binding}{2}{subsection.1.1.1}%
 \contentsline {subsection}{\numberline {1.1.2}Sequence determinants of binding}{2}{subsection.1.1.2}%
 \contentsline {subsection}{\numberline {1.1.3}The specificity paradox}{3}{subsection.1.1.3}%
-\contentsline {section}{\numberline {1.2}Next-generation sequencing and ChIP-seq}{4}{section.1.2}%
-\contentsline {subsection}{\numberline {1.2.1}Short-read sequencing}{4}{subsection.1.2.1}%
+\contentsline {section}{\numberline {1.2}Next-generation sequencing and ChIP-seq}{5}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Short-read sequencing}{5}{subsection.1.2.1}%
 \contentsline {subsection}{\numberline {1.2.2}Chromatin immunoprecipitation sequencing}{5}{subsection.1.2.2}%
-\contentsline {subsection}{\numberline {1.2.3}CUT\&Tag as a methodological contrast}{5}{subsection.1.2.3}%
-\contentsline {subsection}{\numberline {1.2.4}Read alignment and peak calling}{5}{subsection.1.2.4}%
-\contentsline {subsection}{\numberline {1.2.5}Reproducibility filtering and IDR}{6}{subsection.1.2.5}%
-\contentsline {subsection}{\numberline {1.2.6}Data formats and reference genome}{6}{subsection.1.2.6}%
-\contentsline {subsection}{\numberline {1.2.7}The ENCODE project}{6}{subsection.1.2.7}%
-\contentsline {subsection}{\numberline {1.2.8}Long-range sequence context around binding sites}{7}{subsection.1.2.8}%
+\contentsline {subsection}{\numberline {1.2.3}Read alignment and peak calling}{6}{subsection.1.2.3}%
+\contentsline {subsection}{\numberline {1.2.4}Reproducibility filtering and the ENCODE project}{6}{subsection.1.2.4}%
+\contentsline {subsection}{\numberline {1.2.5}Long-range sequence context around binding sites}{7}{subsection.1.2.5}%
 \contentsline {section}{\numberline {1.3}Computational approaches to TF binding site analysis}{8}{section.1.3}%
 \contentsline {subsection}{\numberline {1.3.1}Position weight matrices}{8}{subsection.1.3.1}%
 \contentsline {subsection}{\numberline {1.3.2}Motif discovery and enrichment analysis}{8}{subsection.1.3.2}%
@@ -25,26 +22,29 @@
 \contentsline {section}{\numberline {1.4}Genomic foundation models}{10}{section.1.4}%
 \contentsline {subsection}{\numberline {1.4.1}Self-supervised pretraining and the foundation model paradigm}{10}{subsection.1.4.1}%
 \contentsline {subsection}{\numberline {1.4.2}Genomic foundation models: a brief landscape}{10}{subsection.1.4.2}%
-\contentsline {subsection}{\numberline {1.4.3}Evo and Evo 2}{11}{subsection.1.4.3}%
-\contentsline {subsection}{\numberline {1.4.4}Embedding extraction and layer selection}{11}{subsection.1.4.4}%
-\contentsline {subsection}{\numberline {1.4.5}Autoregressive context and its implications}{12}{subsection.1.4.5}%
-\contentsline {chapter}{\numberline {2}Aims of thesis}{13}{chapter.2}%
-\contentsline {chapter}{\numberline {3}Methods}{14}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Data}{14}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}Transcription factors}{14}{subsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.1.2}ChIP-seq data sources}{14}{subsection.3.1.2}%
-\contentsline {subsection}{\numberline {3.1.3}Cell-line coverage}{15}{subsection.3.1.3}%
-\contentsline {subsection}{\numberline {3.1.4}Random-windows control}{15}{subsection.3.1.4}%
-\contentsline {subsection}{\numberline {3.1.5}Reproducibility and seeding}{16}{subsection.3.1.5}%
+\contentsline {subsection}{\numberline {1.4.3}Evo 1 and Evo 2}{11}{subsection.1.4.3}%
+\contentsline {subsection}{\numberline {1.4.4}Embedding extraction, binning, and normalisation}{12}{subsection.1.4.4}%
+\contentsline {subsubsection}{Magnitude and directional variation}{12}{subsubsection*.5}%
+\contentsline {subsection}{\numberline {1.4.5}Autoregressive context and its implications}{13}{subsection.1.4.5}%
+\contentsline {chapter}{\numberline {2}Aims of thesis}{14}{chapter.2}%
+\contentsline {chapter}{\numberline {3}Methods}{15}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Data}{15}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Transcription factors}{15}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}ChIP-seq data sources}{15}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.1.3}Reproducibility and seeding}{16}{subsection.3.1.3}%
 \contentsline {section}{\numberline {3.2}Pipeline}{16}{section.3.2}%
 \contentsline {subsection}{\numberline {3.2.1}Sequence extraction}{16}{subsection.3.2.1}%
 \contentsline {subsection}{\numberline {3.2.2}Embedding extraction}{17}{subsection.3.2.2}%
-\contentsline {subsection}{\numberline {3.2.3}Computational environment}{17}{subsection.3.2.3}%
-\contentsline {section}{\numberline {3.3}Analyses}{18}{section.3.3}%
-\contentsline {chapter}{\numberline {4}Results and discussion}{19}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Podkapitola}{19}{section.4.1}%
-\contentsline {chapter}{Závěr}{20}{chapter*.5}%
+\contentsline {subsection}{\numberline {3.2.3}Computational environment}{18}{subsection.3.2.3}%
+\contentsline {section}{\numberline {3.3}Analysis}{18}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Global mean-pool PCA}{18}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Positional profiles}{19}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}Reverse-complement strand diagnostic}{20}{subsection.3.3.3}%
+\contentsline {chapter}{\numberline {4}Results and discussion}{21}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Global mean-pool embeddings}{21}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Positional structure of Evo~2 embeddings}{22}{section.4.2}%
+\contentsline {chapter}{Závěr}{28}{chapter*.12}%
 \babel@toc {english}{}\relax 
-\babel@toc {czech}{}\relax 
-\contentsline {chapter}{Bibliography}{24}{chapter*.6}%
-\contentsline {chapter}{Appendix}{25}{chapter*.7}%
+\babel@toc {english}{}\relax 
+\contentsline {chapter}{Bibliography}{33}{chapter*.13}%
+\contentsline {chapter}{Appendix}{34}{chapter*.14}%

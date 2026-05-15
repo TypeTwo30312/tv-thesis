@@ -1,7 +1,12 @@
-\babel@toc {czech}{}\relax 
-\addvspace {10\p@ }
-\addvspace {10\p@ }
-\addvspace {10\p@ }
-\addvspace {10\p@ }
 \babel@toc {english}{}\relax 
-\babel@toc {czech}{}\relax 
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {1}{\ignorespaces Global mean-pool PCA and UMAP of Evo~2 embeddings ($n = 49{,}497$ peaks). Top row: PCA scores coloured by transcription factor identity, cell line, BED file, and per-peak mean GC content (left to right). Bottom row: UMAP ($n_\text {neighbors} = 30$, $\text {min\_dist} = 0.1$) coloured by the same variables. }}{21}{figure.caption.7}%
+\contentsline {figure}{\numberline {2}{\ignorespaces Positional PCA of file-level mean Evo~2 profiles, untrimmed (all 200 bins included in the fit). Top left: embedding L2 magnitude per 50~bp bin. Top right: scree plot. Rows 2--3: positional PC scores for PCs~1--4 plotted across the 10~kb window. The spike confined to the leftmost bins at position $\approx -4750$~bp, absent at the right window edge, is the autoregressive warm-up artefact confirmed by the strand diagnostic (Section~\ref {sec:results-revcomp}). }}{23}{figure.caption.8}%
+\contentsline {figure}{\numberline {3}{\ignorespaces Per-bin embedding L2 magnitude for the forward pass (left) and the reverse-complement pass (right) on MYC GM12878 peaks ($n = 2{,}203$). The RC profile is shown in genomic coordinates (bin axis flipped relative to model processing order). Orange shading marks the expected warm-up region in each pass. The magnitude elevation migrates from the left window edge in the forward pass to the right window edge in the RC pass, consistent with a causal autoregressive origin. }}{24}{figure.caption.9}%
+\contentsline {figure}{\numberline {4}{\ignorespaces Positional PCA of file-level mean Evo~2 profiles with the first 15 bins (750~bp) excluded from the fit. Top left: embedding L2 magnitude per bin. Top right: scree (PC1 52.1\%, PC2 33.6\%, PC3 7.7\%, PC4 3.3\%). Rows 2--3: PC scores for PCs~1--4 across the 10~kb window. Shaded region: excluded warm-up bins. Files are labelled by TF and cell line. }}{25}{figure.caption.10}%
+\contentsline {figure}{\numberline {5}{\ignorespaces Positional PCA after L2 row-normalisation of file-mean profiles (embedding magnitude removed before fitting). Top left: per-bin embedding L2 magnitude (reference, unchanged). Top right: scree (PC1 53.1\%, PC2 21.6\%, PC3 13.4\%, PC4 6.0\%). Rows 2--3: PC scores for PCs~1--4 across the window. Shaded region: excluded warm-up bins. }}{26}{figure.caption.11}%
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 

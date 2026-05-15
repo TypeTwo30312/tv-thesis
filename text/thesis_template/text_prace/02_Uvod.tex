@@ -1,6 +1,47 @@
 \chapter*{Introduction}
 \addcontentsline{toc}{chapter}{Introduction}
 
+\shorthandoff{-}
+
+Machine learning has become a transformative force across the life sciences.
+In medical imaging, deep convolutional networks match or exceed expert performance on
+diagnostic tasks that were previously the exclusive domain of trained clinicians
+\cite{greenerGuideMachineLearning2021}.
+In structural biology, the application of attention-based deep learning to the protein
+folding problem --- a challenge that had resisted computational solution for half a century
+--- produced AlphaFold~2, whose predictions approach experimental accuracy across the
+breadth of known protein sequence space \cite{jumperHighlyAccurateProtein2021}.
+In drug discovery, generative models now propose candidate molecules with specified
+physicochemical properties at a scale and speed inaccessible to traditional screening
+approaches.
+Across these domains, a common theme emerges: models trained on large corpora of
+biological data, without task-specific supervision, acquire representations that are useful
+far beyond the immediate training objective.
+
+Nucleotide sequence is a natural substrate for this class of approach.
+The architecture of transformer-based large language models \cite{vaswaniAttentionAllYou2017},
+developed originally for natural language, transfers to biological sequences in a
+conceptually straightforward way: tokens are nucleotides or amino acids rather than words.
+Applied to biological sequence, the approach produces models that learn representations
+without the constraints of expert-defined features --- the sequence itself provides the
+supervision signal.
+Whether, and to what degree, such representations capture biologically interpretable
+structure in the sequence is an open question that motivates a growing body of
+descriptive work.
+
+This thesis contributes to that body of work.
+The specific context is transcription factor binding: a well-characterised biological
+phenomenon for which large-scale, standardised genomic data are available, and for which
+recent descriptive analyses have identified sequence signals extending well beyond the
+spatial scale addressed by conventional computational models
+\cite{faltejskovaNonconsensusFlankingSequence2026a}.
+The approach taken here is descriptive: Evo~2 embeddings \cite{brixiGenomeModellingDesign2026}
+are extracted from 10~kb windows centred on ChIP-seq binding sites and examined for
+structure that corresponds to known sequence properties of those regions.
+
+\shorthandon{-}
+
+
 \shorthandoff{-}\shorthandon{-}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

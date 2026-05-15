@@ -1,0 +1,1 @@
+Only write inside text/scratchpad. Treat everything else under tv-thesis/ as read-only.

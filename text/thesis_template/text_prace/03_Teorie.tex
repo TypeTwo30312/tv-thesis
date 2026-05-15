@@ -2,13 +2,12 @@
 
 \shorthandoff{-} 
 
-
 \section{Transcription factor binding}
 \label{sec:tf-binding}
 
 \subsection{Transcription factors and DNA binding}
 
-Transcription factors (TFs) are proteins that modulate transcription by binding DNA in a sequence-specific manner.
+Transcription factors (TFs) are proteins that bind DNA in a sequence-specific manner to modulate transcription.
 They act through regulatory elements such as promoters, enhancers, and silencers, recruiting the transcription machinery or modulating its activity.
 Most TFs share a modular architecture: a DNA-binding domain (DBD) that contacts the target sequence, paired with one or more effector domains responsible for transactivation, repression, or dimerisation.
 Because the DBD determines binding specificity, TFs are classified by DBD family rather than by effector function.
@@ -24,13 +23,13 @@ they must locate their short target sequence among a large number of similar but
 
 The specificity of protein--DNA recognition rests on two complementary mechanisms: direct chemical recognition of bases (base readout) and recognition of sequence-dependent DNA geometry (shape readout).
 
-Base readout operates through direct contacts --- hydrogen bonds and van der Waals interactions --- between amino acid side chains and the Watson--Crick edges of bases, predominantly in the major groove.
+Base readout operates through direct contacts -- hydrogen bonds and van der Waals interactions -- between amino acid side chains and the Watson--Crick edges of bases, predominantly in the major groove.
 \fix{The major groove presents a distinctive pattern of hydrogen bond donors and acceptors} that permits discrimination between all four base pairs, including the orientation of A:T and T:A \cite{luscombeAminoAcidbaseInteractions2001, seemanSequencespecificRecognitionDouble1976}.
-The C2H2 zinc finger illustrates the mechanism: each $\beta\beta\alpha$ module contacts approximately three base pairs through specificity residues on the recognition helix, and the contributions of successive modules combine to determine the affinity and specificity of the full array \cite{pavletichZincFingerDNARecognition1991}.
+The C2H2 zinc finger illustrates the mechanism: each $\beta\beta\alpha$ module contacts approximately three base pairs through specificity residues on the recognition helix, and the contributions of successive modules combine to determine the affinity and specificity of the full array.
 Position weight matrices (PWMs) are the natural statistical encoding of base readout, treating each position within the motif as an independent contribution to binding affinity (§\ref{sec:pwm}).
 
 Shape readout depends on sequence context beyond the contact position.
-The geometry at any given base pair --- minor groove width, propeller twist, helical twist, roll, and slide --- is influenced by neighbouring bases over several positions in either direction, and is read by protein contacts that respond to local shape and electrostatics rather than to specific bases.
+The geometry at any given base pair -- minor groove width, propeller twist, helical twist, roll, and slide -- is influenced by neighbouring bases over several positions in either direction, and is read by protein contacts that respond to local shape and electrostatics rather than to specific bases.
 The canonical example is recognition of narrow minor grooves by arginine residues: runs of A:T base pairs (A-tracts) produce locally narrowed minor grooves with concentrated negative electrostatic potential, which arginine side chains insert into and stabilise without forming base-specific hydrogen bonds \cite{rohsRoleDNAShape2009}.
 
 The two mechanisms are genuinely complementary rather than redundant.
@@ -40,27 +39,24 @@ Their combined reach is nonetheless bounded by the binding footprint: base reado
 \subsection{The specificity paradox}
 \label{sec:paradox}
 
-The degeneracy of TF motifs means that a typical 10~bp motif at moderate information content matches millions of sites in a mammalian genome, while in vivo occupancy --- assayed by ChIP-seq, the standard method described in §\ref{sec:chipseq} --- typically identifies between a few thousand and a few tens of thousands of bound sites per TF per cell line. \todo{cite ENCODE probably}
+The degeneracy of TF motifs means that a typical 10~bp motif at moderate information content matches millions of sites in a mammalian genome, while in vivo occupancy -- assayed by ChIP-seq, the standard method described in §\ref{sec:chipseq} -- typically identifies between a few thousand and a few tens of thousands of bound sites per TF per cell line.
 CTCF in K562 cells, for example, has approximately 52\,000 IDR-thresholded ENCODE peaks, against approximately 870\,000 matches to the canonical CTCF motif in the hg19 genome at standard FIMO thresholds \cite{dozmorovCTCFBioconductorData2022}.
-This discrepancy between motif presence and actual occupancy has been termed the transcription factor specificity paradox;
-\todo{if keep, reformulate, cite \cite{kribelbauerLowAffinityBindingSites2019}}% it was formalised for prokaryotic TFs as the futility theorem by \citet{wunderlichDifferentGeneRegulation2009}, who showed that in a sufficiently large genome even highly informative motifs predict more matches than there are TF molecules in the cell, making purely sequence-based recognition statistically insufficient. TODO: rephrase, for eukaryotes - prokaryotes have enough information.
+This discrepancy between motif presence and actual occupancy has been termed the transcription factor specificity paradox; it was formalised for prokaryotic TFs as the futility theorem by \citet{wunderlichDifferentGeneRegulation2009}, who showed that in a sufficiently large genome even highly informative motifs predict more matches than there are TF molecules in the cell, making purely sequence-based recognition statistically insufficient.
 In practice, the paradox is reflected in the weak correlation between intrinsic in vitro affinity (measured by HT-SELEX or protein-binding microarrays) and in vivo occupancy:
 high-affinity sites can remain unbound, while low-affinity sites are often occupied \cite{slatteryAbsenceSimpleCode2014a}.
 
 Several mechanisms partially resolve the discrepancy, each a substantial field in its own right.
 Chromatin accessibility is regarded as the dominant factor: only a small fraction of the genome is accessible to DNA-binding proteins at any given time, the remainder occluded by nucleosomes or compacted into heterochromatin, and most in vivo TF binding occurs within accessible regions \cite{thurmanAccessibleChromatinLandscape2012}.
-Cooperative binding with cofactors restricts binding further: many TFs bind productively only as part of a complex --- homodimers, heterodimers, or larger assemblies --- so the combinatorics of cofactor co-occupancy limit where productive binding can occur \cite{sonmezerMolecularCooccupancyIdentifies2021}.
-Cellular context adds a third layer: TF abundance, post-translational modification, and subcellular localisation are all condition-dependent and regulate the effective concentration of binding-competent protein \cite{spitzTranscriptionFactorsEnhancer2012}.
-\todo{find alternative reference ideally}
+Cooperative binding with cofactors restricts binding further: many TFs bind productively only as part of a complex -- homodimers, heterodimers, or larger assemblies -- so the combinatorics of cofactor co-occupancy limit where productive binding can occur \cite{sonmezerMolecularCooccupancyIdentifies2021}.
+Cellular context adds a third layer: TF abundance, post-translational modification, and subcellular localisation are all condition-dependent and regulate the effective concentration of binding-competent protein \cite{kribelbauerLowAffinityBindingSites2019}.
 
 A fourth contribution, less studied than the preceding three, is sequence context beyond the motif itself.
-\citet{drorWidespreadRoleMotif2015} demonstrated, in a systematic analysis of 239 TFs from HT-SELEX and 56 from ChIP-seq data, that the sequence and DNA shape environment surrounding bound motifs differs significantly from that surrounding unbound occurrences of the same motif, with differences extending well beyond the core binding site and exhibiting TF-family-specific patterns. \todo{distinguish from shape readout somehow, read dror again}
+\citet{drorWidespreadRoleMotif2015} demonstrated, in a systematic analysis of 239 TFs from HT-SELEX and 56 from ChIP-seq data, that the sequence and DNA shape environment (termed "homotypic environment", for its typical resemblance of the motifs composition) surrounding bound motifs differs significantly from that surrounding unbound occurrences of the same motif, with differences extending well beyond the core binding site (up to 300\,bp) and exhibiting TF-family-specific patterns.
 Crucially, the signal was present in both the in vitro and in vivo datasets, ruling out the cellular environment as its sole source and establishing flanking sequence context as a genuine, sequence-encoded contributor to binding discrimination.
 Unlike chromatin accessibility and cooperative binding, this contribution is in principle directly accessible to any model that operates on raw sequence input.
 
-The spatial scale at which sequence context influences binding spans several orders of magnitude: from the immediate flanks of the core motif \cite{drorWidespreadRoleMotif2015}, through the tens-to-hundreds of base pairs over which sequence composition modulates the nonspecific affinity experienced by a scanning TF \cite{afekGenomewideOrganizationEukaryotic2013, selaDNASequenceCorrelations2011}, \fix{out to the kilobase-scale compositional gradients recently characterised by \citet{faltejskovaNonconsensusFlankingSequence2026}.}
-That last study, and its role as the biological motivation for the analyses in this thesis, is discussed in §\ref{sec:faltejskova} following the description of the experimental data on which both studies are based.
-\todo{soften claim - descriptive? implied?, is this first mention? mention it's a preprint?}
+The spatial scale at which sequence context influences binding spans several orders of magnitude: from the immediate flanks of the core motif \cite{drorWidespreadRoleMotif2015}, through the tens-to-hundreds of base pairs over which sequence composition modulates the nonspecific affinity experienced by a scanning TF \cite{afekGenomewideOrganizationEukaryotic2013, selaDNASequenceCorrelations2011}, \fix{out to the kilobase-scale compositional gradients recently reported by \citet{faltejskovaNonconsensusFlankingSequence2026a}(preprint).}
+The findings of this last study are the biological motivation for the analyses in this thesis and are discussed in §\ref{sec:faltejskova}.
 
 \section{Next-generation sequencing and ChIP-seq}
 \label{sec:chipseq}
@@ -73,7 +69,7 @@ libraries of DNA fragments are clonally amplified on a flow cell surface, and ea
 Typical read lengths are 50--150~bp per end; paired-end protocols sequence both ends of each fragment and are standard for ChIP-seq.
 The output is a set of FASTQ files containing read sequences and per-base quality scores.
 Key limitations are the short read length, which complicates mapping to repetitive regions,
-and a characteristic per-base error rate of approximately $10^{-3}$, dominated by substitution errors \cite{stolerSequencingErrorProfiles2021}.
+and a characteristic per-base error rate of approximately $10^{-3}$, dominated by substitution errors.
 
 NGS functions as a platform on which different upstream wet-lab protocols measure different genomic quantities:
 RNA-seq measures transcript abundance, ATAC-seq measures chromatin accessibility, and ChIP-seq measures protein--DNA contacts.
@@ -81,8 +77,8 @@ The platform is otherwise identical across assays; what changes is the biologica
 
 \subsection{Chromatin immunoprecipitation sequencing}
 
-Chromatin immunoprecipitation followed by sequencing (ChIP-seq) is the standard method for mapping genome-wide protein--DNA contacts at the population level \cite{parkChIPSeqAdvantages2009}. \todo{no acess, }
-In the crosslinking variant used for most TF ChIP-seq experiments, cells are treated with formaldehyde to covalently crosslink protein--DNA complexes in situ, chromatin is then fragmented by sonication or enzymatic digestion to a target size of approximately 200~bp, and an antibody specific to the TF of interest is used to immunoprecipitate the crosslinked complexes.
+Chromatin immunoprecipitation followed by sequencing (ChIP-seq) is the standard method for mapping genome-wide protein--DNA contacts at the population level \cite{baileyPracticalGuidelinesComprehensive2013}.
+In the crosslinking variant used for most TF ChIP-seq experiments, cells are treated with formaldehyde to covalently bind protein--DNA complexes in situ, chromatin is then fragmented by sonication or enzymatic digestion to a target size of approximately 200~bp, and an antibody specific to the TF of interest is used to immunoprecipitate the crosslinked complexes.
 After reversal of crosslinks, the co-purified DNA is sequenced.
 The resulting reads are enriched at genomic positions occupied by the protein, producing a coverage signal that is higher at bound sites than at unbound genomic background.
 
@@ -90,68 +86,50 @@ The output of ChIP-seq is interpretable as a population-averaged estimate of con
 sites occupied in a large fraction of cells contribute more fragments to the library and produce sharper, higher-amplitude peaks.
 This population averaging is a fundamental limitation: the assay does not report single-cell occupancy, cannot distinguish direct from indirect binding (a TF pulled down as part of a complex is not directly bound to the immunoprecipitated DNA), and is sensitive to antibody quality in ways that are difficult to control post-hoc.
 
-\subsection{CUT\&Tag as a methodological contrast}
+% \subsection{Cut\&Tag as a methodological contrast}
 
-\todo{cut or not? decide! not really relevant to thesis}
-An alternative to ChIP-seq that is increasingly used for TF mapping is CUT\&Tag \cite{kaya-okurCUTTagEfficientEpigenomic2019}.
-Rather than immunoprecipitating crosslinked complexes, CUT\&Tag uses a Protein~A--Tn5 transposase fusion, directed to the protein of interest by an antibody, to tagment (cut and insert sequencing adaptors into) the DNA in the immediate vicinity of the bound protein.
-The method requires lower cell inputs, produces lower background, and generates sharper peaks than ChIP-seq, making it particularly attractive for TFs with weak or transient binding.
-One CUT\&Tag dataset (CTCF in K562 cells; \citealt{kaya-okurCUTTagEfficientEpigenomic2019}) is included in the Faltejsková et al.\ dataset to which this thesis refers; all ChIP-seq data used in this thesis are from conventional ChIP-seq experiments.
+% An alternative to ChIP-seq that is increasingly used for TF mapping is CUT\&Tag \cite{kaya-okurCUTTagEfficientEpigenomic2019}.
+% Rather than immunoprecipitating crosslinked complexes, CUT\&Tag uses a Protein~A--Tn5 transposase fusion, directed to the protein of interest by an antibody, to tagment (cut and insert sequencing adaptors into) the DNA in the immediate vicinity of the bound protein.
+% The method requires lower cell inputs, produces lower background, and generates sharper peaks than ChIP-seq, making it particularly attractive for TFs with weak or transient binding.
 
 \subsection{Read alignment and peak calling}
 
-Sequencing reads are aligned to the reference genome using short-read aligners such as BWA \cite{liAligningSequenceReads2013} or Bowtie~2 \cite{langmeadFastGappedreadAlignment2012}, \todo{verify how to cite bowtie - i dont have access} producing coordinate-sorted BAM files with alignment information and mapping quality scores.
+Sequencing reads are aligned to the reference genome using short-read aligners such as BWA \cite{liAligningSequenceReads2013} or Bowtie~2 \cite{langmeadFastGappedreadAlignment2012}, producing coordinate-sorted BAM files with alignment information and mapping quality scores.
 Reads mapping to multiple locations are typically filtered; duplicate reads arising from PCR amplification of the same fragment are also marked and excluded.
 
 Enriched genomic regions (peaks) are identified by peak-calling algorithms that compare local fragment density in the immunoprecipitated sample against a control library, usually input chromatin from the same cells.
 MACS2 is the standard algorithm for TF ChIP-seq \cite{zhangModelbasedAnalysisChIPSeq2008};
 it models the expected fragment distribution, estimates local background from a sliding window, and assigns a $p$-value and $q$-value to each candidate peak under a Poisson model.
-The primary output is a narrowPeak BED-format file containing one row per peak, with columns for chromosomal coordinates, a peak score, $-\log_{10}(p)$, $-\log_{10}(q)$, and the offset of the peak summit from the start coordinate.
+The primary output is a narrowPeak BED file containing one row per peak, with columns for chromosomal coordinates, a peak score, $-\log_{10}(p)$, $-\log_{10}(q)$, and the offset of the peak summit from the start coordinate.
 For TF ChIP-seq, peak widths are typically 200--500~bp.
 
-\subsection{Reproducibility filtering and IDR}
+\subsection{Reproducibility filtering and the ENCODE project}
+\label{sec:encode-idr}
+
+The Encyclopedia of DNA Elements (ENCODE) project provides a systematic, large-scale catalogue of functional genomic elements through standardised application of high-throughput assays including ChIP-seq, ATAC-seq, and RNA-seq \cite{dunhamIntegratedEncyclopediaDNA2012}.
+ENCODE enforces uniform experimental protocols, antibody validation requirements, and bioinformatic pipelines, and applies automated quality-control audits to all deposited experiments; experiments flagged by these audits are marked on the portal and excluded from downstream use.
+All ChIP-seq data used in this thesis were obtained from the ENCODE portal.\footnote{\url{https://www.encodeproject.org}}
 
 Because ChIP-seq is sensitive to antibody efficiency and library complexity, peaks called from a single experiment may include irreproducible signals.
 The Irreproducible Discovery Rate (IDR) framework provides a principled way to rank peaks by their reproducibility across biological or technical replicates \cite{liMeasuringReproducibilityHighthroughput2011}.
 IDR fits a mixture model to the joint rank distribution of peaks across two replicates and assigns each peak a probability of arising from the reproducible component of the mixture.
 Peaks below an IDR threshold are retained; those above are discarded as likely irreproducible.
-The ENCODE project distributes IDR-thresholded peak calls as the recommended file type for downstream analysis \cite{dunhamIntegratedEncyclopediaDNA2012};
-conservative IDR-thresholded calls, which are thresholded at an IDR of 0.05 applied to the self-consistency ratio as well as the pooled-consistency ratio, are preferred where available.
-All peak files used in this thesis are IDR-thresholded narrowPeak files obtained from the ENCODE portal \todo{maybe a cite}.
-
-\subsection{Data formats and reference genome}
-
-The narrowPeak format used throughout this thesis is a ten-column extension of the BED format, with the extension columns carrying the MACS2 signal, $p$-value, $q$-value, and summit offset.
-\todo{a few example lines of a narrowPeak file with the columns, for illustration?}
-Reference genome sequences are stored in FASTA format and indexed with \texttt{samtools faidx} to allow efficient random-access retrieval of arbitrary intervals, which is required for the window-extraction step described in §\ref{sec:methods-windows}.
-
-This thesis uses the hg19/GRCh37 human reference assembly throughout, consistent with the Faltejsková et al.\ analysis.
-The hg38/GRCh38 assembly is the current reference standard and differs from hg19 primarily in gap-filling and a small number of chromosome-level corrections;
-coordinates are not directly interchangeable, and liftover is required to transfer annotations between assemblies.
-Non-B DNA and CpG island annotations used by Faltejsková et al.\ are hg38-based and were not used in this thesis.
-
-\subsection{The ENCODE project}
-
-The Encyclopedia of DNA Elements (ENCODE) project is a large-scale, consortium-driven effort to functionally annotate the human genome through systematic application of high-throughput assays including ChIP-seq, ATAC-seq, RNA-seq, and others \cite{dunhamIntegratedEncyclopediaDNA2012}.
-ENCODE enforces standardised experimental protocols, antibody validation requirements, and bioinformatic pipelines, and applies automated quality-control audits to all deposited experiments.
-Experiments flagged by these audits as failing quality thresholds are marked accordingly on the portal; no red-flagged experiments are included in this thesis.
-All data are publicly available through the ENCODE portal (\url{https://www.encodeproject.org}) under permissive data use agreements.\todo{decide if the url is a footnote}
-
-\fix{The TFs and cell lines used in this thesis --- MYC, CTCF, and SPI1 across cell lines GM12878, H1, K562, and MCF-7 --- were selected from the Faltejsková et al.\ supplementary accession list, which is itself drawn from ENCODE.
-Full accession identifiers and selection criteria are given in §\ref{sec:methods-data}.} \todo{consider dropping}
+ENCODE distributes IDR-thresholded peak calls as the recommended file type for downstream analysis \cite{dunhamIntegratedEncyclopediaDNA2012};
+conservative IDR-thresholded calls, thresholded at an IDR of 0.05 applied to both the self-consistency and pooled-consistency ratios, are preferred where available.
+All peak files used in this thesis are conservative IDR-thresholded narrowPeak files.
 
 \subsection{Long-range sequence context around binding sites}
 \label{sec:faltejskova}
 
 The ChIP-seq peak calls distributed by ENCODE identify the genomic coordinates of protein--DNA contacts, but the narrowPeak format records only a ~200--500~bp window around the occupied site.
-Whether the broader sequence context surrounding a bound site encodes systematic, non-random features --- and whether those features are consistent with a role in guiding TF recognition --- is a question that cannot be answered from the peak coordinates alone.
+Whether the broader sequence context surrounding a bound site encodes systematic, non-random features -- and whether those features are consistent with a role in guiding TF recognition -- is a question that cannot be answered from the peak coordinates alone.
 
-\citet{faltejskovaNonconsensusFlankingSequence2026} addressed this question in a recent descriptive study published in \emph{Nucleic Acids Research}.
-They analysed a $\pm$5000~bp window around in vivo binding sites for ten TFs drawn from ENCODE ChIP-seq and one CUT\&Tag dataset, dividing each 10~kb window into 50~bp non-overlapping segments and computing sequence composition features --- GC content, dinucleotide frequencies, predicted DNA shape (via deepDNAshape), and HOCOMOCO-based TF affinity scores --- across the profile from distal flanks to peak centre.
+\citet{faltejskovaNonconsensusFlankingSequence2026a} addressed this question in a recent descriptive analysis (preprint).
+They analysed a $\pm$5000~bp window around in vivo binding sites for ten TFs drawn from ENCODE ChIP-seq and one CUT\&Tag dataset, dividing each 10~kb window into 50~bp non-overlapping segments and computing sequence composition features -- GC content, dinucleotide frequencies, predicted DNA shape (via deepDNAshape), and HOCOMOCO-based TF affinity scores -- across the profile from distal flanks to peak centre. % so cite deepDNAshape
 
 The principal finding is that GC content is significantly elevated in a patch spanning approximately 1--2~kb around the binding site for most of the ten TFs examined, with a typical magnitude of~$\sim$10 percentage points above the distal flank.
 Directional asymmetries in dinucleotide composition, pointing toward the binding site, were observed for several TFs including MYC, FOXK2, and p53, and are absent or weak for CTCF and SPI1.
-DNA shape features predicted from the local sequence context --- in particular roll and helical twist --- change in a manner consistent with increased bendability near the binding site.
+DNA shape features predicted from the local sequence context -- in particular roll and helical twist -- change in a manner consistent with increased bendability near the binding site.
 A small but significant enrichment of predicted Z-DNA and G-quadruplex motifs at the binding site was also observed for selected TFs, though the authors note these are insufficient to account for the full dinucleotide pattern.
 
 These findings are interpreted through a ``statistical funnel'' model: broad compositional gradients around binding sites create a low-free-energy landscape that biases TFs undergoing one-dimensional facilitated diffusion toward the target site, complementing the short-range specific recognition described in §\ref{sec:readout}.
@@ -159,7 +137,7 @@ The study explicitly characterises this model as hypothesis-generating.
 Critically, it is a descriptive analysis: no model is tested for whether it can detect or exploit the sequence gradients described.
 
 This descriptive gap is the primary motivation for the present thesis.
-The sequence features characterised by \citet{faltejskovaNonconsensusFlankingSequence2026} extend over 1--2~kb on either side of the binding site --- a spatial scale that is inaccessible to conventional motif-based models by design, but that falls within the context window of recent genomic foundation models operating at single-nucleotide resolution.
+The sequence features characterised by \citet{faltejskovaNonconsensusFlankingSequence2026a} extend over 1--2~kb on either side of the binding site -- a spatial scale that is inaccessible to conventional motif-based models by design, but that falls within the context window of recent genomic foundation models operating at single-nucleotide resolution.
 Whether the per-token embeddings of such a model encode the kilobase-scale compositional structure described above is the empirical question taken up in this thesis.
 The foundation model used, Evo~2, is introduced in §\ref{sec:foundation-models}.
 
@@ -177,7 +155,7 @@ The information content of the matrix, $\mathrm{IC} = \sum_{i} \sum_b f_{i,b} \l
 \todo{sequence logo visual}
 
 The PWM model rests on an independence assumption: the contribution of each position to the total score is treated as additive, with no coupling between positions.
-This assumption is biologically inaccurate --- adjacent nucleotides are correlated in both sequence and structural terms --- but the model is computationally tractable, transferable across organisms, and sufficiently accurate for many applications.
+This assumption is biologically inaccurate -- adjacent nucleotides are correlated in both sequence and structural terms -- but the model is computationally tractable, transferable across organisms, and sufficiently accurate for many applications.
 It remains the standard representation in curated databases such as JASPAR \cite{ovekbaydarJASPAR2026Expansion2026} and HOCOMOCO \cite{vorontsovHOCOMOCO2024Rebuild2024}, which together provide PWM models for the large majority of human TFs.
 
 \subsection{Motif discovery and enrichment analysis}
@@ -185,7 +163,7 @@ It remains the standard representation in curated databases such as JASPAR \cite
 Given a set of ChIP-seq peak sequences, two related tasks arise:
 discovering the sequence motif enriched in the peaks (motif discovery), and testing whether a known motif is significantly enriched relative to a background set (motif enrichment).
 
-MEME (Multiple EM for Motif Elicitation) addresses the discovery task using expectation maximisation to identify the PWM that best explains an overrepresented pattern across the input sequences \cite{baileyUnsupervisedLearningMultiple1995};
+MEME (Multiple Em for Motif Elicitation) addresses the discovery task using expectation maximisation to identify the PWM that best explains an overrepresented pattern across the input sequences \cite{baileyUnsupervisedLearningMultiple1995};
 the broader MEME Suite extends this to enrichment testing, scanning, and comparative analysis \cite{baileyMEMESuite2015}.
 HOMER (Hypergeometric Optimization of Motif EnRichment) is widely used for ChIP-seq specifically:
 it optimises motif enrichment relative to a GC-matched background set, making it robust to the GC bias that is characteristic of many TF binding sites \cite{heinzSimpleCombinationsLineageDetermining2010}.
@@ -196,15 +174,15 @@ this is the operation used to count the motif matches discussed in §\ref{sec:pa
 
 Several approaches have been developed to relax the positional independence assumption.
 Dinucleotide weight matrices (DWMs) model pairwise dependencies between adjacent positions, capturing the nearest-neighbour sequence correlations that are mechanistically important for
-shape readout \cite{siebertBayesianMarkovModels2016}.
-Hidden Markov models and related probabilistic graphical models can represent variable-length motifs with internal positional dependencies, at the cost of increased model complexity and training data requirements. \todo{citation}
+shape readout \cite{bulykNucleotidesTranscriptionFactor2002}.
+Hidden Markov models and related probabilistic graphical models can represent variable-length motifs with internal positional dependencies, at the cost of increased model complexity and training data requirements \cite{weirauchEvaluationMethodsModeling2013}.
 Convolutional neural networks trained on ChIP-seq data learn sequence representations that implicitly capture multi-position dependencies and outperform PWMs on held-out binding
 prediction benchmarks \cite{alipanahiPredictingSequenceSpecificities2015};
 however, such models are typically trained in a supervised setting and require labelled positive and negative sequences.
 
 A complementary line of work incorporates predicted DNA shape features alongside sequence features.
 \citet{mathelierDNAShapeFeatures2016} showed that adding per-position shape predictions (minor groove width, propeller twist, roll, and helical twist computed by DNAshape) as features alongside the PWM score systematically improves in vivo binding prediction across a broad range of TF families.
-The deepDNAshape model \cite{liPredictingDNAStructure2024}, which predicts the same structural features from sequence using a neural network trained on molecular dynamics simulations, is used by \citet{faltejskovaNonconsensusFlankingSequence2026} to characterise shape changes across the 10~kb window around binding sites.
+The deepDNAshape model \cite{liPredictingDNAStructure2024}, which predicts the same structural features from sequence using a neural network trained on molecular dynamics simulations, is used by \citet{faltejskovaNonconsensusFlankingSequence2026a} to characterise shape changes across the 10~kb window around binding sites.
 
 \subsection{The kilobase-scale context gap}
 \label{sec:motif-gap}
@@ -216,7 +194,7 @@ By construction, these methods cannot represent the kilobase-scale sequence comp
 
 This constraint is not a limitation of any specific algorithm but is inherent to the class of models:
 the binding site itself is defined as a short sequence, and the model is designed to score that sequence.
-Capturing kilobase-scale context requires a qualitatively different modelling approach --- one that processes the full sequence window and produces representations that integrate information across its entire length.
+Capturing kilobase-scale context requires a qualitatively different modelling approach -- one that processes the full sequence window and produces representations that integrate information across its entire length.
 Genomic foundation models, described in the following section, are a natural candidate for this role.
 
 \section{Genomic foundation models}
@@ -224,55 +202,27 @@ Genomic foundation models, described in the following section, are a natural can
 
 \subsection{Self-supervised pretraining and the foundation model paradigm}
 
-\fix{The dominant paradigm in modern sequence modelling} \todo{this is not specific to sequence modelling. bommasani is general about foundation model} is self-supervised pretraining on large
-unlabelled corpora, followed by task-specific adaptation.
-A model is trained to predict held-out portions of the input sequence from the remaining
-context:
-in masked language modelling, randomly selected tokens are replaced with a mask symbol and
-the model is trained to recover them;
-in autoregressive modelling, the model is trained to predict each token from all preceding
-tokens.
+Foundation model, a relatively recent term, describes a machine learning model that in general utilises self-supervised pretraining on large unlabelled datasets, with the intention of subsequent task-specific adaptation by fine-tuning or distillation.
+In self-supervised learning, the model is trained to predict held-out portions of the input sequence from the remaining context: in masked language modelling, randomly selected tokens are replaced with a mask symbol and the model is trained to recover them; in autoregressive modelling, the model is trained to predict each token from all preceding tokens.
 Neither objective requires labelled data;
 the supervision signal is derived entirely from the sequence itself.
-The resulting model learns distributed representations that encode statistical regularities of
-the training corpus and that can be transferred to downstream tasks by fine-tuning on small
-labelled datasets or by extracting intermediate-layer embeddings for use as features
-\cite{bommasaniOpportunitiesRisksFoundation2022}.
+The resulting model learns distributed representations that encode statistical regularities of the training data and that can be transferred to downstream tasks by fine-tuning on small labelled datasets or by extracting intermediate-layer embeddings for use as features \cite{bommasaniOpportunitiesRisksFoundation2022}.
 
-The transformer architecture \cite{vaswaniAttentionAllYou2017} is the backbone of most
-current foundation models.
-Its core mechanism, scaled dot-product attention, computes pairwise interactions between all
-positions in the input sequence, allowing each position's representation to integrate
-information from arbitrarily distant context.
-This property makes transformers well-suited for tasks that require long-range dependencies;
-however, the computational and memory cost of full attention scales quadratically with
-sequence length, which places a practical ceiling on the context window at training time.
-For DNA, where biologically relevant interactions can span thousands to millions of base
-pairs, this is a fundamental constraint.
-
-\todo{Consider a schematic here contrasting the limited receptive field of a PWM scanner
-against the full-context attention of a transformer, to visually motivate why architecture
-matters for the kilobase-scale problem.}
+The transformer architecture \cite{vaswaniAttentionAllYou2017} is the backbone of most current foundation models.
+Its core mechanism, scaled dot-product attention, computes pairwise interactions between all positions in the input sequence, allowing each position's representation to integrate information from arbitrarily distant context.
+This property makes transformers well-suited for tasks that require long-range dependencies; however, the computational and memory cost of full attention scales quadratically with sequence length, which places a practical ceiling on the context window at training time.
+For DNA, where biologically relevant interactions can span thousands to millions of base pairs, this is a fundamental constraint.
 
 \subsection{Genomic foundation models: a brief landscape}
 
-The first genomic foundation model applied to regulatory sequence was DNABERT
-\cite{jiDNABERTPretrainedBidirectional2021a}, which adapted the BERT masked language
-modelling objective to the human reference genome.
-DNABERT tokenises the genome into overlapping $k$-mers (default $k = 6$) and pretrains a
-bidirectional transformer on the resulting token sequences.
-The pretrained model was shown to transfer to promoter prediction, splice site detection, and
-TF binding site prediction by fine-tuning on small labelled datasets.
-A limitation of the $k$-mer tokenisation is that it conflates sequence position with token
-identity and produces a highly redundant vocabulary;
-the context window at inference time was also limited to 512 tokens, corresponding to
-roughly 512~bp of genomic sequence.
+The first genomic foundation model applied to regulatory sequence was DNABERT \cite{jiDNABERTPretrainedBidirectional2021a}, which adapted the BERT masked language modelling objective to the human reference genome.
+DNABERT tokenises the genome into overlapping $k$-mers (default $k = 6$) and pretrains a bidirectional transformer on the resulting token sequences.
+The pretrained model was shown to transfer to promoter prediction, splice site detection, and TF binding site prediction by fine-tuning on small labelled datasets.
+A limitation of the $k$-mer tokenisation is that it conflates sequence position with token identity and produces a highly redundant vocabulary;
+the context window at inference time was also limited to 512 tokens, corresponding to roughly 512~bp of genomic sequence.
 
-The Nucleotide Transformer \cite{dalla-torreNucleotideTransformerBuilding2025} scaled the
-masked language modelling approach to larger model sizes (up to 2.5~billion parameters) and a
-multi-species training corpus, demonstrating that scale improves transfer performance across a
-broad panel of regulatory prediction benchmarks.
-Its context window remains limited to a few kilobases at inference.
+The Nucleotide Transformer \cite{dalla-torreNucleotideTransformerBuilding2025} scaled the masked language modelling approach to larger model sizes (up to 2.5~billion parameters) and a multi-species training dataset.
+Its context window remains limited to a about 6\,kbp at inference.
 
 HyenaDNA \cite{nguyenHyenaDNALongRangeGenomic2023} addressed the context length problem by
 replacing the attention mechanism with the Hyena operator, a data-controlled convolutional
@@ -285,10 +235,11 @@ Performance on short-range benchmarks was competitive with transformer-based mod
 the primary advance was the demonstration that linear-scaling architectures could handle
 genomic context lengths that are infeasible for full attention.
 
-\subsection{Evo and Evo 2}
+\subsection{Evo 1 and Evo 2}
+\label{sec:evo2bg}
 
-Evo \cite{nguyenSequenceModelingDesign2024} extended the long-context autoregressive
-paradigm to a multi-kingdom training corpus, pretraining a 7~billion parameter model on
+The Evo model \cite{nguyenSequenceModelingDesign2024} extended the long-context autoregressive
+approach to a multi-kingdom training dataset, pretraining a 7~billion parameter model on
 prokaryotic, viral, and eukaryotic genomes using the StripedHyena architecture.
 StripedHyena interleaves multi-head attention layers with Hyena convolutional layers,
 combining the strong local feature extraction of attention with the linear-scaling long-range
@@ -298,8 +249,7 @@ generation, and CRISPR guide RNA design.
 
 Evo~2 \cite{brixiGenomeModellingDesign2026} is the successor model, published in
 \emph{Nature} in 2026.
-It is trained autoregressively on OpenGenome2, a curated dataset of 8.8~trillion nucleotide
-tokens drawn from organisms across all domains of life, including prokaryotes, archaea, and
+It is trained autoregressively on OpenGenome2, a curated dataset of 8.8~trillion nucleotides drawn from organisms across all domains of life, including prokaryotes, archaea, and
 eukaryotes.
 The architecture is StripedHyena~2, an updated version that further improves the integration
 of attention and gated convolutional layers.
@@ -309,46 +259,66 @@ The 7~billion parameter checkpoint used in this thesis operates at single-nucleo
 resolution with a context window of up to 1~million base pairs in its extended-context
 configuration (\texttt{evo2\_7b}), or 8192 tokens in its base configuration
 (\texttt{evo2\_7b\_base}).
-Because the 10~kb windows used in this thesis exceed the 8192-token limit of the base
-checkpoint, the extended-context \texttt{evo2\_7b} checkpoint is used throughout.
 
-Evo~2 has been benchmarked on variant effect prediction across coding and non-coding variants,
-zero-shot fitness prediction for proteins and ncRNA, and generative sequence design;
-these evaluations are described in the original publication.
-Whether the per-token embeddings of Evo 2 encode the kilobase-scale flanking-sequence structure characterised by Faltejsková et al. has not been examined.
-
-\subsection{Embedding extraction and layer selection}
+Mechanistic interpretability analyses, using sparse autoencoders trained on Evo~2
+representations, identified internal features associated with transcription factor binding
+motifs in human promoter sequences: unsupervised SAE features matched 70\% of
+promoter-enriched motifs from the HOCOMOCO database, compared with 35\% recalled
+by HOMER, a dedicated motif discovery algorithm \cite{brixiGenomeModellingDesign2026}.
+These analyses characterise motif-level representations within and immediately around
+binding sites.
+Whether Evo~2 embeddings also encode the kilobase-scale compositional gradients that
+extend over 1--2~kb on either side of in vivo binding sites — as described by
+\citet{faltejskovaNonconsensusFlankingSequence2026a} — has not been examined,
+and constitutes the empirical question taken up in this thesis.
+\subsection{Embedding extraction, binning, and normalisation}
 \label{sec:embedding-extraction}
 
 Foundation models trained autoregressively produce, at each token position, a hidden-state
 vector whose dimensionality equals the model's embedding dimension.
 These per-token hidden states are the primary substrate for embedding-based analyses:
-they can be mean-pooled across the sequence to produce a single fixed-length representation,
-or retained at full resolution to carry positional information.
+they can be mean-pooled across positions to yield a single fixed-length representation of the
+whole sequence, or retained at full resolution to preserve positional information.
 
-For Evo~2 with a 7~billion parameter model, the embedding dimension is 4096.
-Each token (nucleotide) at each sequence position produces a 4096-dimensional vector;
+For the 7~billion parameter Evo~2 checkpoint, the embedding dimension is 4096.
+Each nucleotide at each sequence position produces a 4096-dimensional vector;
 a 10~kb sequence therefore yields a $(10{,}000 \times 4096)$ matrix of hidden states before
 any pooling.
+Each row of this matrix can be thought of as a point in a 4096-dimensional space,
+characterised by both a \emph{magnitude} -- the Euclidean length of the vector -- and a
+\emph{direction} -- the pattern of relative activations across the 4096 dimensions.
 
 The choice of which layer's hidden states to extract is consequential.
-The final layer is specialised for the next-token prediction objective and carries
-information optimised for that task rather than for general-purpose representation.
-Intermediate layers have been shown empirically to produce more transferable representations
+The final layer is specialised for the next-token prediction objective and may carry
+information optimised for that task rather than for general-purpose sequence representation.
+Intermediate layers have been shown empirically to yield more transferable representations
 for downstream tasks;
-\fix{the exon classifier notebook distributed with Evo~2 uses layer \texttt{blocks.28.mlp.l3} as
-the embedding source for a classification task} \todo{what else do they use it for?}, and this layer is used in the present thesis
-for the same reason.
+\fix{the exon classifier distributed with Evo~2 uses layer \texttt{blocks.28.mlp.l3} as the
+embedding source}, and this layer is used throughout the present thesis for the same reason.
 
-\todo{consider cutting}
 In this thesis, each 10~kb sequence is processed in a single forward pass through
-\texttt{evo2\_7b}, and the per-token hidden states from \texttt{blocks.28.mlp.l3} are
-extracted and mean-pooled within non-overlapping 50~bp bins to yield a
-$(200 \times 4096)$ positional embedding profile per peak.
-This binning resolution matches the 50~bp window size used by \citet{faltejskovaNonconsensusFlankingSequence2026}
-for hand-engineered feature extraction, allowing a direct spatial correspondence between
-the two analyses.
-The technical details of the embedding pipeline are described in §\ref{sec:methods-embedding}.
+\texttt{evo2\_7b}, and the hidden states from \texttt{blocks.28.mlp.l3} are mean-pooled
+within non-overlapping 50~bp bins to yield a $(200 \times 4096)$ positional embedding
+profile per peak.
+This binning resolution matches the 50~bp window size used by
+\citet{faltejskovaNonconsensusFlankingSequence2026a} for hand-engineered feature extraction,
+allowing a direct spatial correspondence between the two analyses.
+
+\subsubsection{Magnitude and directional variation}
+
+When embeddings are compared based on cosine siimilarity or subjected to principal component analysis, the dominant axis of variation is typically the magnitude of the hidden-state  vectors.
+Magnitude reflects the overall scale of model activations and may co-vary with sequence properties such as GC content, but it conflates many sources of variation and can obscure subtler structure in the data.
+
+To examine the directional component of embedding variation independently of magnitude, each embedding vector can be \emph{L2-normalised}: divided by its own Euclidean norm,
+\begin{equation}
+  \hat{\mathbf{v}} = \frac{\mathbf{v}}{\|\mathbf{v}\|_2},
+\end{equation}
+so that the resulting vector $\hat{\mathbf{v}}$ lies on the unit hypersphere and has norm exactly one (\ref{figsomething}).
+After L2 normalisation, all vectors have the same length and differ only in direction;
+a subsequent PCA therefore responds exclusively to directional differences in the embedding space, with magnitude variation removed by construction.
+The practical motivation is that magnitude and direction may carry distinct biological information, and separating them allows each to be interpreted on its own terms.
+The analyses in §\ref{sec:results-block2b} apply this normalisation to the file-mean positional profiles to characterise what directional structure the embeddings contain after magnitude is removed.
+
 
 \subsection{Autoregressive context and its implications}
 
@@ -362,49 +332,8 @@ left context is rich.
 This warm-up effect is a model-level property, not a sequence-biological signal, and must be
 accounted for when interpreting positional embedding profiles derived from fixed-start 10~kb
 windows.
-The practical consequence for this thesis --- and the trimming strategy adopted to address it
---- is described in §\ref{sec:results-block2}.
-
-
-% \section{Computational methods for motif analysis}
-
-% \subsection{PWMs}
-
-% % \label{sec:working-title}
-
-% \todo{logo sekvence, vizuál pwm?}
-
-% The standard representation of a TF binding motif is the position weight matrix (PWM), constructed from an aligned set of known binding sequences.
-% Counts of each base at each position give the position frequency matrix; dividing by the number of sequences gives the position probability matrix $f_{b,i}$.
-% The PWM entries are the log-odds of these probabilities against a background distribution, $w_{b,i} = \log_2 \left( f_{b,i} / p_b \right)$, where $p_b$ is typically $0.25$ for each base or the genome-wide composition.
-% The conservation at each position is summarised by the information content $I_i = 2 - H_i$, where $H_i = -\sum_b f_{b,i} \log_2 f_{b,i}$ is the Shannon entropy of the base distribution at position $i$.
-% Sequence logos visualise the PWM by stacking letters at each position with heights proportional to $f_{b,i} \cdot I_i$, so that conserved positions appear as tall, near-pure stacks and degenerate positions as short, mixed ones.
-% To identify candidate binding sites in a genome, the PWM is slid across the sequence and each $L$-bp window is scored by summing the matrix entries corresponding to its bases: $S = \sum_{i=1}^{L} w_{b_i, i}$.
-% Standard scanning tools such as FIMO \cite{grantFIMOScanningOccurrences2011} convert this score into a p-value against the background distribution, and report windows below a chosen significance threshold as hits.
-% The additive form of the scoring rule encodes a strong assumption: that each position contributes to binding affinity independently of the others.
-% This approximation is known to be violated for many TFs — for example, where the identity of one position constrains which bases are tolerated at a neighbouring position \todo{citaci} — and motivates the extensions discussed below.
-
-% Curated PWM models for known TFs are derived computationally from sets of enriched sequences, typically obtained from in vitro selection assays such as HT-SELEX or from high-confidence ChIP-seq peaks.
-% The two most widely used discovery tools are MEME \cite{baileyMEMESuite2015}, which identifies over-represented motifs by expectation maximisation, and HOMER \cite{heinzSimpleCombinationsLineageDetermining2010}, which is optimised for ChIP-seq and identifies motifs by differential enrichment against a matched background.
-% Both produce PWMs as their primary output.
-% Curated databases — JASPAR \cite{ovekbaydarJASPAR2026Expansion2026} for general-purpose use and HOCOMOCO \cite{vorontsovHOCOMOCO2024Rebuild2024} for human and mouse TFs — collect such models across studies and provide reference resources for downstream applications; this thesis uses HOCOMOCO v12, matching the choice of \cite{faltejskovaNonconsensusFlankingSequence2026}.
-
-% Several approaches relax the positional independence assumption of PWMs.
-% Dinucleotide weight matrices extend the framework minimally, by scoring adjacent pairs of bases rather than single positions, and so capturing nearest-neighbour dependencies \cite{siebertBayesianMarkovModels2016}; hidden Markov models go further, allowing variable-length and internally structured motifs through state transitions \cite{eddyWhatHiddenMarkov2004} \todo{terrible source and i dont have access, fix!}.
-% Other extensions — Bayesian networks for arbitrary positional dependencies, and k-mer-based methods that learn from short subsequence frequencies directly — explore the same conceptual space.
-% Benchmarking on in vitro binding data has shown that mononucleotide PWMs trained by the best methods perform comparably to more complex models for the majority of TFs, with measurable gains concentrated in a minority of cases \cite{weirauchEvaluationMethodsModeling2013}.
-% The fundamental constraint these extensions share is locality: regardless of how the independence assumption is relaxed, the model remains bounded to the motif region itself.
-
-% The PWM framework and its extensions are bounded by the binding footprint by design.
-% The kilobase-scale gradients described in \todo{inside reference, co s nimi?} §1.1.4, however, lie well outside that footprint, and have so far been characterised only with hand-engineered compositional features rather than learned directly from sequence.
-% DNA language models — foundation models trained on raw genomic sequence over long contexts — operate at a scale where such gradients fall within their input window, and so could in principle encode them as part of their learned representation.
-% The question this thesis addresses is whether a model of this kind, trained on raw sequence with no compositional features supplied, encodes the kilobase-scale signal that \citet{faltejskovaNonconsensusFlankingSequence2026} characterised by other means.
-
-% \section{Foundation models for genomics}
-
-\todo{simplified StripedHyena 2 diagram, or the one from the paper}
-
-%\todo{what they did with TFs, what am i doing?}
+The practical consequence for this thesis -- and the trimming strategy adopted to address it
+-- is described in §\ref{sec:results-block2}. % this may not be relevant, depending on the results, candidate for drop
 
 \shorthandon{-} 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

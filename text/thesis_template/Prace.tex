@@ -35,7 +35,7 @@
 %%%%%%%%%%%%
 
 
-\usepackage[english, czech]{babel}
+\usepackage[czech, english]{babel}
 % \usepackage{czech}
 % \usepackage{slovak}
 
@@ -67,7 +67,11 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% BALIKY POTREBNE PRO MNE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+\usepackage{caption}
+\usepackage{chngcntr}
+\usepackage{titlesec}
+\usepackage{setspace}
+\onehalfspacing
 \usepackage[backend=biber,citestyle=authoryear-comp,natbib=true,sorting=nyt,maxcitenames=2,doi=true]{biblatex}
 \let\cite\citep
 \addbibresource{../../DP_VamberskyT.bib}
@@ -76,6 +80,32 @@
 \AtEveryBibitem{%
   \clearfield{issue}%
 }
+
+
+
+
+
+\captionsetup[figure]{
+    position=below,
+    font={small, singlespacing},  % 1.0 line spacing
+    labelfont=bf,
+    justification=justified,
+    singlelinecheck=false
+}
+\captionsetup[table]{
+    position=above,
+    font={small, singlespacing},
+    labelfont=bf,
+    justification=justified,
+    singlelinecheck=false
+}
+
+
+\counterwithout{figure}{chapter}
+\counterwithout{table}{chapter}
+
+
+\titleformat{\chapter}[block]{\normalfont\huge\bfseries}{\thechapter}{1em}{}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%% NASTAVENI POVINNYCH CASTI DLE SMERNICE DEKANA %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -91,7 +121,7 @@
 %% RNDr - pro rigorozni praci
 %% Barevne - pro dokument s barevnymi odkazy
 %% Tisk - pro dokument v cernobile barve
-%% \geometry{top=22mm,bottom=24mm,left=25mm,right=25mm,headsep=6mm,footskip=8mm,includeheadfoot,headheight=14pt}
+\geometry{top=22mm,bottom=24mm,left=25mm,right=25mm,headsep=6mm,footskip=8mm,includeheadfoot,headheight=14pt}
 
 \NazevUstavu{Ústav biochemie}{Department of Biochemistry}
 
@@ -143,6 +173,9 @@ s~využitím informačních zdrojů, které jsou v~práci citovány. Prohlašuji
 \newcommand{\mysigma}{$\sigma$}
 \newcommand{\fix}[1]{\textit{#1}}
 \newcommand{\todo}[1]{\textcolor{red}{\textbf{[TODO: #1]}}}
+\newcommand{\ask}[1]{\textcolor{magenta}{\text{[#1]}}}
+\renewcommand{\figurename}{Figure}
+\renewcommand{\thetable}{\Roman{table}}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%% VYTVOR POMOCNY SOUBOR PRO REJSTRIK %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
